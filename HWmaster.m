@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  mapa
+//  HWmaster.m
+//  mapa-tab
 //
-//  Created by GABRIEL VIEIRA on 26/02/14.
-//  Copyright (c) 2014 ios. All rights reserved.
+//  Created by Ezequiel Franca dos Santos on 27/02/14.
+//  Copyright (c) 2014 Ezequiel Franca dos Santos. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HWmaster.h"
 
-@interface ViewController ()
+@interface HWmaster ()
 
 @end
 
-@implementation ViewController
+@implementation HWmaster
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

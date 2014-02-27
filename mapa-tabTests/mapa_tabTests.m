@@ -1,18 +1,18 @@
 //
-//  mapaTests.m
-//  mapaTests
+//  mapa_tabTests.m
+//  mapa-tabTests
 //
-//  Created by GABRIEL VIEIRA on 26/02/14.
-//  Copyright (c) 2014 ios. All rights reserved.
+//  Created by Ezequiel Franca dos Santos on 27/02/14.
+//  Copyright (c) 2014 Ezequiel Franca dos Santos. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface mapaTests : XCTestCase
+@interface mapa_tabTests : XCTestCase
 
 @end
 
-@implementation mapaTests
+@implementation mapa_tabTests
 
 - (void)setUp
 {

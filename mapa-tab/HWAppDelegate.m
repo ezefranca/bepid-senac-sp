@@ -1,14 +1,14 @@
 //
-//  AppDelegate.m
-//  mapa
+//  HWAppDelegate.m
+//  mapa-tab
 //
-//  Created by GABRIEL VIEIRA on 26/02/14.
-//  Copyright (c) 2014 ios. All rights reserved.
+//  Created by Ezequiel Franca dos Santos on 27/02/14.
+//  Copyright (c) 2014 Ezequiel Franca dos Santos. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "HWAppDelegate.h"
 
-@implementation AppDelegate
+@implementation HWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
