@@ -10,6 +10,7 @@
 
 @interface HWFirstViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *splashImage;
+@property (strong, nonatomic) IBOutlet UIWebView *noticias;
 
 -(void)splashAction;
 
