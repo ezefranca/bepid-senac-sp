@@ -23,10 +23,7 @@
     
     [loadThread start];
     
-    NSString *fullURL = @"http://conecode.com";
-    NSURL *url = [NSURL URLWithString:fullURL];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [_noticias loadRequest:requestObj];
+   
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
