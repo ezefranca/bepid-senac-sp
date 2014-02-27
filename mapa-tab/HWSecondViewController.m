@@ -20,6 +20,7 @@
     
     CLLocationCoordinate2D loc;
     MKPointAnnotation *ponto = [[MKPointAnnotation alloc]init];
+    //MKAnnotationView *anotView;
     
     loc.latitude = -23.650;
     loc.longitude = -46.703;
@@ -27,6 +28,10 @@
     MKCoordinateRegion regiao;
     regiao.center = loc;
     ponto.coordinate = loc;
+    
+    //[self.mapa setDelegate:self];
+    
+    
     
     [self.mapa setRegion:regiao];
     [self.mapa addAnnotation:ponto];
@@ -39,6 +44,26 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    // If you are showing the users location on the map you don't want to change it
+    MKAnnotationView *view = nil;
+    if (annotation != mapView.userLocation) {
+        // This is not the users location indicator (the blue dot)
+        view = [mapView dequeueReusableAnnotationViewWithIdentifier:@"myAnnotationIdentifier"];
+        if (!view) {
+            // Could not reuse a view ...
+            
+            // Creating a new annotation view
+            view = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"myAnnotationIdentifier"];
+            
+            // This will rescale the annotation view to fit the image
+            view.image = [UIImage imageNamed:@"ico.png"];
+        }
+    }
+    return view;
 }
 
 - (IBAction)mapType:(id)sender {
