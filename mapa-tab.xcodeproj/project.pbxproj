@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297621A918BFCF3A00F8FA3E /* ice.png in Resources */ = {isa = PBXBuildFile; fileRef = 297621A818BFCF3A00F8FA3E /* ice.png */; };
 		F75F71BB18BFAD55001CD59D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BA18BFAD55001CD59D /* Foundation.framework */; };
 		F75F71BD18BFAD55001CD59D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BC18BFAD55001CD59D /* CoreGraphics.framework */; };
 		F75F71BF18BFAD55001CD59D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BE18BFAD55001CD59D /* UIKit.framework */; };
@@ -27,7 +28,6 @@
 		F75F71F918BFB13D001CD59D /* HWThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F71F818BFB13D001CD59D /* HWThirdViewController.m */; };
 		F75F71FF18BFB547001CD59D /* HWsplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F71FE18BFB547001CD59D /* HWsplashController.m */; };
 		F75F720518BFB6F3001CD59D /* HWmaster.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F720418BFB6F3001CD59D /* HWmaster.m */; };
-		F75F7A3618BFBD9B001CD59D /* 3648336.png in Resources */ = {isa = PBXBuildFile; fileRef = F75F7A3518BFBD9B001CD59D /* 3648336.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		297621A818BFCF3A00F8FA3E /* ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ice.png; path = "mapa-tab/ice.png"; sourceTree = SOURCE_ROOT; };
 		F75F71B718BFAD55001CD59D /* mapa-tab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapa-tab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75F71BA18BFAD55001CD59D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F75F71BC18BFAD55001CD59D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,7 +71,6 @@
 		F75F71FE18BFB547001CD59D /* HWsplashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWsplashController.m; path = ../HWsplashController.m; sourceTree = "<group>"; };
 		F75F720318BFB6F3001CD59D /* HWmaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWmaster.h; path = ../HWmaster.h; sourceTree = "<group>"; };
 		F75F720418BFB6F3001CD59D /* HWmaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWmaster.m; path = ../HWmaster.m; sourceTree = "<group>"; };
-		F75F7A3518BFBD9B001CD59D /* 3648336.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3648336.png; path = ../../../Desktop/3648336.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +136,7 @@
 				F75F71CA18BFAD55001CD59D /* HWAppDelegate.m */,
 				F75F720318BFB6F3001CD59D /* HWmaster.h */,
 				F75F720418BFB6F3001CD59D /* HWmaster.m */,
+				297621A818BFCF3A00F8FA3E /* ice.png */,
 				F75F71CC18BFAD55001CD59D /* Main_iPhone.storyboard */,
 				F75F71F718BFB13D001CD59D /* HWThirdViewController.h */,
 				F75F71F818BFB13D001CD59D /* HWThirdViewController.m */,
@@ -147,7 +148,6 @@
 				F75F71D518BFAD55001CD59D /* HWSecondViewController.h */,
 				F75F71D618BFAD55001CD59D /* HWSecondViewController.m */,
 				F75F71D818BFAD55001CD59D /* Images.xcassets */,
-				F75F7A3518BFBD9B001CD59D /* 3648336.png */,
 				F75F71C118BFAD55001CD59D /* Supporting Files */,
 			);
 			path = "mapa-tab";
@@ -261,7 +261,7 @@
 			files = (
 				F75F71D118BFAD55001CD59D /* Main_iPad.storyboard in Resources */,
 				F75F71D918BFAD55001CD59D /* Images.xcassets in Resources */,
-				F75F7A3618BFBD9B001CD59D /* 3648336.png in Resources */,
+				297621A918BFCF3A00F8FA3E /* ice.png in Resources */,
 				F75F71CE18BFAD55001CD59D /* Main_iPhone.storyboard in Resources */,
 				F75F71C518BFAD55001CD59D /* InfoPlist.strings in Resources */,
 			);
@@ -507,6 +507,7 @@
 				F75F71F118BFAD55001CD59D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F75F71F218BFAD55001CD59D /* Build configuration list for PBXNativeTarget "mapa-tabTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				F75F71F418BFAD55001CD59D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
