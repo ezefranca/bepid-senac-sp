@@ -18,6 +18,20 @@
 {
     [super viewDidLoad];
     
+    CLLocationCoordinate2D loc;
+    MKPointAnnotation *ponto = [[MKPointAnnotation alloc]init];
+    
+    loc.latitude = -23.650;
+    loc.longitude = -46.703;
+    
+    MKCoordinateRegion regiao;
+    regiao.center = loc;
+    ponto.coordinate = loc;
+    
+    [self.mapa setRegion:regiao];
+    [self.mapa addAnnotation:ponto];
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
