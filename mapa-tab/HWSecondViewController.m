@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,4 +27,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)mapType:(id)sender {
+    NSInteger opcaoescolhida = [sender selectedSegmentIndex];
+    switch (opcaoescolhida) {
+        case 0:
+            [[self mapa] setMapType:MKMapTypeStandard];
+            break;
+        case 1:
+            [[self mapa] setMapType:MKMapTypeSatellite];
+            break;
+        case 2:
+            [[self mapa] setMapType:MKMapTypeHybrid];
+            break;
+        default:
+            break;
+    }
+}
 @end

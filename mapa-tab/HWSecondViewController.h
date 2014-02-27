@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface HWSecondViewController : UIViewController
+- (IBAction)mapType:(id)sender;
+@property (strong, nonatomic) IBOutlet MKMapView *mapa;
 
 @end
