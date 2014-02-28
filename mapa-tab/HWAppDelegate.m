@@ -7,6 +7,8 @@
 //
 
 #import "HWAppDelegate.h"
+#import "HWSecondViewController.h"
+#import <MapKit/MapKit.h>
 
 @implementation HWAppDelegate
 
@@ -41,6 +43,28 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(MKAnnotationView *)mapView:(MKMapView *)mapa viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    MKAnnotationView *pinView = nil;
+    if(annotation != mapa.userLocation)
+    {
+        static NSString *defaultPinID = @"com.invasivecode.pin";
+        pinView = (MKAnnotationView *)[mapa dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if ( pinView == nil )
+            pinView = [[MKAnnotationView alloc]
+                       initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+        
+        //pinView.pinColor = MKPinAnnotationColorGreen;
+        pinView.canShowCallout = YES;
+        //pinView.animatesDrop = YES;
+        pinView.image = [UIImage imageNamed:@"ice.png"];    //as suggested by Squatch
+    }
+    else {
+        [mapa.userLocation setTitle:@"I am here"];
+    }
+    return pinView;
 }
 
 @end

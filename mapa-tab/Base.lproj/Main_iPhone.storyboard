@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Bem vindo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
-                                <rect key="frame" x="20" y="218" width="280" height="42"/>
+                                <rect key="frame" x="20" y="248" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ice.png" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-Av-4oF">
-                                <rect key="frame" x="192" y="9" width="87" height="164"/>
+                                <rect key="frame" x="35" y="35" width="251" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -34,7 +34,7 @@
                             <constraint firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" constant="20" symbolic="YES" id="eHs-J5-0HT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="ice.png" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="splashImage" destination="yFm-Av-4oF" id="6Zh-bV-Dkr"/>
                     </connections>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="918" y="984"/>
         </scene>
-        <!--Second View Controller - Second-->
+        <!--Second View Controller - Localizar-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="HWSecondViewController" sceneMemberID="viewController">
+                <viewController title="Localizar" id="QUy-BD-bpt" customClass="HWSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="92v-4h-WmE"/>
                         <viewControllerLayoutGuide type="bottom" id="hHG-4u-D0p"/>
@@ -93,7 +93,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" badgeValue="Localizar" systemItem="search" id="Z7h-1E-pvt" userLabel="Localizar"/>
                     <navigationItem key="navigationItem" title="Title" id="aUb-AR-rFD"/>
                     <connections>
                         <outlet property="mapa" destination="bSf-wY-FhH" id="Rof-xs-Dld"/>
@@ -127,7 +127,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="ice.png" width="640" height="1136"/>
-        <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
