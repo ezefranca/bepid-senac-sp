@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		297621A918BFCF3A00F8FA3E /* ice.png in Resources */ = {isa = PBXBuildFile; fileRef = 297621A818BFCF3A00F8FA3E /* ice.png */; };
 		29AEC17A18BFDB31006B33D9 /* ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AEC17918BFDB31006B33D9 /* ico.png */; };
+		F7393B8A18C3AF0800B20B36 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F7393B8818C3AF0800B20B36 /* map.png */; };
+		F7393B8B18C3AF0800B20B36 /* TpgBL.png in Resources */ = {isa = PBXBuildFile; fileRef = F7393B8918C3AF0800B20B36 /* TpgBL.png */; };
 		F75F71BB18BFAD55001CD59D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BA18BFAD55001CD59D /* Foundation.framework */; };
 		F75F71BD18BFAD55001CD59D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BC18BFAD55001CD59D /* CoreGraphics.framework */; };
 		F75F71BF18BFAD55001CD59D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BE18BFAD55001CD59D /* UIKit.framework */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		297621A818BFCF3A00F8FA3E /* ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ice.png; path = "mapa-tab/ice.png"; sourceTree = SOURCE_ROOT; };
 		29AEC17918BFDB31006B33D9 /* ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico.png; path = "mapa-tab/ico.png"; sourceTree = SOURCE_ROOT; };
+		F7393B8818C3AF0800B20B36 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = Images.xcassets/map.png; sourceTree = "<group>"; };
+		F7393B8918C3AF0800B20B36 /* TpgBL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TpgBL.png; path = Images.xcassets/TpgBL.png; sourceTree = "<group>"; };
 		F75F71B718BFAD55001CD59D /* mapa-tab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapa-tab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75F71BA18BFAD55001CD59D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F75F71BC18BFAD55001CD59D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,11 +150,13 @@
 				F75F71FE18BFB547001CD59D /* HWsplashController.m */,
 				F75F71CF18BFAD55001CD59D /* Main_iPad.storyboard */,
 				F75F71D218BFAD55001CD59D /* HWFirstViewController.h */,
-				29AEC17918BFDB31006B33D9 /* ico.png */,
 				F75F71D318BFAD55001CD59D /* HWFirstViewController.m */,
 				F75F71D518BFAD55001CD59D /* HWSecondViewController.h */,
 				F75F71D618BFAD55001CD59D /* HWSecondViewController.m */,
+				29AEC17918BFDB31006B33D9 /* ico.png */,
 				F75F71D818BFAD55001CD59D /* Images.xcassets */,
+				F7393B8818C3AF0800B20B36 /* map.png */,
+				F7393B8918C3AF0800B20B36 /* TpgBL.png */,
 				F75F71C118BFAD55001CD59D /* Supporting Files */,
 			);
 			path = "mapa-tab";
@@ -266,6 +272,8 @@
 				F75F71D918BFAD55001CD59D /* Images.xcassets in Resources */,
 				297621A918BFCF3A00F8FA3E /* ice.png in Resources */,
 				29AEC17A18BFDB31006B33D9 /* ico.png in Resources */,
+				F7393B8A18C3AF0800B20B36 /* map.png in Resources */,
+				F7393B8B18C3AF0800B20B36 /* TpgBL.png in Resources */,
 				F75F71CE18BFAD55001CD59D /* Main_iPhone.storyboard in Resources */,
 				F75F71C518BFAD55001CD59D /* InfoPlist.strings in Resources */,
 			);

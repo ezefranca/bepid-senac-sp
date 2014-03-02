@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HWFirstViewController : UIViewController
+@interface HWFirstViewController : UIViewController <UINavigationControllerDelegate> {
+    UINavigationController *navController;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *splashImage;
+@property (strong, nonatomic) IBOutlet UILabel *labelWelcome;
 
 -(void)splashAction;
 

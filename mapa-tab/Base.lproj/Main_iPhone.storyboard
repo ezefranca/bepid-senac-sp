@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Bem vindo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Bem vindo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
                                 <rect key="frame" x="20" y="248" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ice.png" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-Av-4oF">
-                                <rect key="frame" x="35" y="35" width="251" height="373"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ice.png" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-Av-4oF">
+                                <rect key="frame" x="-3" y="20" width="327" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -34,8 +34,9 @@
                             <constraint firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" constant="20" symbolic="YES" id="eHs-J5-0HT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" image="ice.png" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="TpgBL.png" id="u1e-5L-l1D"/>
                     <connections>
+                        <outlet property="labelWelcome" destination="Zhg-ve-WU7" id="tor-zu-HHU"/>
                         <outlet property="splashImage" destination="yFm-Av-4oF" id="6Zh-bV-Dkr"/>
                     </connections>
                 </viewController>
@@ -56,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="third" image="first" id="1Bg-SM-H6n"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="1Bg-SM-H6n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTV-cV-f8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +94,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="Localizar" systemItem="search" id="Z7h-1E-pvt" userLabel="Localizar"/>
+                    <tabBarItem key="tabBarItem" image="map.png" badgeValue="Localizar" id="Z7h-1E-pvt" userLabel="Localizar"/>
                     <navigationItem key="navigationItem" title="Title" id="aUb-AR-rFD"/>
                     <connections>
                         <outlet property="mapa" destination="bSf-wY-FhH" id="Rof-xs-Dld"/>
@@ -125,8 +126,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="TpgBL.png" width="30" height="30"/>
         <image name="ice.png" width="640" height="1136"/>
+        <image name="map.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
