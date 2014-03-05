@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface HWThirdViewController : UIViewController
+
+@property (strong, nonatomic)  MKMapView *map;
 
 @end
