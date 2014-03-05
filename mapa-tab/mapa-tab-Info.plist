@@ -4,6 +4,20 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>FacebookAppID</key>
+	<string>687932964593006</string>
+	<key>FacebookDisplayName</key>
+	<string>Cadê meu icegurte</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>URL Schames</key>
+			<dict>
+				<key>Item 0</key>
+				<string>fb687932964593006</string>
+			</dict>
+		</dict>
+	</array>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
