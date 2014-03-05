@@ -7,10 +7,16 @@
 //
 
 #import "HWAppDelegate.h"
+#import "HWFirstViewController.h"
 #import "HWSecondViewController.h"
 #import <MapKit/MapKit.h>
 
 @implementation HWAppDelegate
+- (void) loginViewFetchedUserInfo: (FBLoginView *)loginView user:(id<FBGraphUser>)user {
+}
+
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -14,12 +14,23 @@
 
 @implementation HWFirstViewController
 
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self) {
+        // inicializacao
+    }
+    
+    return self;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.splashImage.alpha = 1;
      self.tabBarController.tabBar.alpha = 0;
-    self.labelWelcome.alpha = 0;
     
     NSThread *loadThread = [[NSThread alloc]initWithTarget:self selector:@selector(splashAction) object:nil];
     
@@ -30,7 +41,15 @@
 -(void)viewDidAppear
 {
     self.tabBarController.tabBar.alpha = 1;
-    self.labelWelcome.alpha = 1;
+    FBLoginView *loginview = [[FBLoginView alloc]init];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+    
+    loginview.frame = CGRectOffset(loginview.frame, screenWidth/6, screenHeight/2);
+    [loginview sizeToFit];
+    loginview.readPermissions = @[@"basic_info", @"email", @"user_likes"];
+    [self.view addSubview:loginview];
 }
 
 -(void)splashAction
@@ -67,6 +86,13 @@
        didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     [viewController viewDidAppear:animated];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication fallbackHandler:^(FBAppCall *call){
+                      NSLog(@"In fallback handler");
+    }];
 }
 
 @end

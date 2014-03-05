@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface HWFirstViewController : UIViewController <UINavigationControllerDelegate> {
     UINavigationController *navController;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *splashImage;
-@property (strong, nonatomic) IBOutlet UILabel *labelWelcome;
+@property (strong, nonatomic) IBOutlet UILabel *facebookName;
+@property (retain, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
+@property (retain, nonatomic) IBOutlet UIView *profilePictureOuterView;
+
 
 -(void)splashAction;
 
