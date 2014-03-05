@@ -123,7 +123,7 @@
     NSLog(@"%f - %f", c.latitude , c.longitude);
     
     MKPlacemark *place = [[MKPlacemark alloc]initWithCoordinate:self.map.userLocation.coordinate addressDictionary:nil];
-    
+        
     self.inicio = [[MKMapItem alloc]initWithPlacemark:place];
     
     MKPlacemark *place2 = [[MKPlacemark alloc]initWithCoordinate:c addressDictionary:nil];
@@ -132,7 +132,12 @@
     
     [self obterDirecoes];
     
-	// Do any additional setup after loading the view.
+    
+    if (self.inicio != nil && self.fim != nil) {
+        _inicio = nil;
+        _fim = nil;
+        [_map removeOverlays:_map.overlays];
+    }
 }
 
 -(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
@@ -147,14 +152,15 @@
 {
     MKDirectionsRequest *request = [[MKDirectionsRequest alloc]init];
     request.source = self.inicio;
-    request.destination = self.inicio;
-    request.requestsAlternateRoutes = NO;
+    request.destination = self.fim;
+    request.requestsAlternateRoutes = YES;
     
    MKDirections *direcoes =  [[MKDirections alloc] initWithRequest:request];
     
     [direcoes calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
         
         if (error) {
+            NSLog(@"%@", error);
             NSLog(@"errro ao calcular a rota");
         }
         else
@@ -182,5 +188,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
