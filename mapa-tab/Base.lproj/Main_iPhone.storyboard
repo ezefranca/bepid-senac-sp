@@ -55,11 +55,28 @@
                     <view key="view" contentMode="scaleToFill" id="mCx-r0-XLL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fEf-PC-XVO">
+                                <rect key="frame" x="0.0" y="32" width="320" height="488"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="1Bg-SM-H6n"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="XK5-xn-icp" id="waa-Ue-1sF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTV-cV-f8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="XK5-xn-icp">
+                    <connections>
+                        <outlet property="delegate" destination="NBi-ZY-vub" id="V2S-A4-nWc"/>
+                        <outlet property="searchContentsController" destination="NBi-ZY-vub" id="naP-YY-fe6"/>
+                        <outlet property="searchResultsDataSource" destination="NBi-ZY-vub" id="Tab-LL-bfo"/>
+                        <outlet property="searchResultsDelegate" destination="NBi-ZY-vub" id="WPu-Um-c8y"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="918" y="984"/>
         </scene>
