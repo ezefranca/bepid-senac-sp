@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface HWThirdViewController : UIViewController
+@interface HWThirdViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic)  MKMapView *map;
+@property (strong, nonatomic)  MKMapItem *inicio;
+
+@property (strong, nonatomic)  MKMapItem *fim;
+@property (strong, nonatomic)  MKPolygonRenderer *renderer;
+
+-(void)obterDirecoes;
+-(void)mostraRota : (MKDirectionsResponse *)response;
 
 @end

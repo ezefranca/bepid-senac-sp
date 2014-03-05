@@ -28,6 +28,7 @@
     [super viewDidLoad];
     
     self.map.showsUserLocation = TRUE;
+    self.map.delegate = self;
     
     CLLocationCoordinate2D loc;
     CLLocationCoordinate2D loc1;
@@ -57,7 +58,7 @@
     loc3.longitude = -46.713;
     
     loc4.latitude = -23.650;
-    loc4.longitude = -46.723;
+    loc4.longitude = -23.723;
     
     
     MKCoordinateRegion regiao;
@@ -86,6 +87,7 @@
     double dy;
     double dist;
     double menor;
+    CLLocationCoordinate2D c;
     
     x1 = self.map.userLocation.location.coordinate.latitude;
     y1 = self.map.userLocation.location.coordinate.longitude;
@@ -104,18 +106,75 @@
         if (first) {
             
             menor = dist;
+            c.latitude = x2;
+            c.longitude = y2;
             first = FALSE;
         }
         else
         {
             if (dist < menor) {
                 menor = dist;
+                c.latitude = x2;
+                c.longitude = y2;
             }
         }
-        
-        NSLog(@"%f - %f", l.coordinate.latitude , l.coordinate.longitude);
     }
+    
+    NSLog(@"%f - %f", c.latitude , c.longitude);
+    
+    MKPlacemark *place = [[MKPlacemark alloc]initWithCoordinate:self.map.userLocation.coordinate addressDictionary:nil];
+    
+    self.inicio = [[MKMapItem alloc]initWithPlacemark:place];
+    
+    MKPlacemark *place2 = [[MKPlacemark alloc]initWithCoordinate:c addressDictionary:nil];
+    
+    self.fim = [[MKMapItem alloc]initWithPlacemark:place2];
+    
+    [self obterDirecoes];
+    
 	// Do any additional setup after loading the view.
+}
+
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
+{
+    self.renderer = [[MKPolygonRenderer alloc]initWithOverlay:overlay];
+    self.renderer.strokeColor = [UIColor blueColor];
+    self.renderer.lineWidth = 5.0;
+    return self.renderer;
+}
+
+-(void)obterDirecoes
+{
+    MKDirectionsRequest *request = [[MKDirectionsRequest alloc]init];
+    request.source = self.inicio;
+    request.destination = self.inicio;
+    request.requestsAlternateRoutes = NO;
+    
+   MKDirections *direcoes =  [[MKDirections alloc] initWithRequest:request];
+    
+    [direcoes calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+        
+        if (error) {
+            NSLog(@"errro ao calcular a rota");
+        }
+        else
+        {
+            [self mostraRota:response];
+        }
+    }];
+}
+
+
+-(void)mostraRota:(MKDirectionsResponse *)response
+{
+    for (MKRoute *rota in response.routes) {
+        
+        [self.map addOverlay:rota.polyline level:MKOverlayLevelAboveRoads];
+        
+        for (MKRouteStep *step in rota.steps) {
+            NSLog(@"%@", step.instructions);
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
