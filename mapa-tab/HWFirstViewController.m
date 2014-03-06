@@ -7,6 +7,7 @@
 //
 
 #import "HWFirstViewController.h"
+#import "HWAppDelegate.h"
 
 @interface HWFirstViewController ()
 
@@ -41,16 +42,6 @@
 -(void)viewDidAppear
 {
     self.tabBarController.tabBar.alpha = 1;
-    FBLoginView *loginview = [[FBLoginView alloc]init];
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
-    CGFloat screenWidth = screenRect.size.width;
-    CGFloat screenHeight = screenRect.size.height;
-    
-    loginview.frame = CGRectOffset(loginview.frame, screenWidth/6, screenHeight/2);
-    [loginview sizeToFit];
-    loginview.readPermissions = @[@"basic_info", @"email", @"user_likes"];
-    [self.view addSubview:loginview];
-     
 }
 
 -(void)splashAction
@@ -88,12 +79,4 @@
 {
     [viewController viewDidAppear:animated];
 }
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    
-    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication fallbackHandler:^(FBAppCall *call){
-                      NSLog(@"In fallback handler");
-    }];
-}
-
 @end
