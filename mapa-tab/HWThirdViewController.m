@@ -23,12 +23,23 @@
     return self;
 }
 
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    self.map.centerCoordinate = userLocation.location.coordinate;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.map.showsUserLocation = TRUE;
     self.map.delegate = self;
+    
+    self.map.centerCoordinate = self.map.userLocation.coordinate;
+    
+
     
     CLLocationCoordinate2D loc;
     CLLocationCoordinate2D loc1;
@@ -41,6 +52,8 @@
     MKPointAnnotation *ponto2 = [[MKPointAnnotation alloc]init];
     MKPointAnnotation *ponto3 = [[MKPointAnnotation alloc]init];
     MKPointAnnotation *ponto4 = [[MKPointAnnotation alloc]init];
+    
+    
     //MKAnnotationView *anotView;
     self.map.showsUserLocation = TRUE;
     
@@ -76,8 +89,7 @@
     [self.map addAnnotation:ponto2];
     [self.map addAnnotation:ponto3];
     [self.map addAnnotation:ponto4];
-   // self.map.userLocation.location.coordinate
-    
+   // self.map.userLocation.location.coordinate\
     
     NSLog(@"%@", self.map.userLocation.location);
     
@@ -149,7 +161,41 @@
     
 }
 
-
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    [mapView deselectAnnotation:view.annotation animated:YES];
+    
+    CLLocationCoordinate2D y = [[ view annotation] coordinate];
+    
+    NSLog(@"%f %f", y.longitude , y.latitude);
+    
+    MKDirectionsRequest *directionsRequest = [MKDirectionsRequest new];
+    // Start at our current location
+    MKMapItem *source = [MKMapItem mapItemForCurrentLocation];
+    [directionsRequest setSource:source];
+    // Make the destination
+    CLLocationCoordinate2D destinationCoords = y;
+    
+    MKPlacemark *destinationPlacemark = [[MKPlacemark alloc] initWithCoordinate:destinationCoords addressDictionary:nil];
+    MKMapItem *destination = [[MKMapItem alloc] initWithPlacemark:destinationPlacemark];
+    [directionsRequest setDestination:destination];
+    
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:directionsRequest];
+    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+        // We're done
+        
+        
+        // Now handle the result
+        if (error) {
+            NSLog(@"There was an error getting your directions");
+            return;
+        }
+        
+        // So there wasn't an error - let's plot those routes
+        _currentRoute = [response.routes firstObject];
+        [self plotRouteOnMap:_currentRoute];
+    }];
+}
 
 
 #pragma mark - Utility Methods
