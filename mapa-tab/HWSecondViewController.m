@@ -32,9 +32,11 @@
     //MKAnnotationView *anotView;
     
     
+   // -23.668991, -46.701891
+
     
-    loc.latitude = -23.650;
-    loc.longitude = -46.703;
+    loc.latitude = -23.668991;
+    loc.longitude = -46.701891;
     
     loc1.latitude = -23.640;
     loc1.longitude = -46.703;

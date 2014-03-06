@@ -119,6 +119,8 @@
             }
         }
     }
+    c.latitude = -23.668991;
+    c.longitude = -46.701891;
     
     NSLog(@"%f - %f", c.latitude , c.longitude);
     
