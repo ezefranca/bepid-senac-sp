@@ -29,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.splashImage.alpha = 1;
+     self.splashImage.alpha = 1;
      self.tabBarController.tabBar.alpha = 0;
     
     NSThread *loadThread = [[NSThread alloc]initWithTarget:self selector:@selector(splashAction) object:nil];
@@ -50,6 +50,7 @@
     [loginview sizeToFit];
     loginview.readPermissions = @[@"basic_info", @"email", @"user_likes"];
     [self.view addSubview:loginview];
+     
 }
 
 -(void)splashAction
