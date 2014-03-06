@@ -13,12 +13,9 @@
 @interface HWThirdViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic)  MKMapView *map;
-@property (strong, nonatomic)  MKMapItem *inicio;
 
-@property (strong, nonatomic)  MKMapItem *fim;
-@property (strong, nonatomic)  MKPolygonRenderer *renderer;
+@property MKPolyline *routeOverlay;
+@property MKRoute *currentRoute;
 
--(void)obterDirecoes;
--(void)mostraRota : (MKDirectionsResponse *)response;
 
 @end

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25F5584318C8E6A7006E110C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5584218C8E6A7006E110C /* FacebookSDK.framework */; };
+		29052AD018C8EA98009AD37D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29052ACF18C8EA98009AD37D /* FacebookSDK.framework */; };
 		297621A918BFCF3A00F8FA3E /* ice.png in Resources */ = {isa = PBXBuildFile; fileRef = 297621A818BFCF3A00F8FA3E /* ice.png */; };
 		29AEC17A18BFDB31006B33D9 /* ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AEC17918BFDB31006B33D9 /* ico.png */; };
 		F7393B8A18C3AF0800B20B36 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F7393B8818C3AF0800B20B36 /* map.png */; };
@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		25F5584218C8E6A7006E110C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		29052ACF18C8EA98009AD37D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		297621A818BFCF3A00F8FA3E /* ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ice.png; path = "mapa-tab/ice.png"; sourceTree = SOURCE_ROOT; };
 		29AEC17918BFDB31006B33D9 /* ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico.png; path = "mapa-tab/ico.png"; sourceTree = SOURCE_ROOT; };
 		F7141F0E18C7EC5500E9B8ED /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -87,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F5584318C8E6A7006E110C /* FacebookSDK.framework in Frameworks */,
+				29052AD018C8EA98009AD37D /* FacebookSDK.framework in Frameworks */,
 				F75F71F618BFAE56001CD59D /* MapKit.framework in Frameworks */,
 				F75F71BD18BFAD55001CD59D /* CoreGraphics.framework in Frameworks */,
 				F75F71BF18BFAD55001CD59D /* UIKit.framework in Frameworks */,
@@ -130,6 +131,7 @@
 		F75F71B918BFAD55001CD59D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29052ACF18C8EA98009AD37D /* FacebookSDK.framework */,
 				25F5584218C8E6A7006E110C /* FacebookSDK.framework */,
 				F7141F0E18C7EC5500E9B8ED /* FacebookSDK.framework */,
 				F75F71F518BFAE56001CD59D /* MapKit.framework */,
@@ -448,6 +450,7 @@
 					/Users/ezefranca/Documents/FacebookSDK,
 					"/Users/ezefranca/Documents/cade-meu-icegurte/frameworks",
 					/Users/ezequiel.fsantos/Documents/FacebookSDK,
+					/Users/gabriel.vieira/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapa-tab/mapa-tab-Prefix.pch";
@@ -468,6 +471,7 @@
 					/Users/ezefranca/Documents/FacebookSDK,
 					"/Users/ezefranca/Documents/cade-meu-icegurte/frameworks",
 					/Users/ezequiel.fsantos/Documents/FacebookSDK,
+					/Users/gabriel.vieira/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapa-tab/mapa-tab-Prefix.pch";

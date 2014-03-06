@@ -42,8 +42,7 @@
     MKPointAnnotation *ponto3 = [[MKPointAnnotation alloc]init];
     MKPointAnnotation *ponto4 = [[MKPointAnnotation alloc]init];
     //MKAnnotationView *anotView;
-    
-    
+    self.map.showsUserLocation = TRUE;
     
     loc.latitude = -23.650;
     loc.longitude = -46.703;
@@ -78,6 +77,7 @@
     [self.map addAnnotation:ponto3];
     [self.map addAnnotation:ponto4];
    // self.map.userLocation.location.coordinate
+    
     
     NSLog(@"%@", self.map.userLocation.location);
     
@@ -119,71 +119,64 @@
             }
         }
     }
-    c.latitude = -23.668991;
-    c.longitude = -46.701891;
     
-    NSLog(@"%f - %f", c.latitude , c.longitude);
+    MKDirectionsRequest *directionsRequest = [MKDirectionsRequest new];
+    // Start at our current location
+    MKMapItem *source = [MKMapItem mapItemForCurrentLocation];
+    [directionsRequest setSource:source];
+    // Make the destination
+    CLLocationCoordinate2D destinationCoords = c;
     
-    MKPlacemark *place = [[MKPlacemark alloc]initWithCoordinate:self.map.userLocation.coordinate addressDictionary:nil];
+    MKPlacemark *destinationPlacemark = [[MKPlacemark alloc] initWithCoordinate:destinationCoords addressDictionary:nil];
+    MKMapItem *destination = [[MKMapItem alloc] initWithPlacemark:destinationPlacemark];
+    [directionsRequest setDestination:destination];
+    
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:directionsRequest];
+    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+        // We're done
         
-    self.inicio = [[MKMapItem alloc]initWithPlacemark:place];
-    
-    MKPlacemark *place2 = [[MKPlacemark alloc]initWithCoordinate:c addressDictionary:nil];
-    
-    self.fim = [[MKMapItem alloc]initWithPlacemark:place2];
-    
-    [self obterDirecoes];
-    
-    
-    if (self.inicio != nil && self.fim != nil) {
-        _inicio = nil;
-        _fim = nil;
-        [_map removeOverlays:_map.overlays];
-    }
-}
-
--(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
-{
-    self.renderer = [[MKPolygonRenderer alloc]initWithOverlay:overlay];
-    self.renderer.strokeColor = [UIColor blueColor];
-    self.renderer.lineWidth = 5.0;
-    return self.renderer;
-}
-
--(void)obterDirecoes
-{
-    MKDirectionsRequest *request = [[MKDirectionsRequest alloc]init];
-    request.source = self.inicio;
-    request.destination = self.fim;
-    request.requestsAlternateRoutes = YES;
-    
-   MKDirections *direcoes =  [[MKDirections alloc] initWithRequest:request];
-    
-    [direcoes calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
         
+        // Now handle the result
         if (error) {
-            NSLog(@"%@", error);
-            NSLog(@"errro ao calcular a rota");
+            NSLog(@"There was an error getting your directions");
+            return;
         }
-        else
-        {
-            [self mostraRota:response];
-        }
+        
+        // So there wasn't an error - let's plot those routes
+        _currentRoute = [response.routes firstObject];
+        [self plotRouteOnMap:_currentRoute];
     }];
+    
 }
 
 
--(void)mostraRota:(MKDirectionsResponse *)response
+
+
+#pragma mark - Utility Methods
+- (void)plotRouteOnMap:(MKRoute *)route
 {
-    for (MKRoute *rota in response.routes) {
-        
-        [self.map addOverlay:rota.polyline level:MKOverlayLevelAboveRoads];
-        
-        for (MKRouteStep *step in rota.steps) {
-            NSLog(@"%@", step.instructions);
-        }
+    if(_routeOverlay) {
+        [self.map removeOverlay:_routeOverlay];
     }
+    
+    // Update the ivar
+    _routeOverlay = route.polyline;
+    
+    // Add it to the map
+    [self.map addOverlay:_routeOverlay];
+    
 }
+
+
+#pragma mark - MKMapViewDelegate methods
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
+{
+    MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithPolyline:overlay];
+    renderer.strokeColor = [UIColor redColor];
+    renderer.lineWidth = 4.0;
+    return  renderer;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
