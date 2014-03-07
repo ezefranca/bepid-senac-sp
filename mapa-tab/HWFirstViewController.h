@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface HWFirstViewController : UIViewController <UINavigationControllerDelegate> {
+@interface HWFirstViewController : UIViewController <UINavigationControllerDelegate>  {
     UINavigationController *navController;
 }
 @property (strong, nonatomic) IBOutlet FBLoginView *loginview;

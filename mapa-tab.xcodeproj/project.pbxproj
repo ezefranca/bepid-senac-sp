@@ -11,6 +11,7 @@
 		29052AD218C90C21009AD37D /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 29052AD118C90C21009AD37D /* dog.png */; };
 		297621A918BFCF3A00F8FA3E /* ice.png in Resources */ = {isa = PBXBuildFile; fileRef = 297621A818BFCF3A00F8FA3E /* ice.png */; };
 		29AEC17A18BFDB31006B33D9 /* ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AEC17918BFDB31006B33D9 /* ico.png */; };
+		29CCE55518CA39AC00081C01 /* DataModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CCE55418CA39AC00081C01 /* DataModelObject.m */; };
 		F75F71BB18BFAD55001CD59D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BA18BFAD55001CD59D /* Foundation.framework */; };
 		F75F71BD18BFAD55001CD59D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BC18BFAD55001CD59D /* CoreGraphics.framework */; };
 		F75F71BF18BFAD55001CD59D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75F71BE18BFAD55001CD59D /* UIKit.framework */; };
@@ -31,7 +32,6 @@
 		F75F71F918BFB13D001CD59D /* HWThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F71F818BFB13D001CD59D /* HWThirdViewController.m */; };
 		F75F71FF18BFB547001CD59D /* HWsplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F71FE18BFB547001CD59D /* HWsplashController.m */; };
 		F75F720518BFB6F3001CD59D /* HWmaster.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F720418BFB6F3001CD59D /* HWmaster.m */; };
-		F7F96E3918C99C5000371A63 /* DataModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F96E3818C99C5000371A63 /* DataModelObject.m */; };
 		F7F96F7218C9AB6A00371A63 /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F96E4618C9AB6800371A63 /* 3d.png */; };
 		F7F96F7318C9AB6A00371A63 /* abacus.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F96E4718C9AB6800371A63 /* abacus.png */; };
 		F7F96F7418C9AB6A00371A63 /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F96E4818C9AB6800371A63 /* airplane.png */; };
@@ -351,6 +351,8 @@
 		29052AD118C90C21009AD37D /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = SOURCE_ROOT; };
 		297621A818BFCF3A00F8FA3E /* ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ice.png; path = "mapa-tab/ice.png"; sourceTree = SOURCE_ROOT; };
 		29AEC17918BFDB31006B33D9 /* ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico.png; path = "mapa-tab/ico.png"; sourceTree = SOURCE_ROOT; };
+		29CCE55318CA39AC00081C01 /* DataModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModelObject.h; sourceTree = SOURCE_ROOT; };
+		29CCE55418CA39AC00081C01 /* DataModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModelObject.m; sourceTree = SOURCE_ROOT; };
 		F7141F0E18C7EC5500E9B8ED /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
 		F75F71B718BFAD55001CD59D /* mapa-tab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapa-tab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75F71BA18BFAD55001CD59D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -381,8 +383,6 @@
 		F75F71FE18BFB547001CD59D /* HWsplashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWsplashController.m; path = ../HWsplashController.m; sourceTree = "<group>"; };
 		F75F720318BFB6F3001CD59D /* HWmaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWmaster.h; path = ../HWmaster.h; sourceTree = "<group>"; };
 		F75F720418BFB6F3001CD59D /* HWmaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWmaster.m; path = ../HWmaster.m; sourceTree = "<group>"; };
-		F7F96E3718C99C5000371A63 /* DataModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModelObject.h; path = "../../../Downloads/Tagged--master/FBSample/DataModelObject.h"; sourceTree = "<group>"; };
-		F7F96E3818C99C5000371A63 /* DataModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModelObject.m; path = "../../../Downloads/Tagged--master/FBSample/DataModelObject.m"; sourceTree = "<group>"; };
 		F7F96E4618C9AB6800371A63 /* 3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d.png; sourceTree = "<group>"; };
 		F7F96E4718C9AB6800371A63 /* abacus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abacus.png; sourceTree = "<group>"; };
 		F7F96E4818C9AB6800371A63 /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane.png; sourceTree = "<group>"; };
@@ -763,11 +763,11 @@
 				F75F71FD18BFB547001CD59D /* HWsplashController.h */,
 				F75F71FE18BFB547001CD59D /* HWsplashController.m */,
 				29052AD118C90C21009AD37D /* dog.png */,
+				29CCE55318CA39AC00081C01 /* DataModelObject.h */,
+				29CCE55418CA39AC00081C01 /* DataModelObject.m */,
 				F75F71CF18BFAD55001CD59D /* Main_iPad.storyboard */,
 				F75F71D218BFAD55001CD59D /* HWFirstViewController.h */,
 				F75F71D318BFAD55001CD59D /* HWFirstViewController.m */,
-				F7F96E3718C99C5000371A63 /* DataModelObject.h */,
-				F7F96E3818C99C5000371A63 /* DataModelObject.m */,
 				F75F71D518BFAD55001CD59D /* HWSecondViewController.h */,
 				F75F71D618BFAD55001CD59D /* HWSecondViewController.m */,
 				29AEC17918BFDB31006B33D9 /* ico.png */,
@@ -1517,6 +1517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CCE55518CA39AC00081C01 /* DataModelObject.m in Sources */,
 				F75F71C718BFAD55001CD59D /* main.m in Sources */,
 				F75F71F918BFB13D001CD59D /* HWThirdViewController.m in Sources */,
 				F75F71D718BFAD55001CD59D /* HWSecondViewController.m in Sources */,
@@ -1524,7 +1525,6 @@
 				F75F720518BFB6F3001CD59D /* HWmaster.m in Sources */,
 				F75F71FF18BFB547001CD59D /* HWsplashController.m in Sources */,
 				F75F71D418BFAD55001CD59D /* HWFirstViewController.m in Sources */,
-				F7F96E3918C99C5000371A63 /* DataModelObject.m in Sources */,
 				F75F71CB18BFAD55001CD59D /* HWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

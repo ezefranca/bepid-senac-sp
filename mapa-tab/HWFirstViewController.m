@@ -146,18 +146,18 @@
 {
     self.nameLabel.hidden = NO;
     self.imageView.hidden = NO;
+    
 }
-- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
-                            user:(id<FBGraphUser>)user
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
     self.nameLabel.hidden = NO;
     self.imageView.hidden = NO;
-    
     self.nameLabel.text= user.name;
     
-    NSLog(@"Acabou de Logar!!");
+    NSLog(@"coco");
     
 }
+
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
 {
     self.nameLabel.hidden = YES;
