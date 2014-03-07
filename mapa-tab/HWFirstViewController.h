@@ -13,6 +13,7 @@
     UINavigationController *navController;
 }
 @property (strong, nonatomic) IBOutlet FBLoginView *loginview;
+@property (weak, nonatomic) IBOutlet UIImageView *logoPrincipal;
 
 @property (weak, nonatomic) IBOutlet UIImageView *splashImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

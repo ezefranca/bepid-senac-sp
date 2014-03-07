@@ -26,18 +26,23 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-8Q-aaT">
-                                <rect key="frame" x="138" y="117" width="42" height="21"/>
+                                <rect key="frame" x="132" y="37" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ice.png" translatesAutoresizingMaskIntoConstraints="NO" id="LXH-bC-jVV">
+                                <rect key="frame" x="59" y="66" width="202" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Inicio" image="home.png" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="loginview" destination="tEf-HQ-oTX" id="aa5-1A-ssq"/>
+                        <outlet property="logoPrincipal" destination="LXH-bC-jVV" id="n24-Hj-nFj"/>
                         <outlet property="nameLabel" destination="p4Z-8Q-aaT" id="9Er-Ww-ilt"/>
                         <outlet property="splashImage" destination="yFm-Av-4oF" id="6Zh-bV-Dkr"/>
                     </connections>
@@ -147,6 +152,7 @@
     </scenes>
     <resources>
         <image name="home.png" width="30" height="30"/>
+        <image name="ice.png" width="640" height="1136"/>
         <image name="ice.png" width="640" height="1136"/>
         <image name="map-pin.png" width="30" height="30"/>
         <image name="route-sign.png" width="30" height="30"/>

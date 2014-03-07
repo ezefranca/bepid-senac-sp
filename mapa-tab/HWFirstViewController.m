@@ -54,6 +54,7 @@
 {
     self.tabBarController.tabBar.alpha = 1;
     _loginview.alpha = 1;
+    _logoPrincipal.alpha = 1;
     _loginview.readPermissions = @[@"basic_info", @"email", @"user_likes"];
 }
 
