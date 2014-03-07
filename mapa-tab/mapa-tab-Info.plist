@@ -2,21 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
 	<key>FacebookAppID</key>
 	<string>687932964593006</string>
 	<key>FacebookDisplayName</key>
-	<string>Cadê meu icegurte</string>
+	<string>Cade meu icegurte</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>URL Schames</key>
+			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb687932964593006</string>
 				<string>fb687932964593006</string>
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
