@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    HWData *coo = [HWData pegarCoordenada];
     [super viewDidLoad];
     
     CLLocationCoordinate2D loc;
@@ -24,16 +25,18 @@
     CLLocationCoordinate2D loc3;
     CLLocationCoordinate2D loc4;
     
-    MKPointAnnotation *ponto = [[MKPointAnnotation alloc]init];
-    MKPointAnnotation *ponto1 = [[MKPointAnnotation alloc]init];
-    MKPointAnnotation *ponto2 = [[MKPointAnnotation alloc]init];
-    MKPointAnnotation *ponto3 = [[MKPointAnnotation alloc]init];
-    MKPointAnnotation *ponto4 = [[MKPointAnnotation alloc]init];
+    coo.ponto = [[MKPointAnnotation alloc]init];
+    coo.ponto1 = [[MKPointAnnotation alloc]init];
+    coo.ponto2 = [[MKPointAnnotation alloc]init];
+    coo.ponto3 = [[MKPointAnnotation alloc]init];
+    coo.ponto4 = [[MKPointAnnotation alloc]init];
     //MKAnnotationView *anotView;
     
     
    // -23.668991, -46.701891
 
+    
+    
     
     loc.latitude = -23.668991;
     loc.longitude = -46.701891;
@@ -54,19 +57,19 @@
     MKCoordinateRegion regiao;
     regiao.center = loc;
     
-    ponto.coordinate = loc;
-    ponto1.coordinate = loc1;
-    ponto2.coordinate = loc2;
-    ponto3.coordinate = loc3;
-    ponto4.coordinate = loc4;
+    coo.ponto.coordinate = loc;
+    coo.ponto1.coordinate = loc1;
+    coo.ponto2.coordinate = loc2;
+    coo.ponto3.coordinate = loc3;
+    coo.ponto4.coordinate = loc4;
     //[self.mapa setDelegate:self];
 
     [self.mapa setRegion:regiao];
-    [self.mapa addAnnotation:ponto];
-    [self.mapa addAnnotation:ponto1];
-    [self.mapa addAnnotation:ponto2];
-    [self.mapa addAnnotation:ponto3];
-    [self.mapa addAnnotation:ponto4];
+    [self.mapa addAnnotation:coo.ponto];
+    [self.mapa addAnnotation:coo.ponto1];
+    [self.mapa addAnnotation:coo.ponto2];
+    [self.mapa addAnnotation:coo.ponto3];
+    [self.mapa addAnnotation:coo.ponto4];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

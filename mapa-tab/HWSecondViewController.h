@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "HWData.h"
 
 @interface HWSecondViewController : UIViewController
 - (IBAction)mapType:(id)sender;
--(void)getData;
 @property (strong, nonatomic) IBOutlet MKMapView *mapa;
 
 @end

@@ -332,6 +332,7 @@
 		F7F9709B18C9AB6A00371A63 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F96F6F18C9AB6A00371A63 /* woman.png */; };
 		F7F9709C18C9AB6A00371A63 /* wooden-picket.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F96F7018C9AB6A00371A63 /* wooden-picket.png */; };
 		F7F9709D18C9AB6A00371A63 /* write.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F96F7118C9AB6A00371A63 /* write.png */; };
+		F7F970A018C9AD4900371A63 /* HWData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9709F18C9AD4900371A63 /* HWData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -682,6 +683,8 @@
 		F7F96F6F18C9AB6A00371A63 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
 		F7F96F7018C9AB6A00371A63 /* wooden-picket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wooden-picket.png"; sourceTree = "<group>"; };
 		F7F96F7118C9AB6A00371A63 /* write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = write.png; sourceTree = "<group>"; };
+		F7F9709E18C9AD4900371A63 /* HWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWData.h; sourceTree = "<group>"; };
+		F7F9709F18C9AD4900371A63 /* HWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -753,6 +756,8 @@
 				F75F720418BFB6F3001CD59D /* HWmaster.m */,
 				297621A818BFCF3A00F8FA3E /* ice.png */,
 				F75F71CC18BFAD55001CD59D /* Main_iPhone.storyboard */,
+				F7F9709E18C9AD4900371A63 /* HWData.h */,
+				F7F9709F18C9AD4900371A63 /* HWData.m */,
 				F75F71F718BFB13D001CD59D /* HWThirdViewController.h */,
 				F75F71F818BFB13D001CD59D /* HWThirdViewController.m */,
 				F75F71FD18BFB547001CD59D /* HWsplashController.h */,
@@ -1515,6 +1520,7 @@
 				F75F71C718BFAD55001CD59D /* main.m in Sources */,
 				F75F71F918BFB13D001CD59D /* HWThirdViewController.m in Sources */,
 				F75F71D718BFAD55001CD59D /* HWSecondViewController.m in Sources */,
+				F7F970A018C9AD4900371A63 /* HWData.m in Sources */,
 				F75F720518BFB6F3001CD59D /* HWmaster.m in Sources */,
 				F75F71FF18BFB547001CD59D /* HWsplashController.m in Sources */,
 				F75F71D418BFAD55001CD59D /* HWFirstViewController.m in Sources */,
