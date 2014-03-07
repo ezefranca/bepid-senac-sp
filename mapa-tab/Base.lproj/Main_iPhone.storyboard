@@ -20,8 +20,8 @@
                                 <rect key="frame" x="-4" y="-34" width="327" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEf-HQ-oTX" customClass="FBLoginView">
-                                <rect key="frame" x="55" y="325" width="210" height="49"/>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEf-HQ-oTX" customClass="FBLoginView">
+                                <rect key="frame" x="48" y="361" width="210" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
