@@ -23,12 +23,9 @@
 		2949B6EE18CE515900D4486C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6CA18CE515900D4486C /* UIKit.framework */; };
 		2949B6F618CE515900D4486C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2949B6F418CE515900D4486C /* InfoPlist.strings */; };
 		2949B6F818CE515900D4486C /* shakeShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2949B6F718CE515900D4486C /* shakeShopTests.m */; };
-
-		F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = F7068EC918CE59DB000EE44B /* Buscape.m */; };
-
 		29537FFA18CE57AF00F537FE /* atum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29537FF918CE57AF00F537FE /* atum.jpg */; };
 		29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29537FFC18CE5F5700F537FE /* thirdViewController.m */; };
-
+		F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = F7068EC918CE59DB000EE44B /* Buscape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,14 +61,11 @@
 		2949B6F318CE515900D4486C /* shakeShopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shakeShopTests-Info.plist"; sourceTree = "<group>"; };
 		2949B6F518CE515900D4486C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2949B6F718CE515900D4486C /* shakeShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shakeShopTests.m; sourceTree = "<group>"; };
-
-		F7068EC818CE59DB000EE44B /* Buscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buscape.h; path = ../Buscape.h; sourceTree = "<group>"; };
-		F7068EC918CE59DB000EE44B /* Buscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Buscape.m; path = ../Buscape.m; sourceTree = "<group>"; };
-
 		29537FF918CE57AF00F537FE /* atum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atum.jpg; path = shakeShop/img/atum.jpg; sourceTree = SOURCE_ROOT; };
 		29537FFB18CE5F5700F537FE /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
 		29537FFC18CE5F5700F537FE /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
-
+		F7068EC818CE59DB000EE44B /* Buscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buscape.h; path = ../Buscape.h; sourceTree = "<group>"; };
+		F7068EC918CE59DB000EE44B /* Buscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Buscape.m; path = ../Buscape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +125,8 @@
 		2949B6CC18CE515900D4486C /* shakeShop */ = {
 			isa = PBXGroup;
 			children = (
-
 				F7068EC818CE59DB000EE44B /* Buscape.h */,
 				F7068EC918CE59DB000EE44B /* Buscape.m */,
-
-				29537FF818CE57AF00F537FE /* img */,
-
 				2949B6D518CE515900D4486C /* AppDelegate.h */,
 				2949B6D618CE515900D4486C /* AppDelegate.m */,
 				2949B6D818CE515900D4486C /* Main_iPhone.storyboard */,
@@ -156,6 +146,7 @@
 		2949B6CD18CE515900D4486C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29537FF818CE57AF00F537FE /* img */,
 				2949B6CE18CE515900D4486C /* shakeShop-Info.plist */,
 				2949B6CF18CE515900D4486C /* InfoPlist.strings */,
 				2949B6D218CE515900D4486C /* main.m */,
