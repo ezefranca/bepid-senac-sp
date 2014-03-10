@@ -23,6 +23,7 @@
 		2949B6EE18CE515900D4486C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6CA18CE515900D4486C /* UIKit.framework */; };
 		2949B6F618CE515900D4486C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2949B6F418CE515900D4486C /* InfoPlist.strings */; };
 		2949B6F818CE515900D4486C /* shakeShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2949B6F718CE515900D4486C /* shakeShopTests.m */; };
+		29537FFA18CE57AF00F537FE /* atum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29537FF918CE57AF00F537FE /* atum.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		2949B6F318CE515900D4486C /* shakeShopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shakeShopTests-Info.plist"; sourceTree = "<group>"; };
 		2949B6F518CE515900D4486C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2949B6F718CE515900D4486C /* shakeShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shakeShopTests.m; sourceTree = "<group>"; };
+		29537FF918CE57AF00F537FE /* atum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atum.jpg; path = shakeShop/img/atum.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		2949B6CC18CE515900D4486C /* shakeShop */ = {
 			isa = PBXGroup;
 			children = (
+				29537FF818CE57AF00F537FE /* img */,
 				2949B6D518CE515900D4486C /* AppDelegate.h */,
 				2949B6D618CE515900D4486C /* AppDelegate.m */,
 				2949B6D818CE515900D4486C /* Main_iPhone.storyboard */,
@@ -159,6 +162,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		29537FF818CE57AF00F537FE /* img */ = {
+			isa = PBXGroup;
+			children = (
+				29537FF918CE57AF00F537FE /* atum.jpg */,
+			);
+			name = img;
+			path = shakeShop/img;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -237,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2949B6DD18CE515900D4486C /* Main_iPad.storyboard in Resources */,
+				29537FFA18CE57AF00F537FE /* atum.jpg in Resources */,
 				2949B6E518CE515900D4486C /* Images.xcassets in Resources */,
 				2949B6DA18CE515900D4486C /* Main_iPhone.storyboard in Resources */,
 				2949B6D118CE515900D4486C /* InfoPlist.strings in Resources */,
@@ -480,6 +493,7 @@
 				2949B6FD18CE515900D4486C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2949B6FE18CE515900D4486C /* Build configuration list for PBXNativeTarget "shakeShopTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +502,7 @@
 				2949B70018CE515900D4486C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
