@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "thirdViewController.h"
 
 @interface FirstViewController ()
 
@@ -39,10 +40,6 @@
     [[self view] endEditing:YES];
 }
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
-    NSString *s = self.seachrBar.text;
-    NSLog(@"%@", s);
-}
+
 
 @end

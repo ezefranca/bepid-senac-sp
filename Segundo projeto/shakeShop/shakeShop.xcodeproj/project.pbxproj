@@ -24,6 +24,7 @@
 		2949B6F618CE515900D4486C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2949B6F418CE515900D4486C /* InfoPlist.strings */; };
 		2949B6F818CE515900D4486C /* shakeShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2949B6F718CE515900D4486C /* shakeShopTests.m */; };
 		29537FFA18CE57AF00F537FE /* atum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29537FF918CE57AF00F537FE /* atum.jpg */; };
+		29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29537FFC18CE5F5700F537FE /* thirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		2949B6F518CE515900D4486C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2949B6F718CE515900D4486C /* shakeShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shakeShopTests.m; sourceTree = "<group>"; };
 		29537FF918CE57AF00F537FE /* atum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atum.jpg; path = shakeShop/img/atum.jpg; sourceTree = SOURCE_ROOT; };
+		29537FFB18CE5F5700F537FE /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
+		29537FFC18CE5F5700F537FE /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				2949B6D518CE515900D4486C /* AppDelegate.h */,
 				2949B6D618CE515900D4486C /* AppDelegate.m */,
 				2949B6D818CE515900D4486C /* Main_iPhone.storyboard */,
+				29537FFB18CE5F5700F537FE /* thirdViewController.h */,
+				29537FFC18CE5F5700F537FE /* thirdViewController.m */,
 				2949B6DB18CE515900D4486C /* Main_iPad.storyboard */,
 				2949B6DE18CE515900D4486C /* FirstViewController.h */,
 				2949B6DF18CE515900D4486C /* FirstViewController.m */,
@@ -275,6 +280,7 @@
 				2949B6D718CE515900D4486C /* AppDelegate.m in Sources */,
 				2949B6E018CE515900D4486C /* FirstViewController.m in Sources */,
 				2949B6D318CE515900D4486C /* main.m in Sources */,
+				29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

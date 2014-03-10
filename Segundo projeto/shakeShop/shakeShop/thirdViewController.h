@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  thirdViewController.h
 //  shakeShop
 //
 //  Created by GABRIEL VIEIRA on 10/03/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface thirdViewController : UIViewController
 
 @end
