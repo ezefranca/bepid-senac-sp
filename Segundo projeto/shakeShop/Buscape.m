@@ -66,10 +66,6 @@
     self.buscapeUrl = [NSMutableString stringWithFormat:@"http://sandbox.buscape.com/service/findProductList/lomadee/564771466d477a4458664d3d/?keyword=%@&format=json", busca];
     
     self.jsonDados = [[self jsonDados]initWithContentsOfURL:[NSURL URLWithString:self.buscapeUrl]];
-                        
-    
-
-    
     
     return [self jsonDados];
 }
