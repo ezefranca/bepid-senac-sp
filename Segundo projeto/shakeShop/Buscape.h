@@ -10,15 +10,28 @@
 #define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
 @interface Buscape : NSObject
-{
-    NSMutableArray *catalogo;
-    NSMutableArray *produtos;
-    NSData *jsonDados;
-}
+
+@property    NSMutableArray *catalogo;
+@property    NSMutableArray *produtos;
+@property    NSMutableData *jsonDados;
+@property    NSMutableDictionary *jsonDadosSerializado;
+@property    NSMutableString *buscapeUrl;
+@property    NSMutableArray *productGeral;
+@property    NSMutableDictionary *productSelected;
+
+@property    NSMutableString *produtoNome;
+@property    NSMutableString *precoMaximo;
+@property    NSMutableString *precoMinimo;
+@property    NSMutableString *produtoNomeCurto;
+@property    NSMutableString *totalDeVendedores;
+@property    NSMutableString *imagemMiniatura;
+    //double valorAPAGAR;
+
+@property double valorAPAGAR;
 
 -(NSError *) buscapeJson: (NSString *)busca;
 -(NSMutableDictionary *) retornaDados: (NSString *)caracteristica;
 
-+(id)criarConexao;
++(id)criarClasse;
 
 @end

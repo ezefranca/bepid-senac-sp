@@ -28,11 +28,12 @@
 }
 
 - (IBAction)TESTE:(id)sender {
-    Buscape *teste = [Buscape criarConexao];
-    [teste buscapeJson:@"tv"];
-     [teste retornaDados:@"produtoNomeCurto"];
-    [teste retornaDados:@"precoMinimo"];
-     [teste retornaDados:@"imagemMiniatura"];
+    Buscape *teste = [Buscape criarClasse];
+    NSLog(@"%f", teste.valorAPAGAR);
     
+    [teste buscapeJson:@"tv"];
+    [teste retornaDados:@"produtoNomeCurto"];
+    [teste retornaDados:@"precoMinimo"];
+    [teste retornaDados:@"imagemMiniatura"];
 }
 @end

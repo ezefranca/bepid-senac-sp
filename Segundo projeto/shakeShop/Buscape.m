@@ -10,80 +10,118 @@
 
 @implementation Buscape
 
-+(id)criarConexao{
-    static dispatch_once_t pred;
-    static Buscape *criaConexao = nil;
-    dispatch_once(&pred, ^{
-        criaConexao = [[Buscape alloc] init];
-    });
-    return criaConexao;
++(id)criarClasse{
+    static Buscape *singleton = nil;
+    if (!singleton) {
+        singleton = [[super allocWithZone:nil] init];
+    }
+    
+    return singleton;
 
 }
 
++(id) allocWithZone:(struct _NSZone *)zone{
+    return [self criarClasse];
+}
+
 - (id)init {
-    if (self = [super init]) {
+    self = [super init];
+    
+    if (!self.buscapeUrl) {
+        self.buscapeUrl = [[NSMutableString alloc]init];
     }
+    
+    if (!self.jsonDados){
+        self.jsonDados = [[NSMutableData alloc]init];
+    }
+    if(!self.jsonDadosSerializado){
+        self.jsonDadosSerializado = [[NSMutableDictionary alloc]init];
+    }
+    if (!self.produtos){
+        self.produtos = [[NSMutableArray alloc]init];
+    }
+    if (!self.productGeral) {
+        self.productGeral = [[NSMutableArray alloc]init];
+    }
+    if(!self.productSelected){
+        self.productSelected = [[NSMutableDictionary alloc]init];
+    }
+    if (!self.produtoNome) {
+        self.produtoNome = [[NSMutableString alloc]init];
+    }
+    if (!self.precoMaximo) {
+        self.precoMaximo = [[NSMutableString alloc]init];
+    }
+    if (!self.precoMinimo) {
+        self.precoMinimo = [[NSMutableString alloc]init];
+    }
+    
+            
+    
     return self;
 }
 
 -(NSData *) buscapeJson: (NSString *)busca{
     
-    NSString *buscapeUrl = [NSString stringWithFormat:@"http://sandbox.buscape.com/service/findProductList/lomadee/564771466d477a4458664d3d/?keyword=%@&format=json",busca];
+    self.buscapeUrl = [NSMutableString stringWithFormat:@"http://sandbox.buscape.com/service/findProductList/lomadee/564771466d477a4458664d3d/?keyword=%@&format=json", busca];
     
-    jsonDados = [[NSData alloc] initWithContentsOfURL:
-                 [NSURL URLWithString:buscapeUrl]];
+    self.jsonDados = [[self jsonDados]initWithContentsOfURL:[NSURL URLWithString:self.buscapeUrl]];
+                        
     
-    return jsonDados;
+
+    
+    
+    return [self jsonDados];
 }
 
 -(NSString *) retornaDados: (NSString *)caracteristica{
     
     NSError *error;
     
-    NSMutableDictionary *jsonDadosSerializado = [NSJSONSerialization
-                                                 JSONObjectWithData:jsonDados
+    self.jsonDadosSerializado = [NSJSONSerialization
+                                                 JSONObjectWithData:self.jsonDados
                                                  options:NSJSONReadingMutableContainers
                                                  error:&error];
     
-    NSMutableArray *productGeral = [jsonDadosSerializado objectForKey:@"product"];
+    self.productGeral = [self.jsonDadosSerializado objectForKey:@"product"];
     
     // Esse 1 tem que virar um parametro tambem
-    NSMutableDictionary *productSelected = [productGeral[1] objectForKey:@"product"];
+    self.productSelected = [self.productGeral[1] objectForKey:@"product"];
     
     if ([caracteristica  isEqual: @"produtoNome"]) {
-        NSString *produtoNome = [productSelected objectForKey:@"productname"];
-        NSLog(@"%@", produtoNome);
-        return produtoNome;
+        self.produtoNome = [self.productSelected objectForKey:@"productname"];
+        NSLog(@"%@", self.produtoNome);
+        return self.produtoNome;
     }
     
     if ([caracteristica  isEqual: @"precoMaximo"]) {
-        NSString *precoMaximo = [productSelected objectForKey:@"pricemax"];
-        NSLog(@"%@", precoMaximo);
-        return precoMaximo;
+        self.precoMaximo = [self.productSelected objectForKey:@"pricemax"];
+        NSLog(@"%@", self.precoMaximo);
+        return self.precoMaximo;
     }
     
     if ([caracteristica  isEqual: @"precoMinimo"]) {
-        NSString *precoMinimo = [productSelected objectForKey:@"pricemin"];
-        NSLog(@"%@", precoMinimo);
-        return precoMinimo;
+        self.precoMinimo = [self.productSelected objectForKey:@"pricemin"];
+        NSLog(@"%@", self.precoMinimo);
+        return self.precoMinimo;
     }
     
     if ([caracteristica  isEqual: @"produtoNomeCurto"]) {
-        NSString *produtoNomeCurto = [productSelected objectForKey:@"productshortname"];
-        NSLog(@"%@", produtoNomeCurto);
-        return produtoNomeCurto;
+        self.produtoNomeCurto = [self.productSelected objectForKey:@"productshortname"];
+        NSLog(@"%@", self.produtoNomeCurto);
+        return self.produtoNomeCurto;
     }
     
     if ([caracteristica  isEqual: @"totalDeVendedores"]) {
-        NSString *totalDeVendedores = [productSelected objectForKey:@"totalsellers"];
-        NSLog(@"%@", totalDeVendedores);
-        return totalDeVendedores;
+        self.totalDeVendedores = [self.productSelected objectForKey:@"totalsellers"];
+        NSLog(@"%@", self.totalDeVendedores);
+        return self.totalDeVendedores;
     }
     
     if ([caracteristica  isEqual: @"imagemMiniatura"]) {
-        NSString *imagemMiniatura = [[productSelected objectForKey:@"thumbnail"]objectForKey:@"url"];
-        NSLog(@"%@", imagemMiniatura);
-        return imagemMiniatura;
+        self.imagemMiniatura = [[self.productSelected objectForKey:@"thumbnail"]objectForKey:@"url"];
+        NSLog(@"%@", _imagemMiniatura);
+        return self.imagemMiniatura;
     }
     
 
