@@ -18,4 +18,6 @@
 -(NSError *) buscapeJson: (NSString *)busca;
 -(NSMutableDictionary *) retornaDados: (NSString *)caracteristica;
 
++(id)criarConexao;
+
 @end

@@ -10,6 +10,21 @@
 
 @implementation Buscape
 
++(id)criarConexao{
+    static dispatch_once_t pred;
+    static Buscape *criaConexao = nil;
+    dispatch_once(&pred, ^{
+        criaConexao = [[Buscape alloc] init];
+    });
+    return criaConexao;
+}
+
+- (id)init {
+    if (self = [super init]) {
+    }
+    return self;
+}
+
 -(NSData *) buscapeJson: (NSString *)busca{
     
     NSString *buscapeUrl = [NSString stringWithFormat:@"http://sandbox.buscape.com/service/findProductList/lomadee/564771466d477a4458664d3d/?keyword=%@&format=json",busca];
