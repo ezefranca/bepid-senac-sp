@@ -87,6 +87,7 @@
     self.productGeral = [self.jsonDadosSerializado objectForKey:@"product"];
     
     // Esse 1 tem que virar um parametro tambem
+    
     while (self.productGeral.count > 0) {
         
         
