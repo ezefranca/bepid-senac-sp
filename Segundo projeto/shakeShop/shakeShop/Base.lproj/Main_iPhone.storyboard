@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="794"/>
+            <point key="canvasLocation" x="85" y="700"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -108,7 +108,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="84"/>
+            <point key="canvasLocation" x="-474" y="255"/>
         </scene>
         <!--Recipe Table View Controller - Recipes-->
         <scene sceneID="6J3-Ho-Eg1">
@@ -135,26 +135,34 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qj-IV-hpW">
-                                            <rect key="frame" x="20" y="7" width="58" height="58"/>
+                                            <rect key="frame" x="14" y="6" width="58" height="58"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RecipeName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jS-f9-pdH">
                                             <rect key="frame" x="92" y="7" width="215" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PrepTime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOb-YJ-ZRu">
-                                            <rect key="frame" x="92" y="32" width="186" height="33"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detalhes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOb-YJ-ZRu">
+                                            <rect key="frame" x="86" y="32" width="186" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="outra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muD-RQ-G35">
+                                            <rect key="frame" x="158" y="38" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="0jS-f9-pdH" id="jiN-Wz-pbQ"/>
+                                    <outlet property="outra" destination="muD-RQ-G35" id="1Lc-O9-KUN"/>
                                     <outlet property="prepTimeLabel" destination="FOb-YJ-ZRu" id="Xvj-3Y-2z0"/>
                                     <outlet property="thumbnailImageView" destination="6Qj-IV-hpW" id="mLx-G0-mia"/>
                                     <segue destination="m5m-Oz-qYb" kind="push" identifier="showRecipeDetail" id="opa-PB-7sz"/>
@@ -190,7 +198,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1159" y="43"/>
+            <point key="canvasLocation" x="1161" y="255"/>
         </scene>
         <!--Recipe Detail View Controller - Recipe Detail View Controller-->
         <scene sceneID="UqS-Ju-RHK">
@@ -247,13 +255,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jl1-kj-HDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1621" y="43"/>
+            <point key="canvasLocation" x="1695" y="255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9ka-Fx-ikj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="osh-Zs-Efb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="2lI-gw-RV2"/>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="2lI-gw-RV2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="24t-ZS-2Ce">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -266,7 +274,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Du-D5-B9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="43"/>
+            <point key="canvasLocation" x="566" y="255"/>
         </scene>
     </scenes>
     <resources>

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Buscape.h" 
 
 @interface RecipeTableViewController : UITableViewController
 
 -(void)buscaBackground: (NSString *) busca;
+
+@property Buscape *b;
 
 @end

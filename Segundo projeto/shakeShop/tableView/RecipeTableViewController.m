@@ -10,7 +10,6 @@
 #import "RecipeTableCell.h"
 #import "RecipeDetailViewController.h"
 #import "Recipe.h"
-#import "Buscape.h"
 
 @interface RecipeTableViewController ()
 
@@ -26,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.b = [[Buscape alloc]init];
 	
     // Initialize the recipes array
     Recipe *recipe1 = [Recipe new];
@@ -144,12 +144,18 @@
 //NOVO
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    /*
+     VOCE SERA USADO
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [searchResults count];
         
     } else {
         return [recipes count];
     }
+     */
+    
+    return self.b.productGeral.count;
+
 }
 
 
@@ -187,16 +193,35 @@
     }
     
     // Display recipe in the table cell
+    /*
+    SERA USADO
     Recipe *recipe = nil;
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        recipe = [searchResults objectAtIndex:indexPath.row];
+        recipe = [searchResults objectAtIindexPath.row];
     } else {
         recipe = [recipes objectAtIndex:indexPath.row];
     }
+     */
     
-    cell.nameLabel.text = recipe.name;
-    cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
-    cell.prepTimeLabel.text = recipe.prepTime;
+    if (self.b.productGeral.count > 0) {
+   
+    
+    NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
+    NSDictionary *produto = [d objectForKey:@"product"];
+    
+    
+    NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[[produto objectForKey:@"thumbnail"]objectForKey:@"url"  ]]];
+    
+   
+    
+    cell.nameLabel.text = [produto objectForKey:@"productname"];
+    cell.thumbnailImageView.image = [UIImage imageWithData:data];
+    cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemin"]];
+    cell.outra.text = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemax"]];
+        
+    
+
+    }
     
     return cell;
 }
