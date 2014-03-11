@@ -18,6 +18,7 @@
 @implementation RecipeTableViewController
 {
     NSArray *recipes;
+    NSArray *searchResults;
 }
 
 
@@ -132,11 +133,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+ ANTIGO
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [recipes count];
 }
+*/
+//NOVO
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [searchResults count];
+        
+    } else {
+        return [recipes count];
+    }
+}
 
+
+
+/*
+ ANTIGO
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CustomTableCell";
@@ -155,6 +173,39 @@
     
     return cell;
 }
+ */
+//NOVO
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"CustomTableCell";
+    RecipeTableCell *cell = (RecipeTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    if (cell == nil) {
+        cell = [[RecipeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Display recipe in the table cell
+    Recipe *recipe = nil;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        recipe = [searchResults objectAtIndex:indexPath.row];
+    } else {
+        recipe = [recipes objectAtIndex:indexPath.row];
+    }
+    
+    cell.nameLabel.text = recipe.name;
+    cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
+    cell.prepTimeLabel.text = recipe.prepTime;
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
+}
+
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
@@ -165,6 +216,22 @@
         destViewController.recipe = recipe;
     }
 }
+//BUSCA
 
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
+    searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
+    return YES;
+}
 
 @end
