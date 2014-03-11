@@ -78,6 +78,10 @@
     
     NSError *error;
     
+    if (!self.jsonDados) {
+        return @"error";
+    }
+    
     self.jsonDadosSerializado = [NSJSONSerialization
                                                  JSONObjectWithData:self.jsonDados
                                                  options:NSJSONReadingMutableContainers
@@ -86,7 +90,7 @@
     self.productGeral = [self.jsonDadosSerializado objectForKey:@"product"];
     
     // Esse 1 tem que virar um parametro tambem
-    self.productSelected = [self.productGeral[1] objectForKey:@"product"];
+    self.productSelected = [self.productGeral[0] objectForKey:@"product"];
     
     if ([caracteristica  isEqual: @"produtoNome"]) {
         self.produtoNome = [self.productSelected objectForKey:@"productname"];

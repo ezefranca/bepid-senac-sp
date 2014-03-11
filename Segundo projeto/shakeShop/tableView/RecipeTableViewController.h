@@ -10,4 +10,6 @@
 
 @interface RecipeTableViewController : UITableViewController
 
+-(void)buscaBackground: (NSString *) busca;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "thirdViewController.h"
+#import "Buscape.h"
 
 @interface FirstViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Buscape *b = [[Buscape alloc]init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

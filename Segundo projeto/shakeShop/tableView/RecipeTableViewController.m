@@ -10,6 +10,7 @@
 #import "RecipeTableCell.h"
 #import "RecipeDetailViewController.h"
 #import "Recipe.h"
+#import "Buscape.h"
 
 @interface RecipeTableViewController ()
 
@@ -222,6 +223,12 @@
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
     searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
+    
+    NSThread *t = [[NSThread alloc]initWithTarget:self selector:@selector(buscaBackground: ) object:searchText];
+    [t start];
+    
+    
+    NSLog(@"%@", searchText);
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
@@ -232,6 +239,15 @@
                                                      selectedScopeButtonIndex]]];
     
     return YES;
+}
+
+-(void)buscaBackground: (NSString *) busca
+{
+     Buscape *b = [[Buscape alloc]init];
+    [b buscapeJson:busca];
+    [b retornaDados:@"produtoNomeCurto"];
+    [b retornaDados:@"precoMinimo"];
+    [b retornaDados:@"imagemMiniatura"];
 }
 
 @end
