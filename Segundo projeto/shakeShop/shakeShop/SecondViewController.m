@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Buscape.h"
 
 @interface SecondViewController ()
 
@@ -26,4 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)TESTE:(id)sender {
+    Buscape *teste = [Buscape criarConexao];
+    [teste buscapeJson:@"tv"];
+    [teste retornaDados:@"precoMinimo"];
+    
+}
 @end

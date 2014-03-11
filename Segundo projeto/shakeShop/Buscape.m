@@ -17,6 +17,7 @@
         criaConexao = [[Buscape alloc] init];
     });
     return criaConexao;
+
 }
 
 - (id)init {
@@ -50,12 +51,14 @@
     NSMutableDictionary *productSelected = [productGeral[1] objectForKey:@"product"];
     
     if ([caracteristica  isEqual: @"precoMinimo"]) {
-        NSString *precoMaximo = [productSelected objectForKey:@"pricemin"];
-        return precoMaximo;
+        NSString *precoMinimo = [productSelected objectForKey:@"pricemin"];
+        NSLog(@"%@", precoMinimo);
+        return precoMinimo;
     }
     
     if ([caracteristica  isEqual: @"precoMaximo"]) {
         NSString *precoMaximo = [productSelected objectForKey:@"pricemax"];
+        NSLog(@"%@", precoMaximo);
         return precoMaximo;
     }
 
