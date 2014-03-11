@@ -50,10 +50,10 @@
     // Esse 1 tem que virar um parametro tambem
     NSMutableDictionary *productSelected = [productGeral[1] objectForKey:@"product"];
     
-    if ([caracteristica  isEqual: @"precoMinimo"]) {
-        NSString *precoMinimo = [productSelected objectForKey:@"pricemin"];
-        NSLog(@"%@", precoMinimo);
-        return precoMinimo;
+    if ([caracteristica  isEqual: @"produtoNome"]) {
+        NSString *produtoNome = [productSelected objectForKey:@"productname"];
+        NSLog(@"%@", produtoNome);
+        return produtoNome;
     }
     
     if ([caracteristica  isEqual: @"precoMaximo"]) {
@@ -61,6 +61,31 @@
         NSLog(@"%@", precoMaximo);
         return precoMaximo;
     }
+    
+    if ([caracteristica  isEqual: @"precoMinimo"]) {
+        NSString *precoMinimo = [productSelected objectForKey:@"pricemin"];
+        NSLog(@"%@", precoMinimo);
+        return precoMinimo;
+    }
+    
+    if ([caracteristica  isEqual: @"produtoNomeCurto"]) {
+        NSString *produtoNomeCurto = [productSelected objectForKey:@"productshortname"];
+        NSLog(@"%@", produtoNomeCurto);
+        return produtoNomeCurto;
+    }
+    
+    if ([caracteristica  isEqual: @"totalDeVendedores"]) {
+        NSString *totalDeVendedores = [productSelected objectForKey:@"totalsellers"];
+        NSLog(@"%@", totalDeVendedores);
+        return totalDeVendedores;
+    }
+    
+    if ([caracteristica  isEqual: @"imagemMiniatura"]) {
+        NSString *imagemMiniatura = [[productSelected objectForKey:@"thumbnail"]objectForKey:@"url"];
+        NSLog(@"%@", imagemMiniatura);
+        return imagemMiniatura;
+    }
+    
 
     return @"nada";
 }
