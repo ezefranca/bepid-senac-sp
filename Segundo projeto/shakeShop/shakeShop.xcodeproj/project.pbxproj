@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253497B018D0D39F00DBB3FC /* ProdutosBuscados.m in Sources */ = {isa = PBXBuildFile; fileRef = 253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */; };
 		2949B6C718CE515900D4486C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6C618CE515900D4486C /* Foundation.framework */; };
 		2949B6C918CE515900D4486C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6C818CE515900D4486C /* CoreGraphics.framework */; };
 		2949B6CB18CE515900D4486C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6CA18CE515900D4486C /* UIKit.framework */; };
@@ -61,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253497AE18D0D39F00DBB3FC /* ProdutosBuscados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProdutosBuscados.h; path = ../tableView/ProdutosBuscados.h; sourceTree = "<group>"; };
+		253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProdutosBuscados.m; path = ../tableView/ProdutosBuscados.m; sourceTree = "<group>"; };
 		2949B6C318CE515900D4486C /* shakeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2949B6C618CE515900D4486C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2949B6C818CE515900D4486C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +179,8 @@
 				C0997F5518CED97F00743FC0 /* tableView */,
 				F7068EC818CE59DB000EE44B /* Buscape.h */,
 				F7068EC918CE59DB000EE44B /* Buscape.m */,
+				253497AE18D0D39F00DBB3FC /* ProdutosBuscados.h */,
+				253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */,
 				2949B6D518CE515900D4486C /* AppDelegate.h */,
 				2949B6D618CE515900D4486C /* AppDelegate.m */,
 				2949B6D818CE515900D4486C /* Main_iPhone.storyboard */,
@@ -392,6 +397,7 @@
 			files = (
 				2949B6E318CE515900D4486C /* SecondViewController.m in Sources */,
 				C0997F8518CED97F00743FC0 /* RecipeTableCell.m in Sources */,
+				253497B018D0D39F00DBB3FC /* ProdutosBuscados.m in Sources */,
 				C0997F8418CED97F00743FC0 /* RecipeDetailViewController.m in Sources */,
 				C0997F8318CED97F00743FC0 /* Recipe.m in Sources */,
 				2949B6D718CE515900D4486C /* AppDelegate.m in Sources */,
