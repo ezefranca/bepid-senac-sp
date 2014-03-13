@@ -10,7 +10,7 @@
 #import "Buscape.h" 
 #import "ProdutosBuscados.h"
 
-@interface RecipeTableViewController : UITableViewController <UISearchBarDelegate>
+@interface RecipeTableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
 -(void)buscaBackground: (NSDictionary *) busca;
 
