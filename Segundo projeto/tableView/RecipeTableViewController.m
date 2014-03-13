@@ -10,6 +10,7 @@
 #import "RecipeTableCell.h"
 #import "RecipeDetailViewController.h"
 #import "Recipe.h"
+#import "Produto.h"
 
 @interface RecipeTableViewController ()
 
@@ -99,11 +100,30 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        
+        /*
+         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+         RecipeDetailViewController *destViewController = segue.destinationViewController;
+         
+         Recipe *recipe = [recipes objectAtIndex:indexPath.row];
+         */
+        
+        
+        NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+        
+        NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
+        NSDictionary *produto = [d objectForKey:@"product"];
+        
         RecipeDetailViewController *destViewController = segue.destinationViewController;
         
-        Recipe *recipe = [recipes objectAtIndex:indexPath.row];
-        destViewController.recipe = recipe;
+        Produto *p = [[Produto alloc]init];
+        
+        p.nome = [produto objectForKey:@"productname"];
+        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[[produto objectForKey:@"thumbnail"]objectForKey:@"url"  ]]];
+        p.imagem = [UIImage imageWithData:data];
+        
+        destViewController.produto = p;
     }
 }
 

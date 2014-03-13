@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
+#import "Produto.h"
 
 @interface RecipeDetailViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
 
-@property (weak, nonatomic) IBOutlet UILabel *prepTimeLabel;
-
 @property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
 
 
 @property (nonatomic, strong) Recipe *recipe;
+@property (nonatomic, strong) Produto *produto;
 
 @end

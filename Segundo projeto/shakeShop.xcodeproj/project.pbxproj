@@ -26,6 +26,7 @@
 		2949B6F818CE515900D4486C /* shakeShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2949B6F718CE515900D4486C /* shakeShopTests.m */; };
 		29537FFA18CE57AF00F537FE /* atum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29537FF918CE57AF00F537FE /* atum.jpg */; };
 		29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29537FFC18CE5F5700F537FE /* thirdViewController.m */; };
+		2978F3DF18D2466C0061841F /* Produto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978F3DE18D2466C0061841F /* Produto.m */; };
 		C0997F7118CED97F00743FC0 /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0997F5718CED97F00743FC0 /* angry_birds_cake.jpg */; };
 		C0997F7218CED97F00743FC0 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0997F5818CED97F00743FC0 /* creme_brelee.jpg */; };
 		C0997F7318CED97F00743FC0 /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0997F5918CED97F00743FC0 /* egg_benedict.jpg */; };
@@ -89,6 +90,8 @@
 		29537FF918CE57AF00F537FE /* atum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atum.jpg; path = shakeShop/img/atum.jpg; sourceTree = SOURCE_ROOT; };
 		29537FFB18CE5F5700F537FE /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
 		29537FFC18CE5F5700F537FE /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
+		2978F3DD18D2466C0061841F /* Produto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Produto.h; sourceTree = "<group>"; };
+		2978F3DE18D2466C0061841F /* Produto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Produto.m; sourceTree = "<group>"; };
 		C0997F5718CED97F00743FC0 /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = angry_birds_cake.jpg; path = tableView/images/angry_birds_cake.jpg; sourceTree = SOURCE_ROOT; };
 		C0997F5818CED97F00743FC0 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = tableView/images/creme_brelee.jpg; sourceTree = SOURCE_ROOT; };
 		C0997F5918CED97F00743FC0 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = egg_benedict.jpg; path = tableView/images/egg_benedict.jpg; sourceTree = SOURCE_ROOT; };
@@ -244,6 +247,8 @@
 				C0997F6A18CED97F00743FC0 /* Recipe.m */,
 				C0997F6B18CED97F00743FC0 /* RecipeDetailViewController.h */,
 				C0997F6C18CED97F00743FC0 /* RecipeDetailViewController.m */,
+				2978F3DD18D2466C0061841F /* Produto.h */,
+				2978F3DE18D2466C0061841F /* Produto.m */,
 				C0997F6D18CED97F00743FC0 /* RecipeTableCell.h */,
 				C0997F6E18CED97F00743FC0 /* RecipeTableCell.m */,
 				C0997F6F18CED97F00743FC0 /* RecipeTableViewController.h */,
@@ -404,6 +409,7 @@
 				C0997F8618CED97F00743FC0 /* RecipeTableViewController.m in Sources */,
 				F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */,
 				2949B6E018CE515900D4486C /* FirstViewController.m in Sources */,
+				2978F3DF18D2466C0061841F /* Produto.m in Sources */,
 				2949B6D318CE515900D4486C /* main.m in Sources */,
 				29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */,
 			);
