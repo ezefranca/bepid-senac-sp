@@ -214,7 +214,7 @@
     
    
     
-    cell.nameLabel.text = [produto objectForKey:@"productname"];
+        cell.nameLabel.text = [produto objectForKey:@"productname"];
     cell.thumbnailImageView.image = [UIImage imageWithData:data];
     cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemin"]];
     cell.outra.text = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemax"]];

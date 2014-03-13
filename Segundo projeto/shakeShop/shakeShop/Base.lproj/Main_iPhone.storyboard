@@ -257,11 +257,11 @@
             </objects>
             <point key="canvasLocation" x="1695" y="255"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Pesquisa-->
         <scene sceneID="9ka-Fx-ikj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="osh-Zs-Efb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="2lI-gw-RV2"/>
+                    <tabBarItem key="tabBarItem" title="Pesquisa" image="spanner.png" id="2lI-gw-RV2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="24t-ZS-2Ce">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -282,6 +282,7 @@
         <image name="first" width="30" height="30"/>
         <image name="photo-frame.png" width="297" height="199"/>
         <image name="second" width="30" height="30"/>
+        <image name="spanner.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
