@@ -49,6 +49,7 @@
 		C0997F8518CED97F00743FC0 /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0997F6E18CED97F00743FC0 /* RecipeTableCell.m */; };
 		C0997F8618CED97F00743FC0 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0997F7018CED97F00743FC0 /* RecipeTableViewController.m */; };
 		F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = F7068EC918CE59DB000EE44B /* Buscape.m */; };
+		F789622018D1548100621BF7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F789621F18D1548100621BF7 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		C0997F7018CED97F00743FC0 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeTableViewController.m; path = tableView/RecipeTableViewController.m; sourceTree = SOURCE_ROOT; };
 		F7068EC818CE59DB000EE44B /* Buscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buscape.h; path = ../Buscape.h; sourceTree = "<group>"; };
 		F7068EC918CE59DB000EE44B /* Buscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Buscape.m; path = ../Buscape.m; sourceTree = "<group>"; };
+		F789621F18D1548100621BF7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F789622018D1548100621BF7 /* Social.framework in Frameworks */,
 				2949B6C918CE515900D4486C /* CoreGraphics.framework in Frameworks */,
 				2949B6CB18CE515900D4486C /* UIKit.framework in Frameworks */,
 				2949B6C718CE515900D4486C /* Foundation.framework in Frameworks */,
@@ -165,6 +168,7 @@
 		2949B6C518CE515900D4486C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F789621F18D1548100621BF7 /* Social.framework */,
 				2949B6C618CE515900D4486C /* Foundation.framework */,
 				2949B6C818CE515900D4486C /* CoreGraphics.framework */,
 				2949B6CA18CE515900D4486C /* UIKit.framework */,
