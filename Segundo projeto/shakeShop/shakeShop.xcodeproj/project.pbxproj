@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		2932B51818CFAE9800DFCA5E /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 2932B3EC18CFAE9600DFCA5E /* 3d.png */; };
 		2932B51918CFAE9800DFCA5E /* abacus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2932B3ED18CFAE9600DFCA5E /* abacus.png */; };
 		2932B51A18CFAE9800DFCA5E /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 2932B3EE18CFAE9600DFCA5E /* airplane.png */; };
@@ -307,6 +308,9 @@
 		2932B64118CFAE9800DFCA5E /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2932B51518CFAE9800DFCA5E /* woman.png */; };
 		2932B64218CFAE9800DFCA5E /* wooden-picket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2932B51618CFAE9800DFCA5E /* wooden-picket.png */; };
 		2932B64318CFAE9800DFCA5E /* write.png in Resources */ = {isa = PBXBuildFile; fileRef = 2932B51718CFAE9800DFCA5E /* write.png */; };
+=======
+		253497B018D0D39F00DBB3FC /* ProdutosBuscados.m in Sources */ = {isa = PBXBuildFile; fileRef = 253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */; };
+>>>>>>> 0d9f4a8fff3fb4ecca6c3a1db8eb8589707a1e69
 		2949B6C718CE515900D4486C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6C618CE515900D4486C /* Foundation.framework */; };
 		2949B6C918CE515900D4486C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6C818CE515900D4486C /* CoreGraphics.framework */; };
 		2949B6CB18CE515900D4486C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949B6CA18CE515900D4486C /* UIKit.framework */; };
@@ -348,6 +352,7 @@
 		C0997F8518CED97F00743FC0 /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0997F6E18CED97F00743FC0 /* RecipeTableCell.m */; };
 		C0997F8618CED97F00743FC0 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0997F7018CED97F00743FC0 /* RecipeTableViewController.m */; };
 		F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = F7068EC918CE59DB000EE44B /* Buscape.m */; };
+		F789622018D1548100621BF7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F789621F18D1548100621BF7 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -361,6 +366,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		2932B3EC18CFAE9600DFCA5E /* 3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d.png; sourceTree = "<group>"; };
 		2932B3ED18CFAE9600DFCA5E /* abacus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abacus.png; sourceTree = "<group>"; };
 		2932B3EE18CFAE9600DFCA5E /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane.png; sourceTree = "<group>"; };
@@ -661,6 +667,10 @@
 		2932B51518CFAE9800DFCA5E /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
 		2932B51618CFAE9800DFCA5E /* wooden-picket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wooden-picket.png"; sourceTree = "<group>"; };
 		2932B51718CFAE9800DFCA5E /* write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = write.png; sourceTree = "<group>"; };
+=======
+		253497AE18D0D39F00DBB3FC /* ProdutosBuscados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProdutosBuscados.h; path = ../tableView/ProdutosBuscados.h; sourceTree = "<group>"; };
+		253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProdutosBuscados.m; path = ../tableView/ProdutosBuscados.m; sourceTree = "<group>"; };
+>>>>>>> 0d9f4a8fff3fb4ecca6c3a1db8eb8589707a1e69
 		2949B6C318CE515900D4486C /* shakeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2949B6C618CE515900D4486C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2949B6C818CE515900D4486C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -714,6 +724,7 @@
 		C0997F7018CED97F00743FC0 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeTableViewController.m; path = tableView/RecipeTableViewController.m; sourceTree = SOURCE_ROOT; };
 		F7068EC818CE59DB000EE44B /* Buscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buscape.h; path = ../Buscape.h; sourceTree = "<group>"; };
 		F7068EC918CE59DB000EE44B /* Buscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Buscape.m; path = ../Buscape.m; sourceTree = "<group>"; };
+		F789621F18D1548100621BF7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,6 +732,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F789622018D1548100621BF7 /* Social.framework in Frameworks */,
 				2949B6C918CE515900D4486C /* CoreGraphics.framework in Frameworks */,
 				2949B6CB18CE515900D4486C /* UIKit.framework in Frameworks */,
 				2949B6C718CE515900D4486C /* Foundation.framework in Frameworks */,
@@ -1069,6 +1081,7 @@
 		2949B6C518CE515900D4486C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F789621F18D1548100621BF7 /* Social.framework */,
 				2949B6C618CE515900D4486C /* Foundation.framework */,
 				2949B6C818CE515900D4486C /* CoreGraphics.framework */,
 				2949B6CA18CE515900D4486C /* UIKit.framework */,
@@ -1084,6 +1097,8 @@
 				C0997F5518CED97F00743FC0 /* tableView */,
 				F7068EC818CE59DB000EE44B /* Buscape.h */,
 				F7068EC918CE59DB000EE44B /* Buscape.m */,
+				253497AE18D0D39F00DBB3FC /* ProdutosBuscados.h */,
+				253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */,
 				2949B6D518CE515900D4486C /* AppDelegate.h */,
 				2949B6D618CE515900D4486C /* AppDelegate.m */,
 				2949B6D818CE515900D4486C /* Main_iPhone.storyboard */,
@@ -1600,6 +1615,7 @@
 			files = (
 				2949B6E318CE515900D4486C /* SecondViewController.m in Sources */,
 				C0997F8518CED97F00743FC0 /* RecipeTableCell.m in Sources */,
+				253497B018D0D39F00DBB3FC /* ProdutosBuscados.m in Sources */,
 				C0997F8418CED97F00743FC0 /* RecipeDetailViewController.m in Sources */,
 				C0997F8318CED97F00743FC0 /* Recipe.m in Sources */,
 				2949B6D718CE515900D4486C /* AppDelegate.m in Sources */,

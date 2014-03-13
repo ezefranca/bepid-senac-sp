@@ -36,7 +36,7 @@ Projects developed in Bepid - (Brazilian Education Program for iOS Development) 
   <tr>
     <th>AutoLayout/ StoryBoard</th>
     <td></td>
-    <td></td>
+    <td>&#x2713;</td>
     <td></td>
     <td></td>
     <td></td>
@@ -44,7 +44,7 @@ Projects developed in Bepid - (Brazilian Education Program for iOS Development) 
   <tr>
     <th>Webservice/ Threads</th>
     <td></td>
-    <td></td>
+    <td>&#x2713;</td>
     <td></td>
     <td></td>
     <td></td>

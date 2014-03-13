@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Buscape.h" 
+#import "ProdutosBuscados.h"
 
-@interface RecipeTableViewController : UITableViewController
+@interface RecipeTableViewController : UITableViewController <UISearchBarDelegate>
 
--(void)buscaBackground: (NSString *) busca;
+-(void)buscaBackground: (NSDictionary *) busca;
 
 @property Buscape *b;
+
+@property NSArray *produtosTabela;
+@property NSArray *produtosFiltrados;
+
 
 @end
