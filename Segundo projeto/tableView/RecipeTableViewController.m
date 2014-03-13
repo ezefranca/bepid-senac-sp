@@ -25,6 +25,8 @@
 {
     [super viewDidLoad];
     self.b = [[Buscape alloc]init];
+    
+    background = [[NSThread alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,12 +40,12 @@
 {
     /*
      VOCE SERA USADO
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        return [searchResults count];
-        
-    } else {
-        return [recipes count];
-    }
+     if (tableView == self.searchDisplayController.searchResultsTableView) {
+     return [searchResults count];
+     
+     } else {
+     return [recipes count];
+     }
      */
     
     if(self.tableView == tableView){
@@ -52,7 +54,7 @@
     
     NSLog(@">>>>>> %d", self.b.productGeral.count);
     return self.b.productGeral.count;
-
+    
 }
 
 //NOVO
@@ -65,25 +67,25 @@
     if (cell == nil) {
         cell = [[RecipeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-
+    
     
     NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
     NSDictionary *produto = [d objectForKey:@"product"];
     
     
     NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[[produto objectForKey:@"thumbnail"]objectForKey:@"url"  ]]];
-//
-   // if (data) {
+    //
+    // if (data) {
     cell.thumbnailImageView.image = [UIImage imageWithData:data];
-   // }
+    // }
     
     cell.nameLabel.text = [produto objectForKey:@"productname"];
     //cell.thumbnailImageView.image = [UIImage imageWithData:data];
     cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemin"]];
     cell.outra.text = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemax"]];
-        
     
-
+    
+    
     
     return cell;
 }
@@ -99,7 +101,7 @@
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         RecipeDetailViewController *destViewController = segue.destinationViewController;
-
+        
         Recipe *recipe = [recipes objectAtIndex:indexPath.row];
         destViewController.recipe = recipe;
     }
@@ -107,7 +109,7 @@
 
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
-
+    
     NSDictionary *d = @{@"string" :searchText, @"delegate":self };
     [self performSelectorInBackground:@selector(buscaBackground:) withObject:d];
     NSLog(@"tic");
@@ -116,7 +118,12 @@
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
     NSDictionary *d = @{@"string" :searchString, @"delegate":self };
-    [self performSelectorInBackground:@selector(buscaBackground:) withObject:d];
+    //[self performSelectorInBackground:@selector(buscaBackground:) withObject:d];
+    
+    [self performSelector:@selector(buscaBackground:) onThread:background withObject:d waitUntilDone:NO];
+    
+    //[self buscaBackground:d];
+    
     return NO;
 }
 

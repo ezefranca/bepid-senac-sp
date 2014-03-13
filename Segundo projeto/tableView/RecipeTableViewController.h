@@ -11,13 +11,16 @@
 #import "ProdutosBuscados.h"
 
 @interface RecipeTableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
-
+{
+    NSThread *background;
+}
 -(void)buscaBackground: (NSDictionary *) busca;
 
 @property Buscape *b;
 
 @property NSArray *produtosTabela;
 @property NSArray *produtosFiltrados;
+@property NSOperationQueue *fila;
 
 
 @end
