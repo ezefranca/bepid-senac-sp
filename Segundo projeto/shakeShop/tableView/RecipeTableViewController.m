@@ -285,10 +285,13 @@
 }
 
 -(void) terminouDebaixarAsParadsDoBuscape{
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
     NSLog(@"reload");
-    [self.searchDisplayController.searchResultsTableView reloadData];
-}
+    //[self.searchDisplayController.searchResultsTableView reloadData];
+    //PEDRO MOSTRAR BUG
+    //PEDRO MOSTRAR BUG
+    [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+   }
 
 -(void)buscaBackground :(NSDictionary*) dict
 {
@@ -303,6 +306,9 @@
     
     [vc terminouDebaixarAsParadsDoBuscape];
     //self.busqueiEstes = [[ProdutosBuscados alloc]init];
+    //PEDRO MOSTRAR BUG
+    //[self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+
 }
 
 @end
