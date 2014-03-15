@@ -101,28 +101,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
-        int i = -1;
         
-        /*
-         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-         RecipeDetailViewController *destViewController = segue.destinationViewController;
-         
-         Recipe *recipe = [recipes objectAtIndex:indexPath.row];
-         */
-        /*
-        Buscape *teste = [Buscape criarClasse];
-        NSLog(@"%f", teste.valorAPAGAR);
+        int i = -1; //para varrer o objeto a partir do indice 0;
         
-        [teste buscapeJson:@"tv"];
-        [teste retornaDados:@"produtoNomeCurto"];
-        [teste retornaDados:@"precoMinimo"];
-        [teste retornaDados:@"imagemMiniatura"];
-        [teste retornaDados:@"especificacao"];
-        */
-         
-         
         NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-        
         NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
         NSDictionary *produto = [d objectForKey:@"product"];
         

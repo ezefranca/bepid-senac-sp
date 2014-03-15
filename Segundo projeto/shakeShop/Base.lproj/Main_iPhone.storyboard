@@ -44,7 +44,7 @@
                             <constraint firstAttribute="centerX" secondItem="L87-eT-2PZ" secondAttribute="centerX" constant="-5.5" id="kE8-pP-tDW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="53-house.png" id="u1e-5L-l1D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +75,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Frete" image="box-sealed.png" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,7 +253,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Carrinho" image="shopping-cart.png" id="NQl-Na-Ggb"/>
+                    <tabBarItem key="tabBarItem" title="Carrinho" image="80-shopping-cart.png" id="NQl-Na-Ggb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLC-ag-0A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -299,7 +299,7 @@
         <scene sceneID="9ka-Fx-ikj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="osh-Zs-Efb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pesquisa" image="search.png" id="2lI-gw-RV2"/>
+                    <tabBarItem key="tabBarItem" title="Pesquisa" image="06-magnify.png" id="2lI-gw-RV2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="24t-ZS-2Ce">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -335,11 +335,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="06-magnify.png" width="24" height="24"/>
+        <image name="53-house.png" width="22" height="22"/>
+        <image name="80-shopping-cart.png" width="26" height="19"/>
         <image name="atum.jpg" width="300" height="194"/>
-        <image name="home.png" width="30" height="30"/>
-        <image name="search.png" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="shopping-cart.png" width="29" height="30"/>
+        <image name="box-sealed.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
