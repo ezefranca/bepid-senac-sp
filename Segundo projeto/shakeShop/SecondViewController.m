@@ -35,5 +35,6 @@
     [teste retornaDados:@"produtoNomeCurto"];
     [teste retornaDados:@"precoMinimo"];
     [teste retornaDados:@"imagemMiniatura"];
+    [teste retornaDados:@"especificacao"];
 }
 @end

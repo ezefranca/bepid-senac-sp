@@ -18,6 +18,8 @@
 @property    NSMutableString *buscapeUrl;
 @property    NSMutableArray *productGeral;
 @property    NSMutableDictionary *productSelected;
+@property    NSMutableDictionary *specification;
+@property    NSMutableArray *specificationDetails;
 
 @property    NSMutableString *produtoNome;
 @property    NSMutableString *precoMaximo;
@@ -25,6 +27,7 @@
 @property    NSMutableString *produtoNomeCurto;
 @property    NSMutableString *totalDeVendedores;
 @property    NSMutableString *imagemMiniatura;
+@property    NSMutableString *especificacaoTexto;
     //double valorAPAGAR;
 
 @property double valorAPAGAR;

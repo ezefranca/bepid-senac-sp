@@ -12,6 +12,8 @@
 
 @property NSString *nome;
 @property UIImage *imagem;
+@property NSMutableArray *descricao;
+@property NSMutableString *description;
 
 
 @end

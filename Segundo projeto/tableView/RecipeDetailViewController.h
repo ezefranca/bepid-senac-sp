@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
 
-@property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 
 
 @property (nonatomic, strong) Recipe *recipe;

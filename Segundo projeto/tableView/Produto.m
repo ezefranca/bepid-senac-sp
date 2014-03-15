@@ -9,6 +9,10 @@
 #import "Produto.h"
 
 @implementation Produto
-
+- (id)init {
+    self = [super init];
+    _description = @"Descrição";
+    return self;
+}
 
 @end

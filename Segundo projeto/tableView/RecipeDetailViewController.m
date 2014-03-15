@@ -31,6 +31,11 @@
    // self.prepTimeLabel.text = self.recipe.prepTime;
     self.recipeImageView.image = self.produto.imagem;
     
+    self.produto.description = [self.produto.description stringByReplacingOccurrencesOfString:@"(" withString:@""];
+    self.produto.description = [self.produto.description stringByReplacingOccurrencesOfString:@")" withString:@""];
+    
+    self.descriptionTextView.text = self.produto.description;
+    
     /*
     NSMutableString *ingredientsText = [NSMutableString string];
     for (NSString* ingredient in self.recipe.ingredients) {

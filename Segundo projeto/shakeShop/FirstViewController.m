@@ -10,6 +10,8 @@
 #import "thirdViewController.h"
 #import "Buscape.h"
 
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 @interface FirstViewController ()
 
 @end
@@ -19,10 +21,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Buscape *b = [[Buscape alloc]init];
+    // Com o codigo abaixo vc pode colocar uma imagem no topo igual o app da Amazon
+    
+    //self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"appcoda-logo.png"]];
+    
+    self.title = @"ShakeShop";
+   // Buscape *b = [[Buscape alloc]init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

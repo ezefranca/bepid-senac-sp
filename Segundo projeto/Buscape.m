@@ -55,6 +55,17 @@
     if (!self.precoMinimo) {
         self.precoMinimo = [[NSMutableString alloc]init];
     }
+    if (!self.especificacaoTexto) {
+        self.especificacaoTexto = [[NSMutableString alloc]init];
+    }
+    
+    if (!self.specificationDetails) {
+        self.specificationDetails = [[NSMutableArray alloc]init];
+    }
+    if(!self.specification){
+        self.specification = [[NSMutableDictionary alloc]init];
+    }
+
     
     
     
@@ -130,6 +141,23 @@
             self.imagemMiniatura = [[self.productSelected objectForKey:@"thumbnail"]objectForKey:@"url"];
             NSLog(@"%@", _imagemMiniatura);
             return self.imagemMiniatura;
+        }
+        
+        if ([caracteristica isEqualToString:@"especificacao"]) {
+            int i = -1;
+            self.specification = [self.productSelected objectForKey:@"specification"];
+            self.specificationDetails = [self.specification objectForKey:@"item"];
+            self.especificacaoTexto = @"Descrição do Produto\n";
+            for (NSMutableString *especificacaoTexto in self.specificationDetails ) {
+                i++;
+                self.especificacaoTexto = [NSMutableString stringWithFormat:@"%@%@:%@", self.especificacaoTexto, [[_specificationDetails[i] objectForKey:@"item"]objectForKey:@"label"], [[_specificationDetails[i] objectForKey:@"item"]objectForKey:@"value"]]; //objectAtIndex:i] objectForKey:@"item"]objectForKey:@"value" ]];
+            }
+            _especificacaoTexto = [_especificacaoTexto stringByReplacingOccurrencesOfString:@"("
+                                                     withString:@""];
+            _especificacaoTexto = [_especificacaoTexto stringByReplacingOccurrencesOfString:@")"
+                                                                                 withString:@""];
+            NSLog(@"^^^ %@ ^^^", _especificacaoTexto);
+            return self.especificacaoTexto;
         }
         
         

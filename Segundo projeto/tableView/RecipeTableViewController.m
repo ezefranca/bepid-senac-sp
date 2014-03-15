@@ -11,6 +11,7 @@
 #import "RecipeDetailViewController.h"
 #import "Recipe.h"
 #import "Produto.h"
+#import "Buscape.h"
 
 @interface RecipeTableViewController ()
 
@@ -100,7 +101,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
-        
+        int i = -1;
         
         /*
          NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -108,8 +109,18 @@
          
          Recipe *recipe = [recipes objectAtIndex:indexPath.row];
          */
+        /*
+        Buscape *teste = [Buscape criarClasse];
+        NSLog(@"%f", teste.valorAPAGAR);
         
-        
+        [teste buscapeJson:@"tv"];
+        [teste retornaDados:@"produtoNomeCurto"];
+        [teste retornaDados:@"precoMinimo"];
+        [teste retornaDados:@"imagemMiniatura"];
+        [teste retornaDados:@"especificacao"];
+        */
+         
+         
         NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
         
         NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
@@ -120,8 +131,17 @@
         Produto *p = [[Produto alloc]init];
         
         p.nome = [produto objectForKey:@"productname"];
-        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[[produto objectForKey:@"thumbnail"]objectForKey:@"url"  ]]];
+        
+        NSData *data = [[NSData alloc] initWithContentsOfURL:
+                        [NSURL URLWithString:[[produto objectForKey:@"thumbnail"]objectForKey:@"url"  ]]];
         p.imagem = [UIImage imageWithData:data];
+        
+        p.descricao = [[produto objectForKey:@"specification"] objectForKey:@"item"];
+        for (NSMutableString *descricao in p.descricao) {
+            i++;
+            p.description = [NSMutableString stringWithFormat:@"%@\n%@%@",p.description, [[p.descricao[i] objectForKey:@"item"]objectForKey:@"label"], [[p.descricao[i] objectForKey:@"item"]objectForKey:@"value"]];
+        }
+        
         
         destViewController.produto = p;
     }
