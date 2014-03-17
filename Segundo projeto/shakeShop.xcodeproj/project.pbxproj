@@ -350,6 +350,8 @@
 		C0997F8518CED97F00743FC0 /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0997F6E18CED97F00743FC0 /* RecipeTableCell.m */; };
 		C0997F8618CED97F00743FC0 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0997F7018CED97F00743FC0 /* RecipeTableViewController.m */; };
 		F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = F7068EC918CE59DB000EE44B /* Buscape.m */; };
+		F71673AA18D766CA00564D90 /* Frete.m in Sources */ = {isa = PBXBuildFile; fileRef = F71673A918D766CA00564D90 /* Frete.m */; };
+		F71673AC18D776A600564D90 /* correios.png in Resources */ = {isa = PBXBuildFile; fileRef = F71673AB18D776A600564D90 /* correios.png */; };
 		F7B296C218D4EEB900756CC4 /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FA18D4EEB600756CC4 /* 01-refresh.png */; };
 		F7B296C318D4EEB900756CC4 /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FB18D4EEB700756CC4 /* 02-redo.png */; };
 		F7B296C418D4EEB900756CC4 /* 03-loopback.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FC18D4EEB700756CC4 /* 03-loopback.png */; };
@@ -920,6 +922,9 @@
 		C0997F7018CED97F00743FC0 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeTableViewController.m; path = tableView/RecipeTableViewController.m; sourceTree = SOURCE_ROOT; };
 		F7068EC818CE59DB000EE44B /* Buscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buscape.h; path = ../Buscape.h; sourceTree = "<group>"; };
 		F7068EC918CE59DB000EE44B /* Buscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Buscape.m; path = ../Buscape.m; sourceTree = "<group>"; };
+		F71673A818D766CA00564D90 /* Frete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frete.h; sourceTree = SOURCE_ROOT; };
+		F71673A918D766CA00564D90 /* Frete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frete.m; sourceTree = SOURCE_ROOT; };
+		F71673AB18D776A600564D90 /* correios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correios.png; sourceTree = SOURCE_ROOT; };
 		F7B295FA18D4EEB600756CC4 /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
 		F7B295FB18D4EEB700756CC4 /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
 		F7B295FC18D4EEB700756CC4 /* 03-loopback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-loopback.png"; sourceTree = "<group>"; };
@@ -1179,10 +1184,13 @@
 		2949B6CC18CE515900D4486C /* shakeShop */ = {
 			isa = PBXGroup;
 			children = (
+				F71673AB18D776A600564D90 /* correios.png */,
 				2990366E18D25179008F4535 /* icon */,
 				C0997F5518CED97F00743FC0 /* tableView */,
 				F7068EC818CE59DB000EE44B /* Buscape.h */,
 				F7068EC918CE59DB000EE44B /* Buscape.m */,
+				F71673A818D766CA00564D90 /* Frete.h */,
+				F71673A918D766CA00564D90 /* Frete.m */,
 				253497AE18D0D39F00DBB3FC /* ProdutosBuscados.h */,
 				253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */,
 				2949B6D518CE515900D4486C /* AppDelegate.h */,
@@ -1243,6 +1251,7 @@
 		2990366E18D25179008F4535 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				C0997F5618CED97F00743FC0 /* images */,
 				F7B295FA18D4EEB600756CC4 /* 01-refresh.png */,
 				F7B295FB18D4EEB700756CC4 /* 02-redo.png */,
 				F7B295FC18D4EEB700756CC4 /* 03-loopback.png */,
@@ -1750,7 +1759,6 @@
 		C0997F5518CED97F00743FC0 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
-				C0997F5618CED97F00743FC0 /* images */,
 				C0997F6918CED97F00743FC0 /* Recipe.h */,
 				C0997F6A18CED97F00743FC0 /* Recipe.m */,
 				C0997F6B18CED97F00743FC0 /* RecipeDetailViewController.h */,
@@ -2235,6 +2243,7 @@
 				2990389618D2517A008F4535 /* stethoscope.png in Resources */,
 				F7B296C818D4EEB900756CC4 /* 07-map-marker.png in Resources */,
 				F7B296C218D4EEB900756CC4 /* 01-refresh.png in Resources */,
+				F71673AC18D776A600564D90 /* correios.png in Resources */,
 				F7B2974418D4EEB900756CC4 /* 131-tower.png in Resources */,
 				2990380718D2517A008F4535 /* factory-pollution.png in Resources */,
 				299038B518D2517A008F4535 /* vector.png in Resources */,
@@ -2414,6 +2423,7 @@
 				2949B6E318CE515900D4486C /* SecondViewController.m in Sources */,
 				C0997F8518CED97F00743FC0 /* RecipeTableCell.m in Sources */,
 				253497B018D0D39F00DBB3FC /* ProdutosBuscados.m in Sources */,
+				F71673AA18D766CA00564D90 /* Frete.m in Sources */,
 				C0997F8418CED97F00743FC0 /* RecipeDetailViewController.m in Sources */,
 				C0997F8318CED97F00743FC0 /* Recipe.m in Sources */,
 				2949B6D718CE515900D4486C /* AppDelegate.m in Sources */,

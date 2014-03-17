@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "Buscape.h"
+#import "Frete.h"
 
 @interface SecondViewController ()
 
@@ -36,5 +37,15 @@
     [teste retornaDados:@"precoMinimo"];
     [teste retornaDados:@"imagemMiniatura"];
     [teste retornaDados:@"especificacao"];
+    
+    Frete *f = [[Frete alloc]init];
+    // Peso sera calculado com base na quantidade de itens do carrinho
+    [f calculaFrete:10 noEndereco:@"06900000"];
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self resignFirstResponder];
+}
+
 @end
