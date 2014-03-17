@@ -10,7 +10,7 @@
 #import "Buscape.h" 
 #import "ProdutosBuscados.h"
 
-@interface RecipeTableViewController : UITableViewController < 78o, UISearchDisplayDelegate>
+@interface RecipeTableViewController : UITableViewController < UISearchBarDelegate, UISearchDisplayDelegate>
 {
     NSThread *background;
 }
