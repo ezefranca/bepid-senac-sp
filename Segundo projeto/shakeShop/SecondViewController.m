@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "Buscape.h"
 #import "Frete.h"
+#import "ProdutosBuscados.h"
 
 @interface SecondViewController ()
 

@@ -155,6 +155,11 @@
     [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
 }
 
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[self view] endEditing:YES];
+}
+
 -(void)buscaBackground :(NSDictionary*) dict
 {
     RecipeTableViewController *vc = [dict objectForKey:@"delegate" ];

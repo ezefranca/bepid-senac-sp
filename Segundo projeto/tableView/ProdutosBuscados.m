@@ -10,27 +10,36 @@
 
 @implementation ProdutosBuscados
 
-+(id)singletonClasse: (Buscape *) busquinha{
-    static ProdutosBuscados *buscados = nil;
-    if (!buscados) {
-        buscados = [[super allocWithZone:nil] init];
-        }
++(ProdutosBuscados *) singleProdutos
+{
+    static ProdutosBuscados *singleProdutos = nil;
     
-    for (int i = 0; i <= busquinha.productGeral.count; i++)
-        buscados[i] = busquinha.productGeral[i];
-    return buscados;
+    if(!singleProdutos)
+    {
+        singleProdutos = [[super allocWithZone:nil] init];
+    }
     
+    return singleProdutos;
 }
 
++(id) allocWithZone: (struct _NSZone *) zone
+{
+    return [self singleProdutos];
+}
 
--(id)init {
+-(id)init
+{
     self = [super init];
+    
+    if (self)
+    {
+        if (!self.produtos) {
+            
+            self.produtos = [[NSMutableArray alloc]init];
+        }
+    }
+    
     return self;
-}
-
-+(id) allocWithZone:(struct _NSZone *)zone{
-    Buscape *busquinha = [[Buscape alloc]init];
-    return [self singletonClasse:busquinha];
 }
 
 @end

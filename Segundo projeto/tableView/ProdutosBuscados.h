@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Buscape.h"
 
-@interface ProdutosBuscados : NSMutableArray
+@interface ProdutosBuscados : NSObject
 
-+(id)singletonClasse: (Buscape *) busquinha;
++(ProdutosBuscados *) singleProdutos ;
+
+@property NSMutableArray *produtos;
+@property int i;
 
 @end

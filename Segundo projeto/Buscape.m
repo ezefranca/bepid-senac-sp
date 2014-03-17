@@ -147,7 +147,8 @@
             int i = -1;
             self.specification = [self.productSelected objectForKey:@"specification"];
             self.specificationDetails = [self.specification objectForKey:@"item"];
-            self.especificacaoTexto = @"Descrição do Produto\n";
+          [self.especificacaoTexto appendString:@"Descrição do Produto\n"] ;
+            
             for (NSMutableString *especificacaoTexto in self.specificationDetails ) {
                 i++;
                 self.especificacaoTexto = [NSMutableString stringWithFormat:@"%@%@:%@", self.especificacaoTexto, [[_specificationDetails[i] objectForKey:@"item"]objectForKey:@"label"], [[_specificationDetails[i] objectForKey:@"item"]objectForKey:@"value"]]; //objectAtIndex:i] objectForKey:@"item"]objectForKey:@"value" ]];
