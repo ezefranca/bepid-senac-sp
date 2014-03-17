@@ -10,6 +10,6 @@
 
 @interface Frete : NSObject
 
--(void)calculaFrete: (NSInteger)peso noEndereco:(NSString *)cep;
+-(NSMutableDictionary *)calculaFrete: (NSInteger)peso noEndereco:(NSString *)cep;
 
 @end

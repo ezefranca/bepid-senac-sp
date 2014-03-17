@@ -7,11 +7,12 @@
 //
 
 #import "Frete.h"
+#import "SecondViewController.h"
 #define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
 @implementation Frete
 
--(void)calculaFrete: (NSInteger)peso noEndereco:(NSString *)cep{
+-(NSMutableDictionary *)calculaFrete: (NSInteger)peso noEndereco:(NSString *)cep{
     NSError *error;
     NSMutableString *url = [NSMutableString stringWithFormat:@"http://developers.agenciaideias.com.br/correios/frete/json/04696000/%@/%ld/100.0", cep, (long)peso];
     
@@ -20,15 +21,16 @@
                          [NSURL URLWithString:url]];
     
     if (!jsonFrete) {
-        return;
+        return nil;
     }
     
-    NSData *jsonFreteSerializado = [NSJSONSerialization
+    NSMutableDictionary *jsonFreteSerializado = [NSJSONSerialization
                                     JSONObjectWithData:jsonFrete
                                     options:NSJSONReadingMutableContainers
                                     error:&error];
     
     NSLog(@"%@", jsonFreteSerializado);
+    return jsonFreteSerializado;
 }
 
 @end

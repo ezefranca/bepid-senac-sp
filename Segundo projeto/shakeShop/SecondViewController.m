@@ -40,7 +40,11 @@
     
     Frete *f = [[Frete alloc]init];
     // Peso sera calculado com base na quantidade de itens do carrinho
-    [f calculaFrete:10 noEndereco:@"06900000"];
+    fretes = [f calculaFrete:10 noEndereco:@"06900000"];
+     NSString *valorPAC= [fretes objectForKey:@"pac"];
+     NSString *valorSEDEX = [fretes objectForKey:@"sedex"];
+     self.precoPac.text = [NSMutableString stringWithFormat:@"R$ %@", valorPAC];
+     self.precoSedex.text = [NSMutableString stringWithFormat:@"R$ %@", valorSEDEX];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
