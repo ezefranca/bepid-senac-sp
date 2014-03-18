@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--First View Controller - First-->
@@ -89,6 +89,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-3q-85n">
+                                <rect key="frame" x="150" y="285" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -96,6 +100,7 @@
                     <connections>
                         <outlet property="precoPac" destination="Rhh-LB-EAF" id="LYZ-oe-mUE"/>
                         <outlet property="precoSedex" destination="XwL-Mp-AbA" id="8Ni-nH-wan"/>
+                        <outlet property="spiner" destination="1kp-3q-85n" id="sHG-0J-6xZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
@@ -333,11 +338,11 @@
             </objects>
             <point key="canvasLocation" x="119" y="508"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Carrinho-->
         <scene sceneID="koS-NL-NDU">
             <objects>
                 <navigationController definesPresentationContext="YES" id="KuB-o5-6qO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IOj-K7-0H5"/>
+                    <tabBarItem key="tabBarItem" title="Carrinho" image="80-shopping-cart.png" id="IOj-K7-0H5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xde-sJ-eIZ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -353,6 +358,7 @@
     <resources>
         <image name="06-magnify.png" width="24" height="24"/>
         <image name="53-house.png" width="22" height="22"/>
+        <image name="80-shopping-cart.png" width="26" height="19"/>
         <image name="atum.jpg" width="300" height="194"/>
         <image name="box-sealed.png" width="30" height="30"/>
         <image name="correios.png" width="392" height="178"/>
@@ -363,6 +369,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MdZ-VV-uTV"/>
+        <segue reference="opa-PB-7sz"/>
     </inferredMetricsTieBreakers>
 </document>

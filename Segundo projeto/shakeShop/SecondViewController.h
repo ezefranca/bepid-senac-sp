@@ -10,9 +10,12 @@
 
 @interface SecondViewController : UIViewController{
     NSMutableDictionary *fretes;
+    IBOutlet UIActivityIndicatorView *spiner;
 }
 - (IBAction)TESTE:(id)sender;
+- (void)consultaCorreio;
 @property (strong, nonatomic) IBOutlet UILabel *precoPac;
 @property (strong, nonatomic) IBOutlet UILabel *precoSedex;
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spiner;
 
 @end

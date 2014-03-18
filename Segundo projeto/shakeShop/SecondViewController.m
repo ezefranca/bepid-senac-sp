@@ -16,10 +16,11 @@
 @end
 
 @implementation SecondViewController
-
+@synthesize spiner;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,22 +31,32 @@
 }
 
 - (IBAction)TESTE:(id)sender {
-    Buscape *teste = [Buscape criarClasse];
-    NSLog(@"%f", teste.valorAPAGAR);
+    [spiner setAlpha:1];
+    [spiner startAnimating];
+    [self performSelectorInBackground:@selector(consultaCorreio) withObject:nil];
+    //Buscape *teste = [Buscape criarClasse];
+    //NSLog(@"%f", teste.valorAPAGAR);
     
+    /*
     [teste buscapeJson:@"tv"];
     [teste retornaDados:@"produtoNomeCurto"];
     [teste retornaDados:@"precoMinimo"];
     [teste retornaDados:@"imagemMiniatura"];
     [teste retornaDados:@"especificacao"];
-    
+    */
+}
+
+- (void)consultaCorreio{
     Frete *f = [[Frete alloc]init];
     // Peso sera calculado com base na quantidade de itens do carrinho
     fretes = [f calculaFrete:10 noEndereco:@"06900000"];
-     NSString *valorPAC= [fretes objectForKey:@"pac"];
-     NSString *valorSEDEX = [fretes objectForKey:@"sedex"];
-     self.precoPac.text = [NSMutableString stringWithFormat:@"R$ %@", valorPAC];
-     self.precoSedex.text = [NSMutableString stringWithFormat:@"R$ %@", valorSEDEX];
+    NSString *valorPAC= [fretes objectForKey:@"pac"];
+    NSString *valorSEDEX = [fretes objectForKey:@"sedex"];
+    self.precoPac.text = [NSMutableString stringWithFormat:@"R$ %@", valorPAC];
+    self.precoSedex.text = [NSMutableString stringWithFormat:@"R$ %@", valorSEDEX];
+    [spiner stopAnimating];
+    [spiner setAlpha:0];
+    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
