@@ -59,9 +59,17 @@
     
 }
 
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+// Use this method also if you want to hide keyboard when user touch in background
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self resignFirstResponder];
+
 }
 
 @end

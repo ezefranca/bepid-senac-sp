@@ -62,39 +62,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-SQ-EzN">
-                                <rect key="frame" x="104" y="350" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-SQ-EzN">
+                                <rect key="frame" x="241" y="203" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Calcular Frete">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="OK">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="TESTE:" destination="QUy-BD-bpt" eventType="touchUpInside" id="kdb-Ab-jKu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correios.png" translatesAutoresizingMaskIntoConstraints="NO" id="avo-Jn-GXK">
-                                <rect key="frame" x="30" y="55" width="260" height="138"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="correios.png" translatesAutoresizingMaskIntoConstraints="NO" id="avo-Jn-GXK">
+                                <rect key="frame" x="57" y="17" width="207" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="Eeo-p5-69G"/>
+                                    <constraint firstAttribute="height" constant="99" id="W5l-vC-b4f"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhh-LB-EAF">
-                                <rect key="frame" x="207" y="196" width="83" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhh-LB-EAF">
+                                <rect key="frame" x="214" y="124" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwL-Mp-AbA">
-                                <rect key="frame" x="44" y="196" width="114" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwL-Mp-AbA">
+                                <rect key="frame" x="57" y="124" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-3q-85n">
-                                <rect key="frame" x="150" y="285" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-3q-85n">
+                                <rect key="frame" x="150" y="154" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CEP aqui" minimumFontSize="17" disabledBackground="01-refresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="cju-xp-J6g">
+                                <rect key="frame" x="57" y="203" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="XwL-Mp-AbA" secondAttribute="centerX" constant="78" id="4aS-ve-wTm"/>
+                            <constraint firstAttribute="centerY" secondItem="avo-Jn-GXK" secondAttribute="centerY" constant="223.5" id="5BA-Ol-Clh"/>
+                            <constraint firstItem="avo-Jn-GXK" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="57" id="8hg-u5-Wyt"/>
+                            <constraint firstItem="Rhh-LB-EAF" firstAttribute="top" secondItem="avo-Jn-GXK" secondAttribute="bottom" constant="14" id="CQa-0e-pjc"/>
+                            <constraint firstItem="avo-Jn-GXK" firstAttribute="top" secondItem="gMD-aP-Fq6" secondAttribute="top" constant="11" id="JxM-qW-rfk"/>
+                            <constraint firstAttribute="centerX" secondItem="e3d-SQ-EzN" secondAttribute="centerX" constant="-110.5" id="SGr-Ry-RZ9"/>
+                            <constraint firstAttribute="centerX" secondItem="1kp-3q-85n" secondAttribute="centerX" id="SuB-wZ-R1q"/>
+                            <constraint firstAttribute="centerX" secondItem="avo-Jn-GXK" secondAttribute="centerX" constant="-0.5" id="Tab-dM-BeJ"/>
+                            <constraint firstAttribute="trailing" secondItem="avo-Jn-GXK" secondAttribute="trailing" constant="56" id="YXt-q2-nfA"/>
+                            <constraint firstItem="XwL-Mp-AbA" firstAttribute="top" secondItem="avo-Jn-GXK" secondAttribute="bottom" constant="14" id="cAe-iN-nvU"/>
+                            <constraint firstAttribute="centerX" secondItem="cju-xp-J6g" secondAttribute="centerX" constant="11.5" id="ifc-ur-XK6"/>
+                            <constraint firstAttribute="centerX" secondItem="Rhh-LB-EAF" secondAttribute="centerX" constant="-79" id="rsh-bj-WwK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Frete" image="box-sealed.png" id="Z7h-1E-pvt"/>
                     <connections>
@@ -356,6 +381,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="01-refresh.png" width="24" height="26"/>
         <image name="06-magnify.png" width="24" height="24"/>
         <image name="53-house.png" width="22" height="22"/>
         <image name="80-shopping-cart.png" width="26" height="19"/>
@@ -363,6 +389,7 @@
         <image name="box-sealed.png" width="30" height="30"/>
         <image name="correios.png" width="392" height="178"/>
     </resources>
+    <color key="tintColor" red="0.19215688109397888" green="0.0078431377187371254" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
