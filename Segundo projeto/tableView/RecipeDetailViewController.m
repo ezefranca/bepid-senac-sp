@@ -51,4 +51,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"eu me moci");
+    }
+}
+
 @end
