@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--First View Controller - First-->
@@ -255,26 +255,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-cS-1Wf">
-                                <rect key="frame" x="63" y="112" width="194" height="175"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-cS-1Wf">
+                                <rect key="frame" x="10" y="89" width="300" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="9Nm-4A-mSG"/>
+                                    <constraint firstAttribute="width" constant="300" id="KO5-o6-fGB"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="product description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3pz-3c-Gt1">
-                                <rect key="frame" x="16" y="310" width="289" height="196"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="product description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3pz-3c-Gt1">
+                                <rect key="frame" x="10" y="309" width="300" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="Axz-Br-xNk"/>
+                                    <constraint firstAttribute="width" constant="300" id="oVp-lr-XBv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="coco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFK-hQ-Ehg">
-                                <rect key="frame" x="139" y="75" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5RH-cS-1Wf" firstAttribute="leading" secondItem="RyB-EE-q73" secondAttribute="leading" constant="10" id="B04-f7-gLq"/>
+                            <constraint firstAttribute="trailing" secondItem="3pz-3c-Gt1" secondAttribute="trailing" constant="10" id="ErA-3e-GWm"/>
+                            <constraint firstItem="WGJ-8y-pjC" firstAttribute="top" secondItem="3pz-3c-Gt1" secondAttribute="bottom" constant="38" id="mJw-gq-Azb"/>
+                            <constraint firstItem="5RH-cS-1Wf" firstAttribute="top" secondItem="kDT-Ye-ael" secondAttribute="bottom" constant="25" id="voL-zn-F0V"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Produto selecionado" id="VCF-2T-5dh"/>
                     <connections>
@@ -396,6 +403,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="opa-PB-7sz"/>
+        <segue reference="MdZ-VV-uTV"/>
     </inferredMetricsTieBreakers>
 </document>
