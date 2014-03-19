@@ -84,7 +84,7 @@
     cell.nameLabel.text = [produto objectForKey:@"productname"];
     //cell.thumbnailImageView.image = [UIImage imageWithData:data];
     cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemin"]];
-    cell.outra.text = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemax"]];
+    //cell.outra.text = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemax"]];
     
     
     
@@ -124,6 +124,7 @@
             p.description = [NSMutableString stringWithFormat:@"%@\n%@%@",p.description, [[p.descricao[i] objectForKey:@"item"]objectForKey:@"label"], [[p.descricao[i] objectForKey:@"item"]objectForKey:@"value"]];
         }
         
+        p.precoMin = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemin"]];
         
         destViewController.produto = p;
         

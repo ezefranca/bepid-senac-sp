@@ -14,6 +14,7 @@
 @property UIImage *imagem;
 @property NSMutableArray *descricao;
 @property NSMutableString *description;
+@property NSString *precoMin;
 
 
 @end

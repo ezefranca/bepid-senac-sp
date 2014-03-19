@@ -120,8 +120,8 @@
     
     cell.nameLabel.text = produto.nome;
     cell.thumbnailImageView.image = produto.imagem ;
-    cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  produto.description];
-    cell.outra.text = [NSString stringWithFormat:@"R$ %@" , produto.descricao];
+   // cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  produto.description];
+    cell.prepTimeLabel.text = produto.precoMin;
     
     return cell;
 
