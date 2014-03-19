@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
 #import "Produto.h"
+#import "Carrinho.h"
 
 @interface RecipeDetailViewController : UIViewController
 
@@ -16,8 +17,10 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 
-
 @property (nonatomic, strong) Recipe *recipe;
+
 @property (nonatomic, strong) Produto *produto;
+
+@property BOOL podeColocar;
 
 @end

@@ -316,9 +316,10 @@
             </objects>
             <point key="canvasLocation" x="-476" y="-253"/>
         </scene>
-        <!--Fouth View Controller - Root View Controller-->
+        <!--Fouth View Controller - Carrinho-->
         <scene sceneID="FBS-E3-Aqs">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et6-XV-lek" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="2ot-YA-Gbc" customClass="fouthViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ksS-Ox-0Jk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -368,9 +369,8 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="cpK-Dt-wjr"/>
+                    <navigationItem key="navigationItem" title="Carrinho" id="cpK-Dt-wjr"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="et6-XV-lek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119" y="508"/>
         </scene>

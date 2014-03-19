@@ -26,6 +26,7 @@
 		2949B6F818CE515900D4486C /* shakeShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2949B6F718CE515900D4486C /* shakeShopTests.m */; };
 		29537FFA18CE57AF00F537FE /* atum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29537FF918CE57AF00F537FE /* atum.jpg */; };
 		29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29537FFC18CE5F5700F537FE /* thirdViewController.m */; };
+		296C83B218DA1057002D65C3 /* Carrinho.m in Sources */ = {isa = PBXBuildFile; fileRef = 296C83B118DA1057002D65C3 /* Carrinho.m */; };
 		2978F3DF18D2466C0061841F /* Produto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978F3DE18D2466C0061841F /* Produto.m */; };
 		297BF4A618D7954C00CE4F08 /* fouthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297BF4A518D7954C00CE4F08 /* fouthViewController.m */; };
 		2990379B18D2517A008F4535 /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 2990366F18D25179008F4535 /* 3d.png */; };
@@ -593,6 +594,8 @@
 		29537FF918CE57AF00F537FE /* atum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atum.jpg; path = shakeShop/img/atum.jpg; sourceTree = SOURCE_ROOT; };
 		29537FFB18CE5F5700F537FE /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
 		29537FFC18CE5F5700F537FE /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
+		296C83B018DA1057002D65C3 /* Carrinho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carrinho.h; sourceTree = "<group>"; };
+		296C83B118DA1057002D65C3 /* Carrinho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carrinho.m; sourceTree = "<group>"; };
 		2978F3DD18D2466C0061841F /* Produto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Produto.h; sourceTree = "<group>"; };
 		2978F3DE18D2466C0061841F /* Produto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Produto.m; sourceTree = "<group>"; };
 		297BF4A418D7954C00CE4F08 /* fouthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fouthViewController.h; path = ../fouthViewController.h; sourceTree = "<group>"; };
@@ -1769,6 +1772,8 @@
 				C0997F6B18CED97F00743FC0 /* RecipeDetailViewController.h */,
 				C0997F6C18CED97F00743FC0 /* RecipeDetailViewController.m */,
 				2978F3DD18D2466C0061841F /* Produto.h */,
+				296C83B018DA1057002D65C3 /* Carrinho.h */,
+				296C83B118DA1057002D65C3 /* Carrinho.m */,
 				2978F3DE18D2466C0061841F /* Produto.m */,
 				C0997F6D18CED97F00743FC0 /* RecipeTableCell.h */,
 				C0997F6E18CED97F00743FC0 /* RecipeTableCell.m */,
@@ -2432,6 +2437,7 @@
 				C0997F8418CED97F00743FC0 /* RecipeDetailViewController.m in Sources */,
 				C0997F8318CED97F00743FC0 /* Recipe.m in Sources */,
 				2949B6D718CE515900D4486C /* AppDelegate.m in Sources */,
+				296C83B218DA1057002D65C3 /* Carrinho.m in Sources */,
 				C0997F8618CED97F00743FC0 /* RecipeTableViewController.m in Sources */,
 				F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */,
 				2949B6E018CE515900D4486C /* FirstViewController.m in Sources */,

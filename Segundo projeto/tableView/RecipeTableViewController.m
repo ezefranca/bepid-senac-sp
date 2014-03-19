@@ -126,6 +126,8 @@
         
         
         destViewController.produto = p;
+        
+        destViewController.podeColocar = YES;
     }
 }
 

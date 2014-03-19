@@ -38,8 +38,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+   // UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+   // self.navigationItem.rightBarButtonItem = addButton;
   //  self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -48,6 +48,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)viewDidAppear:(BOOL)animated
+{
+     Carrinho  *c = [[Carrinho alloc]init ];
+    
+    NSLog(@"%@", c.produtosCarrinho);
+    
+    [self.tableView reloadData];
+
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
+}
+
 
 - (void)insertNewObject:(id)sender
 {
@@ -75,16 +92,39 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    Carrinho  *c = [[Carrinho alloc]init ];
+    return c.produtosCarrinho.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomTableCell" forIndexPath:indexPath];
     
     NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [object description];
     return cell;
+     */
+
+    Carrinho  *c = [[Carrinho alloc]init ];
+    
+    static NSString *CellIdentifier = @"CustomTableCell";
+    RecipeTableCell *cell = (RecipeTableCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    if (cell == nil) {
+        cell = [[RecipeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    Produto *produto = [c.produtosCarrinho objectAtIndex:indexPath.row];
+    
+    cell.nameLabel.text = produto.nome;
+    cell.thumbnailImageView.image = produto.imagem ;
+    cell.prepTimeLabel.text =  [NSString stringWithFormat:@"R$ %@" ,  produto.description];
+    cell.outra.text = [NSString stringWithFormat:@"R$ %@" , produto.descricao];
+    
+    return cell;
+
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,7 +136,11 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        
+        Carrinho *c = [[Carrinho alloc]init];
+        
+        
+        [c.produtosCarrinho removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -123,17 +167,35 @@
 {
    
 }
- /*
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-   
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
-  
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        
+        /*
+        NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+        NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
+        NSDictionary *produto = [d objectForKey:@"product"];
+        
+        RecipeDetailViewController *destViewController = segue.destinationViewController;
+        
+        Produto *p = [[Produto alloc]init];
+        
+        p.nome = [produto objectForKey:@"productname"];
+        
+        NSData *data = [[NSData alloc] initWithContentsOfURL:
+                        [NSURL URLWithString:[[produto objectForKey:@"thumbnail"]objectForKey:@"url"  ]]];
+        p.imagem = [UIImage imageWithData:data];
+        
+        p.descricao = [[produto objectForKey:@"specification"] objectForKey:@"item"];
+        for (NSMutableString *descricao in p.descricao) {
+            i++;
+            p.description = [NSMutableString stringWithFormat:@"%@\n%@%@",p.description, [[p.descricao[i] objectForKey:@"item"]objectForKey:@"label"], [[p.descricao[i] objectForKey:@"item"]objectForKey:@"value"]];
+        }
+        */
+         RecipeDetailViewController *destViewController = segue.destinationViewController;
+        
+        destViewController.podeColocar = NO;
     }
 }
-*/
 
 @end

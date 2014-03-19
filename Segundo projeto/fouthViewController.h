@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RecipeDetailViewController.h"
+#import "RecipeTableCell.h"
+#import "Carrinho.h"
 
 @interface fouthViewController : UITableViewController
 

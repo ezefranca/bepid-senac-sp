@@ -36,6 +36,7 @@
     
     self.descriptionTextView.text = self.produto.description;
     
+    //self.podeColocar = NO;
     /*
     NSMutableString *ingredientsText = [NSMutableString string];
     for (NSString* ingredient in self.recipe.ingredients) {
@@ -55,7 +56,17 @@
 {
     if (motion == UIEventSubtypeMotionShake)
     {
-        NSLog(@"eu me moci");
+        if (self.podeColocar == YES) {
+            
+            Carrinho *c = [[Carrinho alloc]init];
+            
+            [c.produtosCarrinho addObject:self.produto];
+            
+        }
+        else
+        {
+            NSLog(@"Nao pode colocar");
+        }
     }
 }
 
