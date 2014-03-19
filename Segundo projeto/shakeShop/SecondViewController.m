@@ -20,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_precoPac setAlpha:0];
+    [_precoSedex setAlpha:0];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -49,13 +51,28 @@
 - (void)consultaCorreio{
     Frete *f = [[Frete alloc]init];
     // Peso sera calculado com base na quantidade de itens do carrinho
-    fretes = [f calculaFrete:10 noEndereco:@"06900000"];
+    NSString *cep =  [_labelCEP.text stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    
+    if(cep.length == 8){
+    
+    fretes = [f calculaFrete:10 noEndereco:cep];
     NSString *valorPAC= [fretes objectForKey:@"pac"];
     NSString *valorSEDEX = [fretes objectForKey:@"sedex"];
     self.precoPac.text = [NSMutableString stringWithFormat:@"R$ %@", valorPAC];
     self.precoSedex.text = [NSMutableString stringWithFormat:@"R$ %@", valorSEDEX];
+    [_precoPac setAlpha:1];
+    [_precoSedex setAlpha:1];
+    }
+    else{
+        UIAlertView *avisoErro = [[UIAlertView alloc]initWithTitle:@"CEP Invalido" message:@"Voce digiou um cep invalido" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [avisoErro show];
+    }
     [spiner stopAnimating];
     [spiner setAlpha:0];
+    
+    
+    
+    
     
 }
 
@@ -69,7 +86,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-
+    [[self view]endEditing:YES];
 }
 
 @end

@@ -17,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *precoPac;
 @property (strong, nonatomic) IBOutlet UILabel *precoSedex;
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spiner;
+@property (weak, nonatomic) IBOutlet UITextField *labelCEP;
 
 @end
