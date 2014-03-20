@@ -2,7 +2,7 @@
 //  CustomTableViewController.m
 //  CustomTable
 //
-//  Created by Simon on 7/12/13.
+//  Created by GABRIEL VIEIRA on 7/04/14.
 //  Copyright (c) 2013 Appcoda. All rights reserved.
 //
 
@@ -30,8 +30,6 @@
     
     background = [[NSThread alloc] init];
     
-   buscarLabel.text = @"testando";
-
 }
 
 - (void)didReceiveMemoryWarning

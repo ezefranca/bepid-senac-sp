@@ -58,6 +58,7 @@
     
     UITabBarController *tab = app.window.rootViewController ;
     tab.selectedIndex = 1;
+    NSLog(@"%@", tab.viewControllers);
     //_buscarLabel.text = @"tv";
 
 }

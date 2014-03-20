@@ -233,7 +233,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Buscar" id="azw-Ad-FyL"/>
                     <connections>
-                        <outlet property="buscarLabel" destination="wV1-Ya-x9r" id="Y7p-P3-0Q7"/>
                         <outlet property="searchDisplayController" destination="dQ4-FL-Co7" id="VAI-ep-Wf0"/>
                     </connections>
                 </tableViewController>
@@ -287,7 +286,7 @@
                                     <constraint firstAttribute="width" constant="300" id="oVp-lr-XBv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

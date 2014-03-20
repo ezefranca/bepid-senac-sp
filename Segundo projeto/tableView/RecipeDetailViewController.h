@@ -23,4 +23,6 @@
 
 @property BOOL podeColocar;
 
+- (void)unicodeConserta;
+
 @end
