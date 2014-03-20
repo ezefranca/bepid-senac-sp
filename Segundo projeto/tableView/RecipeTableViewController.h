@@ -13,7 +13,6 @@
 @interface RecipeTableViewController : UITableViewController < UISearchBarDelegate, UISearchDisplayDelegate>
 {
     NSThread *background;
-    
 }
 -(void)buscaBackground: (NSDictionary *) busca;
 
