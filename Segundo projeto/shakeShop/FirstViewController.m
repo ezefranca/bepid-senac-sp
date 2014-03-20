@@ -10,6 +10,8 @@
 #import "thirdViewController.h"
 #import "Buscape.h"
 #import "ProdutosBuscados.h"
+#import "AppDelegate.h"
+#import "RecipeDetailViewController.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -28,6 +30,9 @@
     //self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"appcoda-logo.png"]];
     
     self.title = @"ShakeShop";
+    
+    
+ //   NSLog(@"%@", )
    // Buscape *b = [[Buscape alloc]init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -47,4 +52,12 @@
 
 
 
+- (IBAction)btn:(id)sender {
+    
+    AppDelegate *app = [[UIApplication sharedApplication]delegate];
+    
+    UITabBarController *tab = app.window.rootViewController ;
+    tab.selectedIndex = 1;
+
+}
 @end

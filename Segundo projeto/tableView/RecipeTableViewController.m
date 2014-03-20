@@ -29,6 +29,9 @@
     self.b = [[Buscape alloc]init];
     
     background = [[NSThread alloc] init];
+    
+   // self.searchBar.text = @"testando"
+
 }
 
 - (void)didReceiveMemoryWarning

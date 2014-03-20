@@ -10,4 +10,5 @@
 
 
 @interface FirstViewController : UIViewController
+- (IBAction)btn:(id)sender;
 @end
