@@ -29,9 +29,12 @@
     self.b = [[Buscape alloc]init];
     
     background = [[NSThread alloc] init];
-    
-   buscarLabel.text = @"testando";
 
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -178,6 +181,7 @@
     [b retornaDados:@"precoMinimo"];
     [b retornaDados:@"imagemMiniatura"];
     [vc terminouDebaixarAsParadsDoBuscape];
+    
 }
 
 @end

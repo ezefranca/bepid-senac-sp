@@ -14,7 +14,6 @@
 {
     NSThread *background;
     
-    IBOutlet UISearchBar *buscarLabel;
 }
 -(void)buscaBackground: (NSDictionary *) busca;
 
