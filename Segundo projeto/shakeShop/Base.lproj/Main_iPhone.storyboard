@@ -233,6 +233,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Buscar" id="azw-Ad-FyL"/>
                     <connections>
+                        <outlet property="buscarLabel" destination="wV1-Ya-x9r" id="Y7p-P3-0Q7"/>
                         <outlet property="searchDisplayController" destination="dQ4-FL-Co7" id="VAI-ep-Wf0"/>
                     </connections>
                 </tableViewController>

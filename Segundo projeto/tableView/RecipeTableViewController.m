@@ -30,7 +30,7 @@
     
     background = [[NSThread alloc] init];
     
-   // self.searchBar.text = @"testando"
+   buscarLabel.text = @"testando";
 
 }
 
