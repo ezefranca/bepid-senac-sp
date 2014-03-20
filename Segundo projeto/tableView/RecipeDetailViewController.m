@@ -34,13 +34,10 @@
     self.produto.description = [self.produto.description stringByReplacingOccurrencesOfString:@"(" withString:@""];
     self.produto.description = [self.produto.description stringByReplacingOccurrencesOfString:@")" withString:@""];
     
-    NSString *corretorUTF = [self.produto.description mutableCopy];
-    CFStringRef transform = CFSTR("Any-Hex/Java");
-    CFStringTransform((__bridge CFMutableStringRef)corretorUTF, NULL, transform, YES);
-    [self unicodeConserta];
+   
+ 
    // [corretorUTF valueForKey: [NSString stringWithCString:[self.produto.description cStringUsingEncoding:NSISOLatin1StringEncoding] encoding:NSUTF8StringEncoding]];
-    NSLog(@"%@", corretorUTF);
-    self.descriptionTextView.text = corretorUTF;
+ 
     
     //self.podeColocar = NO;
     /*

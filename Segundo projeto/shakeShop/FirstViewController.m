@@ -31,7 +31,10 @@
     
     self.title = @"ShakeShop";
     
+    NSString *utf8String = @"puta que pariu";
+    NSString *correctString = [NSString stringWithCString:[utf8String cStringUsingEncoding:NSISOLatin1StringEncoding] encoding:NSUTF8StringEncoding];
     
+    NSLog(@"%@", correctString);
  //   NSLog(@"%@", )
    // Buscape *b = [[Buscape alloc]init];
 	// Do any additional setup after loading the view, typically from a nib.

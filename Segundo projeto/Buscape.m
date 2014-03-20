@@ -98,6 +98,7 @@
                                  options:NSJSONReadingMutableContainers
                                  error:&error];
     
+    
     self.productGeral = [self.jsonDadosSerializado objectForKey:@"product"];
     
     // Esse 1 tem que virar um parametro tambem
