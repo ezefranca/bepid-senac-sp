@@ -356,6 +356,7 @@
 		F71673AC18D776A600564D90 /* correios.png in Resources */ = {isa = PBXBuildFile; fileRef = F71673AB18D776A600564D90 /* correios.png */; };
 		F747209D18DC13CF00D536A4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F747209C18DC13CF00D536A4 /* MapKit.framework */; };
 		F747209F18DC13DA00D536A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F747209E18DC13DA00D536A4 /* CoreLocation.framework */; };
+		F74720A218DC689200D536A4 /* MapaEntrega.m in Sources */ = {isa = PBXBuildFile; fileRef = F74720A118DC689200D536A4 /* MapaEntrega.m */; };
 		F7B296C218D4EEB900756CC4 /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FA18D4EEB600756CC4 /* 01-refresh.png */; };
 		F7B296C318D4EEB900756CC4 /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FB18D4EEB700756CC4 /* 02-redo.png */; };
 		F7B296C418D4EEB900756CC4 /* 03-loopback.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FC18D4EEB700756CC4 /* 03-loopback.png */; };
@@ -935,6 +936,8 @@
 		F71673AB18D776A600564D90 /* correios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correios.png; sourceTree = SOURCE_ROOT; };
 		F747209C18DC13CF00D536A4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F747209E18DC13DA00D536A4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F74720A018DC689100D536A4 /* MapaEntrega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaEntrega.h; sourceTree = "<group>"; };
+		F74720A118DC689200D536A4 /* MapaEntrega.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaEntrega.m; sourceTree = "<group>"; };
 		F7B295FA18D4EEB600756CC4 /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
 		F7B295FB18D4EEB700756CC4 /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
 		F7B295FC18D4EEB700756CC4 /* 03-loopback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-loopback.png"; sourceTree = "<group>"; };
@@ -1205,6 +1208,8 @@
 				F7068EC918CE59DB000EE44B /* Buscape.m */,
 				F71673A818D766CA00564D90 /* Frete.h */,
 				F71673A918D766CA00564D90 /* Frete.m */,
+				F74720A018DC689100D536A4 /* MapaEntrega.h */,
+				F74720A118DC689200D536A4 /* MapaEntrega.m */,
 				253497AE18D0D39F00DBB3FC /* ProdutosBuscados.h */,
 				253497AF18D0D39F00DBB3FC /* ProdutosBuscados.m */,
 				297BF4A418D7954C00CE4F08 /* fouthViewController.h */,
@@ -2451,6 +2456,7 @@
 				2949B6E018CE515900D4486C /* FirstViewController.m in Sources */,
 				2978F3DF18D2466C0061841F /* Produto.m in Sources */,
 				2949B6D318CE515900D4486C /* main.m in Sources */,
+				F74720A218DC689200D536A4 /* MapaEntrega.m in Sources */,
 				29537FFE18CE5F5700F537FE /* thirdViewController.m in Sources */,
 				297BF4A618D7954C00CE4F08 /* fouthViewController.m in Sources */,
 			);

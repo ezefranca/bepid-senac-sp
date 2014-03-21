@@ -10,6 +10,7 @@
 #import "Buscape.h"
 #import "Frete.h"
 #import "ProdutosBuscados.h"
+#import "MapaEntrega.h"
 
 @interface SecondViewController ()
 
@@ -23,7 +24,6 @@
     [_precoPac setAlpha:0];
     [_precoSedex setAlpha:0];
     _labelCEP.keyboardType = UIKeyboardTypeDecimalPad;
-     [self.navigationItem.backBarButtonItem setTitle:NSLocalizedStringFromTable(@"back", @"InfoPlist", @"")];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,6 +31,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)botaoMapa:(id)sender {
+    [spiner setAlpha:1];
+    [spiner startAnimating];
+    [self performSelectorInBackground:@selector(pegaCoordenadas) withObject:nil];
+    
 }
 
 - (IBAction)TESTE:(id)sender {
@@ -71,10 +78,36 @@
     [spiner stopAnimating];
     [spiner setAlpha:0];
     
+    //http://172.246.16.27/web_location.php?cep=04784-280
     
+}
+
+- (void)pegaCoordenadas{
+    MapaEntrega *m = [[MapaEntrega alloc]init];
     
+    NSString *cep =  [_labelCEP.text stringByReplacingOccurrencesOfString:@"-" withString:@""];
     
+    if(cep.length == 8){
+        
+        rotas = [m calculaRota:cep];
+        NSString *latitude = [rotas objectForKey:@"latitude"];
+        NSString *longitude = [rotas objectForKey:@"longitude"];
+        destinoEntrega.latitude = [latitude doubleValue];
+        destinoEntrega.longitude = [longitude doubleValue];
+
+    }
+    else{
+        UIAlertView *avisoErro = [[UIAlertView alloc]initWithTitle:@"CEP Invalido" message:@"Voce digiou um cep invalido" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [avisoErro show];
+    }
+    [spiner stopAnimating];
+    [spiner setAlpha:0];
     
+    MKPointAnnotation *ponto = [[MKPointAnnotation alloc]init];
+    ponto.coordinate = destinoEntrega;
+    [self.map addAnnotation:ponto];
+    
+
 }
 
 
