@@ -154,10 +154,10 @@
                 i++;
                 self.especificacaoTexto = [NSMutableString stringWithFormat:@"%@%@:%@", self.especificacaoTexto, [[_specificationDetails[i] objectForKey:@"item"]objectForKey:@"label"], [[_specificationDetails[i] objectForKey:@"item"]objectForKey:@"value"]]; //objectAtIndex:i] objectForKey:@"item"]objectForKey:@"value" ]];
             }
-            _especificacaoTexto = [_especificacaoTexto stringByReplacingOccurrencesOfString:@"("
-                                                     withString:@""];
-            _especificacaoTexto = [_especificacaoTexto stringByReplacingOccurrencesOfString:@")"
-                                                                                 withString:@""];
+            [_especificacaoTexto appendString:[_especificacaoTexto stringByReplacingOccurrencesOfString:@"("
+                                                     withString:@""]];
+            [_especificacaoTexto appendString:[_especificacaoTexto stringByReplacingOccurrencesOfString:@")"
+                                                     withString:@""]];
             NSLog(@"^^^ %@ ^^^", _especificacaoTexto);
             return self.especificacaoTexto;
         }

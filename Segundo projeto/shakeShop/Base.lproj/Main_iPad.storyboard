@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="atum.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t5P-MA-NTS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atum.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t5P-MA-NTS">
                                 <rect key="frame" x="239" y="136" width="300" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -37,6 +37,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="t5P-MA-NTS" firstAttribute="top" secondItem="y1s-10-46f" secondAttribute="bottom" constant="116" id="83d-Gd-9Sg"/>
                             <constraint firstAttribute="centerX" secondItem="agq-bt-c7k" secondAttribute="centerX" constant="-5.5" id="R4G-NN-fGB"/>
                             <constraint firstItem="y1s-10-46f" firstAttribute="top" secondItem="fmz-zE-djK" secondAttribute="bottom" constant="68" id="aqU-FI-ZbZ"/>
                             <constraint firstItem="agq-bt-c7k" firstAttribute="leading" secondItem="t5P-MA-NTS" secondAttribute="leading" constant="106" id="k9g-5s-7w9"/>
