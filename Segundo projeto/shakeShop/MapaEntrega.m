@@ -11,6 +11,7 @@
 @implementation MapaEntrega
 
 -(NSMutableDictionary *)calculaRota: (NSString *)cep{
+    NSLog(@"%@", cep);
     NSError *error;
     NSMutableString *url = [NSMutableString stringWithFormat:@"http://172.246.16.27/web_location.php?cep=%@", cep];
     

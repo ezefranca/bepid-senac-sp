@@ -14,6 +14,7 @@
     NSMutableDictionary *rotas;
     IBOutlet UIActivityIndicatorView *spiner;
     CLLocationCoordinate2D destinoEntrega;
+    MKPointAnnotation *ponto;
 }
 - (IBAction)botaoMapa:(id)sender;
 - (IBAction)TESTE:(id)sender;

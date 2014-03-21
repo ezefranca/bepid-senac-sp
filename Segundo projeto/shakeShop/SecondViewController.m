@@ -36,8 +36,8 @@
 - (IBAction)botaoMapa:(id)sender {
     [spiner setAlpha:1];
     [spiner startAnimating];
-    [self performSelectorInBackground:@selector(pegaCoordenadas) withObject:nil];
-    
+    [self pegaCoordenadas];
+    [self.map addAnnotation:ponto];
 }
 
 - (IBAction)TESTE:(id)sender {
@@ -85,9 +85,7 @@
 - (void)pegaCoordenadas{
     MapaEntrega *m = [[MapaEntrega alloc]init];
     
-    NSString *cep =  [_labelCEP.text stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    
-    if(cep.length == 8){
+    NSString *cep = _labelCEP.text;
         
         rotas = [m calculaRota:cep];
         NSString *latitude = [rotas objectForKey:@"latitude"];
@@ -95,19 +93,12 @@
         destinoEntrega.latitude = [latitude doubleValue];
         destinoEntrega.longitude = [longitude doubleValue];
 
-    }
-    else{
-        UIAlertView *avisoErro = [[UIAlertView alloc]initWithTitle:@"CEP Invalido" message:@"Voce digiou um cep invalido" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [avisoErro show];
-    }
     [spiner stopAnimating];
     [spiner setAlpha:0];
     
-    MKPointAnnotation *ponto = [[MKPointAnnotation alloc]init];
+    ponto = [[MKPointAnnotation alloc]init];
     ponto.coordinate = destinoEntrega;
-    [self.map addAnnotation:ponto];
     
-
 }
 
 
