@@ -329,6 +329,7 @@
 		299038C418D2517A008F4535 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2990379818D2517A008F4535 /* woman.png */; };
 		299038C518D2517A008F4535 /* wooden-picket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2990379918D2517A008F4535 /* wooden-picket.png */; };
 		299038C618D2517A008F4535 /* write.png in Resources */ = {isa = PBXBuildFile; fileRef = 2990379A18D2517A008F4535 /* write.png */; };
+		29CCEBF818DCABAE002E6FBC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEBF718DCABAE002E6FBC /* back.png */; };
 		C0928FBE18DC9C8B00CF5306 /* shake-description-image.png in Resources */ = {isa = PBXBuildFile; fileRef = C0928FBD18DC9C8B00CF5306 /* shake-description-image.png */; };
 		C0997F7118CED97F00743FC0 /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0997F5718CED97F00743FC0 /* angry_birds_cake.jpg */; };
 		C0997F7218CED97F00743FC0 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0997F5818CED97F00743FC0 /* creme_brelee.jpg */; };
@@ -904,6 +905,7 @@
 		2990379818D2517A008F4535 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
 		2990379918D2517A008F4535 /* wooden-picket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wooden-picket.png"; sourceTree = "<group>"; };
 		2990379A18D2517A008F4535 /* write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = write.png; sourceTree = "<group>"; };
+		29CCEBF718DCABAE002E6FBC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../back.png; sourceTree = "<group>"; };
 		C0928FBD18DC9C8B00CF5306 /* shake-description-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shake-description-image.png"; sourceTree = SOURCE_ROOT; };
 		C0997F5718CED97F00743FC0 /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = angry_birds_cake.jpg; path = tableView/images/angry_birds_cake.jpg; sourceTree = SOURCE_ROOT; };
 		C0997F5818CED97F00743FC0 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = tableView/images/creme_brelee.jpg; sourceTree = SOURCE_ROOT; };
@@ -1786,6 +1788,7 @@
 				C0997F6918CED97F00743FC0 /* Recipe.h */,
 				C0997F6A18CED97F00743FC0 /* Recipe.m */,
 				C0997F6B18CED97F00743FC0 /* RecipeDetailViewController.h */,
+				29CCEBF718DCABAE002E6FBC /* back.png */,
 				C0997F6C18CED97F00743FC0 /* RecipeDetailViewController.m */,
 				2978F3DD18D2466C0061841F /* Produto.h */,
 				296C83B018DA1057002D65C3 /* Carrinho.h */,
@@ -2060,6 +2063,7 @@
 				2990380918D2517A008F4535 /* file.png in Resources */,
 				F7B2977618D4EEB900756CC4 /* 181-hammer.png in Resources */,
 				299038A518D2517A008F4535 /* text-list.png in Resources */,
+				29CCEBF818DCABAE002E6FBC /* back.png in Resources */,
 				F7B2970818D4EEB900756CC4 /* 71-compass.png in Resources */,
 				2990388818D2517A008F4535 /* smiley-beast.png in Resources */,
 				F7B2973318D4EEB900756CC4 /* 114-balloon.png in Resources */,
