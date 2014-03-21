@@ -23,6 +23,7 @@
     [_precoPac setAlpha:0];
     [_precoSedex setAlpha:0];
     _labelCEP.keyboardType = UIKeyboardTypeDecimalPad;
+     [self.navigationItem.backBarButtonItem setTitle:NSLocalizedStringFromTable(@"back", @"InfoPlist", @"")];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
