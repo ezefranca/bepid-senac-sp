@@ -11,7 +11,9 @@
 #import "Produto.h"
 #import "Carrinho.h"
 
-@interface RecipeDetailViewController : UIViewController
+@interface RecipeDetailViewController : UIViewController{
+    NSString *arrumado;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
 

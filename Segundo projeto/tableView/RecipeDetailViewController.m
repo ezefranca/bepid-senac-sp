@@ -34,8 +34,14 @@
     [self.produto.description appendString:[self.produto.description stringByReplacingOccurrencesOfString:@"(" withString:@""]];
     [self.produto.description appendString:[self.produto.description stringByReplacingOccurrencesOfString:@")" withString:@""]];
     
-   
-  //self.descriptionTextView.text = @"testao";
+    [self.produto.description appendString:[self.produto.description stringByReplacingOccurrencesOfString:@"(null)" withString:@"--------"]];
+    
+    arrumado = [NSString stringWithFormat:@"Descricão do Produto \n %@", self.produto.description];
+    
+    
+    
+    self.descriptionTextView.text = arrumado;
+   //self.descriptionTextView.text = self.produto.description;
    // [corretorUTF valueForKey: [NSString stringWithCString:[self.produto.description cStringUsingEncoding:NSISOLatin1StringEncoding] encoding:NSUTF8StringEncoding]];
  
     
