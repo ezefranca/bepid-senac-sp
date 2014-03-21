@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="38E478CD-1B2F-47B7-B05D-FCD2418BC98E" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-Xe-bmP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="8C2455AC-BD9B-49CF-9FF3-0BCAD40A3E13" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-Xe-bmP">
                                 <rect key="frame" x="15" y="136" width="300" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -123,8 +123,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-3q-85n">
-                                <rect key="frame" x="150" y="154" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-3q-85n">
+                                <rect key="frame" x="150" y="183" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CEP aqui" minimumFontSize="17" disabledBackground="01-refresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="cju-xp-J6g">
@@ -133,19 +133,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-0N-6su">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-0N-6su">
+                                <rect key="frame" x="20" y="224" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="map-pin.png"/>
                                 <connections>
                                     <action selector="botaoMapa:" destination="QUy-BD-bpt" eventType="touchUpInside" id="0Qu-tZ-Jyu"/>
                                     <segue destination="rub-f9-qP6" kind="push" id="x4S-5Y-xQC"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="XwL-Mp-AbA" secondAttribute="centerX" constant="78" id="4aS-ve-wTm"/>
                             <constraint firstItem="Rhh-LB-EAF" firstAttribute="top" secondItem="avo-Jn-GXK" secondAttribute="bottom" constant="14" id="CQa-0e-pjc"/>
@@ -154,6 +153,7 @@
                             <constraint firstAttribute="centerX" secondItem="avo-Jn-GXK" secondAttribute="centerX" constant="-0.5" id="Tab-dM-BeJ"/>
                             <constraint firstAttribute="trailing" secondItem="avo-Jn-GXK" secondAttribute="trailing" constant="56" id="YXt-q2-nfA"/>
                             <constraint firstItem="XwL-Mp-AbA" firstAttribute="top" secondItem="avo-Jn-GXK" secondAttribute="bottom" constant="14" id="cAe-iN-nvU"/>
+                            <constraint firstItem="cju-xp-J6g" firstAttribute="leading" secondItem="H0o-0N-6su" secondAttribute="trailing" constant="13" id="fj3-Kc-Qku"/>
                             <constraint firstAttribute="centerX" secondItem="cju-xp-J6g" secondAttribute="centerX" constant="11.5" id="ifc-ur-XK6"/>
                             <constraint firstItem="avo-Jn-GXK" firstAttribute="top" secondItem="KcB-Px-PBn" secondAttribute="bottom" constant="5" id="q2d-oJ-Nur"/>
                             <constraint firstAttribute="centerX" secondItem="Rhh-LB-EAF" secondAttribute="centerX" constant="-79" id="rsh-bj-WwK"/>
@@ -465,7 +465,9 @@
     <resources>
         <image name="01-refresh.png" width="24" height="26"/>
         <image name="06-magnify.png" width="24" height="24"/>
-        <image name="38E478CD-1B2F-47B7-B05D-FCD2418BC98E" width="300" height="194">
+        <image name="53-house.png" width="22" height="22"/>
+        <image name="80-shopping-cart.png" width="26" height="19"/>
+        <image name="8C2455AC-BD9B-49CF-9FF3-0BCAD40A3E13" width="300" height="194">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
@@ -3447,10 +3449,9 @@ AAK4YwACuGoAArhyAAK4fwACuIQAAriGAAK4iAACuI0AAriVAAK4mAACuJ0AArilAAK4qAACuLoAAri9
 AAK4wgAAAAAAAAQBAAAAAAAAAD8AAAAAAAAAAAAAAAAAArjEA
 </mutableData>
         </image>
-        <image name="53-house.png" width="22" height="22"/>
-        <image name="80-shopping-cart.png" width="26" height="19"/>
         <image name="box-sealed.png" width="30" height="30"/>
         <image name="correios.png" width="392" height="178"/>
+        <image name="map-pin.png" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="0.19215688109397888" green="0.0078431377187371254" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
