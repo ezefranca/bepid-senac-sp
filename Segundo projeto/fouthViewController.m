@@ -28,13 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-     [_objects addObject:[NSDate date]];
-    
-    NSLog(@"%@", _objects);
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
@@ -51,9 +44,9 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-     Carrinho  *c = [[Carrinho alloc]init ];
+   //  Carrinho  *c = [[Carrinho alloc]init ];
     
-    NSLog(@"%@", c.produtosCarrinho);
+   // NSLog(@"%@", c.produtosCarrinho);
     
     [self.tableView reloadData];
 
@@ -168,18 +161,21 @@
    
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail2"]) {
         
-        /*
-        NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-        NSMutableDictionary *d = [self.b.productGeral objectAtIndex:indexPath.row];
-        NSDictionary *produto = [d objectForKey:@"product"];
+        int i = -1; //para varrer o objeto a partir do indice 0;
+        
+        Carrinho *c = [[Carrinho alloc]init];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Produto *d = [c.produtosCarrinho objectAtIndex:indexPath.row];
+        //NSDictionary *produto = [d objectForKey:@"product"];
         
         RecipeDetailViewController *destViewController = segue.destinationViewController;
-        
-        Produto *p = [[Produto alloc]init];
-        
+       
+        /*
         p.nome = [produto objectForKey:@"productname"];
         
         NSData *data = [[NSData alloc] initWithContentsOfURL:
@@ -191,11 +187,35 @@
             i++;
             p.description = [NSMutableString stringWithFormat:@"%@\n%@%@",p.description, [[p.descricao[i] objectForKey:@"item"]objectForKey:@"label"], [[p.descricao[i] objectForKey:@"item"]objectForKey:@"value"]];
         }
+        
+        p.precoMin = [NSString stringWithFormat:@"R$ %@" ,  [produto objectForKey:@"pricemin"]];
         */
-         RecipeDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.produto = d;
         
         destViewController.podeColocar = NO;
+        
+        NSLog(@"preapra");
     }
 }
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        UIAlertView *u = [[UIAlertView alloc]initWithTitle:@"Shake Shop" message:@"Parabens Sua compra foi finalizada com sucesso" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [u show];
+        
+        Carrinho *c = [[Carrinho alloc]init]    ;
+        
+        c.produtosCarrinho = [[NSMutableArray alloc]init];
+        
+        [self.tableView reloadData] ;
+        
+        
+    }
+}
+
+
 
 @end

@@ -130,6 +130,8 @@
         destViewController.produto = p;
         
         destViewController.podeColocar = YES;
+        
+        NSLog(@"preapra");
     }
 }
 

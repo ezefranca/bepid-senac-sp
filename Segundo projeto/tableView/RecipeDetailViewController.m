@@ -35,7 +35,7 @@
     [self.produto.description appendString:[self.produto.description stringByReplacingOccurrencesOfString:@")" withString:@""]];
     
    
- 
+  //self.descriptionTextView.text = @"testao";
    // [corretorUTF valueForKey: [NSString stringWithCString:[self.produto.description cStringUsingEncoding:NSISOLatin1StringEncoding] encoding:NSUTF8StringEncoding]];
  
     
@@ -68,11 +68,12 @@
         }
         else
         {
-            NSLog(@"Nao pode colocar");
+            NSLog(@"Compra finalizada");
         }
     }
 }
 
+/*
 - (void)unicodeConserta{
 
     NSInteger indice = 0;
@@ -187,5 +188,6 @@
      [self.produto.description stringByReplacingOccurrencesOfString:[unicodeMaiusculo objectAtIndex:indice] withString:[codificado objectAtIndex:indice] ];
     }
 }
-
+*/
+ 
 @end
