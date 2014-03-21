@@ -22,7 +22,7 @@
     [super viewDidLoad];
     [_precoPac setAlpha:0];
     [_precoSedex setAlpha:0];
-    
+    _labelCEP.keyboardType = UIKeyboardTypeDecimalPad;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

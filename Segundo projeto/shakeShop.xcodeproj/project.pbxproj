@@ -354,6 +354,8 @@
 		F7068ECA18CE59DB000EE44B /* Buscape.m in Sources */ = {isa = PBXBuildFile; fileRef = F7068EC918CE59DB000EE44B /* Buscape.m */; };
 		F71673AA18D766CA00564D90 /* Frete.m in Sources */ = {isa = PBXBuildFile; fileRef = F71673A918D766CA00564D90 /* Frete.m */; };
 		F71673AC18D776A600564D90 /* correios.png in Resources */ = {isa = PBXBuildFile; fileRef = F71673AB18D776A600564D90 /* correios.png */; };
+		F747209D18DC13CF00D536A4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F747209C18DC13CF00D536A4 /* MapKit.framework */; };
+		F747209F18DC13DA00D536A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F747209E18DC13DA00D536A4 /* CoreLocation.framework */; };
 		F7B296C218D4EEB900756CC4 /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FA18D4EEB600756CC4 /* 01-refresh.png */; };
 		F7B296C318D4EEB900756CC4 /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FB18D4EEB700756CC4 /* 02-redo.png */; };
 		F7B296C418D4EEB900756CC4 /* 03-loopback.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B295FC18D4EEB700756CC4 /* 03-loopback.png */; };
@@ -931,6 +933,8 @@
 		F71673A818D766CA00564D90 /* Frete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frete.h; sourceTree = SOURCE_ROOT; };
 		F71673A918D766CA00564D90 /* Frete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frete.m; sourceTree = SOURCE_ROOT; };
 		F71673AB18D776A600564D90 /* correios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correios.png; sourceTree = SOURCE_ROOT; };
+		F747209C18DC13CF00D536A4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F747209E18DC13DA00D536A4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F7B295FA18D4EEB600756CC4 /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
 		F7B295FB18D4EEB700756CC4 /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
 		F7B295FC18D4EEB700756CC4 /* 03-loopback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-loopback.png"; sourceTree = "<group>"; };
@@ -1138,6 +1142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F747209F18DC13DA00D536A4 /* CoreLocation.framework in Frameworks */,
+				F747209D18DC13CF00D536A4 /* MapKit.framework in Frameworks */,
 				2949B6C918CE515900D4486C /* CoreGraphics.framework in Frameworks */,
 				2949B6CB18CE515900D4486C /* UIKit.framework in Frameworks */,
 				2949B6C718CE515900D4486C /* Foundation.framework in Frameworks */,
@@ -1179,6 +1185,8 @@
 		2949B6C518CE515900D4486C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F747209E18DC13DA00D536A4 /* CoreLocation.framework */,
+				F747209C18DC13CF00D536A4 /* MapKit.framework */,
 				2949B6C618CE515900D4486C /* Foundation.framework */,
 				2949B6C818CE515900D4486C /* CoreGraphics.framework */,
 				2949B6CA18CE515900D4486C /* UIKit.framework */,

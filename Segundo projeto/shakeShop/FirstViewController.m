@@ -27,7 +27,7 @@
     
     // Com o codigo abaixo vc pode colocar uma imagem no topo igual o app da Amazon
     
-    //self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"appcoda-logo.png"]];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"correios.png"]];
     
     self.title = @"ShakeShop";
     
