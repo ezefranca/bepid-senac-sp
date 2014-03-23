@@ -2,19 +2,26 @@ bepid-senac-sp
 ==============
 [![Bepid - Senac](https://raw.github.com/ezefranca/bepid-senac-sp/master/Segundo%20projeto/logo.png)](https://github.com/ezefranca/bepid-senac-sp) 
 
-
 Projects developed in Bepid - (Brazilian Education Program for iOS Development) from second stage in SENAC-SP
+
+## Projects
+
+Week 1   - [(Cade Meu iCEgurte)](https://github.com/ezefranca/bepid-senac-sp/tree/master/Primeiro%20projeto) 
+
+Week 2-3 - [(ShakeShop)](https://github.com/ezefranca/bepid-senac-sp/tree/master/Segundo%20projeto)
+
+Week 4-5 - [()]
 
 ## Projects List
 
 <table>
   <tr>
   <th></th>
-    <th>Semana 1</th>
-    <th>Semana 3</th>
-    <th>Semana 5</th>
-    <th>Semana 7</th>
-    <th>Semana 9</th>
+    <th>Week 1</th>
+    <th>Week 3</th>
+    <th>Week 5</th>
+    <th>Week 7</th>
+    <th>Week 9</th>
   </tr>
   
   <tr>
@@ -68,7 +75,7 @@ Projects developed in Bepid - (Brazilian Education Program for iOS Development) 
   <tr>
     <th>Mapkit/ CoreLocation</th>
     <td>&#x2713;</td>
-    <td></td>
+    <td>&#x2713;</td>
     <td></td>
     <td></td>
     <td></td>
