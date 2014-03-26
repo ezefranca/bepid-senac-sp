@@ -12,4 +12,7 @@
 @interface ViewController : UIViewController
 <RNFrostedSidebarDelegate>
 
+
+-(void)abrirMenu;
+
 @end

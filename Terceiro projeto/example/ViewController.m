@@ -13,6 +13,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
+
 @end
 
 @implementation ViewController
@@ -21,9 +22,15 @@
     [super viewDidLoad];
     
     self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
+    
+    UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
+    [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
+    [self.view addGestureRecognizer:gestoPorra];
 }
 
-- (IBAction)onBurger:(id)sender {
+
+-(void)abrirMenu
+{
     NSArray *images = @[
                         [UIImage imageNamed:@"home"],
                         [UIImage imageNamed:@"perfil"],
@@ -40,10 +47,16 @@
                         [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1]];
     
     RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
-//    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images];
+    //    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images];
     callout.delegate = self;
-//    callout.showFromRight = YES;
+    //    callout.showFromRight = YES;
     [callout show];
+
+
+}
+
+- (IBAction)onBurger:(id)sender {
+    [self abrirMenu];
 }
 
 #pragma mark - RNFrostedSidebarDelegate
