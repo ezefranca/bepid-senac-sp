@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SensoresViewController : UITableViewController
+@interface SensoresViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

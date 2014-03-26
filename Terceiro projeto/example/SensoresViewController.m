@@ -13,6 +13,9 @@
 @end
 
 @implementation SensoresViewController
+{
+    NSArray *opcoesMenu;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,8 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    opcoesMenu = [NSArray arrayWithObjects:@"Temperatura", @"Umidade", @"Luminosidade", @"Ruido", @"Tremor", @"Inclinacao", @"Chama", @"Presenca" , nil];
     self.title = @"Sensores";
+    self.tableView.delegate = self;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,30 +50,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [opcoesMenu count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    // Configure the cell...
+    cell.textLabel.text = [opcoesMenu objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:@"lampada"];
+
     
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.
