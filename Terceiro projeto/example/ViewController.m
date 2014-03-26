@@ -55,7 +55,7 @@
     if (index == 1) {
         tempViewController *t = [[tempViewController alloc]initWithNibName:@"tempViewController" bundle:nil];
         
-        [self presentModalViewController:t animated:NO];
+        [self presentViewController:t animated:NO completion:^{ NSLog(@"troquei"); }];
     }
     
     if (index == 2) {
