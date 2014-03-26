@@ -24,11 +24,11 @@
 
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"gear"],
-                        [UIImage imageNamed:@"globe"],
-                        [UIImage imageNamed:@"profile"],
-                        [UIImage imageNamed:@"star"],
-                        [UIImage imageNamed:@"gear"]];
+                        [UIImage imageNamed:@"home"],
+                        [UIImage imageNamed:@"perfil"],
+                        [UIImage imageNamed:@"sensores"],
+                        [UIImage imageNamed:@"controle"],
+                        [UIImage imageNamed:@"configuracoes"]];
     
     
     NSArray *colors = @[

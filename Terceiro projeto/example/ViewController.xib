@@ -77,7 +77,7 @@
                     <rect key="frame" x="20" y="239" width="64" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P1-Lighticons-full-197.png" id="Ic3-IB-W93">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ic3-IB-W93">
                     <rect key="frame" x="169" y="239" width="64" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -88,9 +88,6 @@
         </view>
     </objects>
     <resources>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
         <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
         <image name="burger.png" width="19" height="17"/>
         <image name="tum.png" width="375" height="360"/>
