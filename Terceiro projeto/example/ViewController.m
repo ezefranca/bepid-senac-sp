@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "tempViewController.h"
+#import "SensoresViewController.h"
 #import "PNChart.h"
 
 @interface ViewController ()
@@ -56,11 +57,11 @@
         
         [self presentModalViewController:t animated:NO];
     }
-    /*
-    if (index == 3) {
-        [sidebar dismissAnimated:YES completion:nil];
+    
+    if (index == 2) {
+        SensoresViewController *s = [[SensoresViewController alloc]initWithNibName:@"SensoresViewController" bundle:nil];
+        [self presentViewController:s animated:NO completion:nil];
     }
-     */
 }
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {

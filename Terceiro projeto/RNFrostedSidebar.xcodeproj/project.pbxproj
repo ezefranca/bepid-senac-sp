@@ -2141,6 +2141,8 @@
 		25B25C3918E35B1300348A04 /* P2-Lighticons-line-354.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B2511A18E35B1200348A04 /* P2-Lighticons-line-354.png */; };
 		25B25C3A18E35B1300348A04 /* P2-Lighticons-line-355.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B2511B18E35B1200348A04 /* P2-Lighticons-line-355.png */; };
 		25B25C3B18E35B1300348A04 /* open.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25B2511C18E35B1200348A04 /* open.gif */; };
+		25B25C3F18E3651400348A04 /* SensoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B25C3D18E3651400348A04 /* SensoresViewController.m */; };
+		25B25C4018E3651400348A04 /* SensoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B25C3E18E3651400348A04 /* SensoresViewController.xib */; };
 		29B9C23818E2150A00B68933 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9C22718E2150A00B68933 /* PNBar.m */; };
 		29B9C23918E2150A00B68933 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9C22918E2150A00B68933 /* PNBarChart.m */; };
 		29B9C23A18E2150A00B68933 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9C22D18E2150A00B68933 /* PNChartLabel.m */; };
@@ -4317,6 +4319,9 @@
 		25B2511A18E35B1200348A04 /* P2-Lighticons-line-354.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "P2-Lighticons-line-354.png"; sourceTree = "<group>"; };
 		25B2511B18E35B1200348A04 /* P2-Lighticons-line-355.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "P2-Lighticons-line-355.png"; sourceTree = "<group>"; };
 		25B2511C18E35B1200348A04 /* open.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = open.gif; sourceTree = "<group>"; };
+		25B25C3C18E3651400348A04 /* SensoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensoresViewController.h; path = example/SensoresViewController.h; sourceTree = "<group>"; };
+		25B25C3D18E3651400348A04 /* SensoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensoresViewController.m; path = example/SensoresViewController.m; sourceTree = "<group>"; };
+		25B25C3E18E3651400348A04 /* SensoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SensoresViewController.xib; path = example/SensoresViewController.xib; sourceTree = "<group>"; };
 		29B9C22618E2150A00B68933 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
 		29B9C22718E2150A00B68933 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
 		29B9C22818E2150A00B68933 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
@@ -6670,6 +6675,9 @@
 		8646015417BAF99800FCE7F4 = {
 			isa = PBXGroup;
 			children = (
+				25B25C3C18E3651400348A04 /* SensoresViewController.h */,
+				25B25C3D18E3651400348A04 /* SensoresViewController.m */,
+				25B25C3E18E3651400348A04 /* SensoresViewController.xib */,
 				25B245F218E35B0200348A04 /* images */,
 				29B9C24018E2176600B68933 /* UICountingLabel.m */,
 				29B9C22518E2150A00B68933 /* PNChart */,
@@ -7313,6 +7321,7 @@
 				25B258DE18E35B1200348A04 /* P2-Lighticons-full-204.png in Resources */,
 				25B251ED18E35B1200348A04 /* P1-Lighticons-full-207.svg in Resources */,
 				25B252DE18E35B1200348A04 /* P1-Lighticons-full-092.png in Resources */,
+				25B25C4018E3651400348A04 /* SensoresViewController.xib in Resources */,
 				25B253C018E35B1200348A04 /* P1-Lighticons-full-318.png in Resources */,
 				25B255AD18E35B1200348A04 /* P1-Lighticons-line-099.png in Resources */,
 				25B2589918E35B1200348A04 /* P2-Lighticons-full-135.png in Resources */,
@@ -8922,6 +8931,7 @@
 				29CD2F1918E2023300579A2A /* tempViewController.m in Sources */,
 				29B9C23F18E2150A00B68933 /* PNLineChartDataItem.m in Sources */,
 				29B9C23B18E2150A00B68933 /* PNCircleChart.m in Sources */,
+				25B25C3F18E3651400348A04 /* SensoresViewController.m in Sources */,
 				29B9C23A18E2150A00B68933 /* PNChartLabel.m in Sources */,
 				29B9C23D18E2150A00B68933 /* PNLineChart.m in Sources */,
 				29B9C23918E2150A00B68933 /* PNBarChart.m in Sources */,
