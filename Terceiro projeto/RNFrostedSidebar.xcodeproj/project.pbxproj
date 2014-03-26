@@ -2143,6 +2143,7 @@
 		25B25C3B18E35B1300348A04 /* open.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25B2511C18E35B1200348A04 /* open.gif */; };
 		25B25C3F18E3651400348A04 /* SensoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B25C3D18E3651400348A04 /* SensoresViewController.m */; };
 		25B25C4018E3651400348A04 /* SensoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B25C3E18E3651400348A04 /* SensoresViewController.xib */; };
+		25B25C4218E3717900348A04 /* HeaderSensor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B25C4118E3717900348A04 /* HeaderSensor.xib */; };
 		29B9C23818E2150A00B68933 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9C22718E2150A00B68933 /* PNBar.m */; };
 		29B9C23918E2150A00B68933 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9C22918E2150A00B68933 /* PNBarChart.m */; };
 		29B9C23A18E2150A00B68933 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9C22D18E2150A00B68933 /* PNChartLabel.m */; };
@@ -4322,6 +4323,7 @@
 		25B25C3C18E3651400348A04 /* SensoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensoresViewController.h; path = example/SensoresViewController.h; sourceTree = "<group>"; };
 		25B25C3D18E3651400348A04 /* SensoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensoresViewController.m; path = example/SensoresViewController.m; sourceTree = "<group>"; };
 		25B25C3E18E3651400348A04 /* SensoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SensoresViewController.xib; path = example/SensoresViewController.xib; sourceTree = "<group>"; };
+		25B25C4118E3717900348A04 /* HeaderSensor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderSensor.xib; sourceTree = "<group>"; };
 		29B9C22618E2150A00B68933 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
 		29B9C22718E2150A00B68933 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
 		29B9C22818E2150A00B68933 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
@@ -6678,6 +6680,7 @@
 				25B25C3C18E3651400348A04 /* SensoresViewController.h */,
 				25B25C3D18E3651400348A04 /* SensoresViewController.m */,
 				25B25C3E18E3651400348A04 /* SensoresViewController.xib */,
+				25B25C4118E3717900348A04 /* HeaderSensor.xib */,
 				25B245F218E35B0200348A04 /* images */,
 				29B9C24018E2176600B68933 /* UICountingLabel.m */,
 				29B9C22518E2150A00B68933 /* PNChart */,
@@ -7070,6 +7073,7 @@
 				25B25BA218E35B1300348A04 /* P2-Lighticons-line-203.png in Resources */,
 				25B2570518E35B1200348A04 /* P2-Lighticons-full-085.svg in Resources */,
 				25B2523818E35B1200348A04 /* P1-Lighticons-full-282.svg in Resources */,
+				25B25C4218E3717900348A04 /* HeaderSensor.xib in Resources */,
 				25B25BE518E35B1300348A04 /* P2-Lighticons-line-270.png in Resources */,
 				25B2578B18E35B1200348A04 /* P2-Lighticons-full-219.svg in Resources */,
 				25B2521C18E35B1200348A04 /* P1-Lighticons-full-254.svg in Resources */,
