@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController
 <RNFrostedSidebarDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *tut;
 
 -(void)abrirMenu;
 

@@ -26,8 +26,21 @@
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:gestoPorra];
+    
+   
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
+    rotationAnimation.duration = 5;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = HUGE_VALF;
+
+    [[[self tut ]layer]addAnimation:rotationAnimation forKey:nil];
+}
 
 -(void)abrirMenu
 {
