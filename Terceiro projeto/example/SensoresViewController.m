@@ -82,18 +82,23 @@
 
 - (UIView *)headerView
 {
-    if(!_headerView){
-        [[NSBundle mainBundle] loadNibNamed:@"HeaderSensor" owner:self options:nil];
+    if(!headerView){
+       [[NSBundle mainBundle] loadNibNamed:@"HeaderSensor" owner:self options:nil];
+         NSLog(@"xxxxxxxx");
     }
-    return _headerView;
+     NSLog(@"uiuiuiui");
+    return headerView;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
     return [self headerView];
 }
 
 - (CGFloat) tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section{
+   
     return [[self headerView] bounds].size.height;
+    
 }
 
 @end

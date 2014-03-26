@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SensoresViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (strong, nonatomic) IBOutlet UIView *headerView;
+{
+IBOutlet UIView *headerView;
+}
+
+- (UIView *)headerView;
 
 @end
