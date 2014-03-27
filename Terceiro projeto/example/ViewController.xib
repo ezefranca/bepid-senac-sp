@@ -27,7 +27,7 @@
                         <action selector="onBurger:" destination="-1" eventType="touchUpInside" id="lIJ-yL-xaH"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turtle Monitor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzc-En-Oug">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Monitor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzc-En-Oug">
                     <rect key="frame" x="42" y="57" width="236" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="35"/>
@@ -35,51 +35,33 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZEA-af-b9M">
-                    <rect key="frame" x="72" y="144" width="81" height="38"/>
+                    <rect key="frame" x="50" y="188" width="163" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                     <color key="textColor" red="0.98823535439999999" green="0.98823535439999999" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Umidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nh1-4W-bDF">
-                    <rect key="frame" x="218" y="144" width="60" height="38"/>
+                    <rect key="frame" x="193" y="244" width="85" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
-                    <color key="textColor" red="0.98823535439999999" green="0.98823535439999999" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luminosidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13Z-bZ-pP9">
-                    <rect key="frame" x="72" y="249" width="89" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
-                    <color key="textColor" red="0.98823535439999999" green="0.98823535439999999" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0nl-PF-c3d">
-                    <rect key="frame" x="228" y="249" width="40" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                     <color key="textColor" red="0.98823535439999999" green="0.98823535439999999" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tum.png" id="wmE-CV-tpZ">
-                    <rect key="frame" x="85" y="349" width="150" height="194"/>
+                    <rect key="frame" x="197" y="117" width="76" height="137"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P1-Lighticons-full-197.png" id="oJu-O6-dnm">
-                    <rect key="frame" x="20" y="134" width="64" height="57"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sensores.png" id="oJu-O6-dnm">
+                    <rect key="frame" x="20" y="170" width="65" height="63"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P1-Lighticons-full-197.png" id="Lfv-wy-cWw">
-                    <rect key="frame" x="166" y="134" width="64" height="57"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gelinho.png" id="Lfv-wy-cWw">
+                    <rect key="frame" x="136" y="234" width="64" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P1-Lighticons-full-197.png" id="BNJ-O4-YnM">
-                    <rect key="frame" x="20" y="239" width="64" height="57"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ic3-IB-W93">
-                    <rect key="frame" x="169" y="239" width="64" height="57"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inspiracao.png" id="abe-2U-PYc">
+                    <rect key="frame" x="0.0" y="310" width="320" height="198"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
@@ -89,10 +71,10 @@
         </view>
     </objects>
     <resources>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
         <image name="burger.png" width="19" height="17"/>
+        <image name="gelinho.png" width="512" height="512"/>
+        <image name="inspiracao.png" width="1600" height="900"/>
+        <image name="sensores.png" width="512" height="512"/>
         <image name="tum.png" width="375" height="360"/>
     </resources>
 </document>

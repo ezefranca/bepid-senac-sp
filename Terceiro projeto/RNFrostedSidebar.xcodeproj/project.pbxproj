@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250195A318E4BE9300E52A7D /* inspiracao.png in Resources */ = {isa = PBXBuildFile; fileRef = 250195A218E4BE9300E52A7D /* inspiracao.png */; };
 		25B2511D18E35B1200348A04 /* click.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25B245F318E35B0200348A04 /* click.gif */; };
 		25B2511E18E35B1200348A04 /* Flat icons v2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25B245F518E35B0200348A04 /* Flat icons v2.jpg */; };
 		25B2511F18E35B1200348A04 /* P1-Lighticons-full-001.svg in Resources */ = {isa = PBXBuildFile; fileRef = 25B245F818E35B0200348A04 /* P1-Lighticons-full-001.svg */; };
@@ -2186,6 +2187,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250195A218E4BE9300E52A7D /* inspiracao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inspiracao.png; sourceTree = "<group>"; };
 		25B245F318E35B0200348A04 /* click.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = click.gif; sourceTree = "<group>"; };
 		25B245F518E35B0200348A04 /* Flat icons v2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Flat icons v2.jpg"; sourceTree = "<group>"; };
 		25B245F818E35B0200348A04 /* P1-Lighticons-full-001.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "P1-Lighticons-full-001.svg"; sourceTree = "<group>"; };
@@ -4402,6 +4404,7 @@
 		25B245F218E35B0200348A04 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				250195A218E4BE9300E52A7D /* inspiracao.png */,
 				25B245F318E35B0200348A04 /* click.gif */,
 				25B245F418E35B0200348A04 /* flat-icons */,
 				25B2511C18E35B1200348A04 /* open.gif */,
@@ -8034,6 +8037,7 @@
 				25B2559918E35B1200348A04 /* P1-Lighticons-line-079.png in Resources */,
 				25B2590318E35B1200348A04 /* P2-Lighticons-full-241.png in Resources */,
 				25B25BDE18E35B1300348A04 /* P2-Lighticons-line-263.png in Resources */,
+				250195A318E4BE9300E52A7D /* inspiracao.png in Resources */,
 				25B258AA18E35B1200348A04 /* P2-Lighticons-full-152.png in Resources */,
 				25B2596718E35B1200348A04 /* P2-Lighticons-full-341.png in Resources */,
 				25B2581A18E35B1200348A04 /* P2-Lighticons-full-008.png in Resources */,
