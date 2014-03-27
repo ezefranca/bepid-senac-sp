@@ -83,7 +83,7 @@
 - (UIView *)headerView
 {
     if(!headerView){
-       [[NSBundle mainBundle] loadNibNamed:@"HeaderSensor" owner:self options:nil];
+      headerViewg= [[NSBundle mainBundle] loadNibNamed:@"HeaderSensor" owner:self options:nil];
          NSLog(@"xxxxxxxx");
     }
      NSLog(@"uiuiuiui");
