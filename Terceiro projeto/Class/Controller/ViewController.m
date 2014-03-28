@@ -44,28 +44,7 @@
 
 -(void)abrirMenu
 {
-    NSArray *images = @[
-                        [UIImage imageNamed:@"home"],
-                        [UIImage imageNamed:@"perfil"],
-                        [UIImage imageNamed:@"sensores"],
-                        [UIImage imageNamed:@"controle"],
-                        [UIImage imageNamed:@"configuracoes"]];
-    
-    
-    NSArray *colors = @[
-                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
-                        [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
-                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                        [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
-                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1]];
-    
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
-    //    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images];
-    callout.delegate = self;
-    //    callout.showFromRight = YES;
-    [callout show];
-
-
+    [SDbar showSideBar:self];
 }
 
 - (IBAction)onBurger:(id)sender {

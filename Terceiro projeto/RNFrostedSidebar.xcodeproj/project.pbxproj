@@ -2177,6 +2177,8 @@
 		296E21B318E5EFB6005969F7 /* SensoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E193918E5EFB5005969F7 /* SensoresViewController.xib */; };
 		296E21B418E5EFB6005969F7 /* tempViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E193A18E5EFB5005969F7 /* tempViewController.xib */; };
 		296E21B518E5EFB6005969F7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E193B18E5EFB5005969F7 /* ViewController.xib */; };
+		296E21C118E5F3B2005969F7 /* Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21BF18E5F3B2005969F7 /* Single.m */; };
+		296E21C518E5F795005969F7 /* SDbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21C418E5F795005969F7 /* SDbar.m */; };
 		8646016117BAF99800FCE7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016017BAF99800FCE7F4 /* Foundation.framework */; };
 		8646016317BAF99800FCE7F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016217BAF99800FCE7F4 /* CoreGraphics.framework */; };
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
@@ -4372,6 +4374,10 @@
 		296E193918E5EFB5005969F7 /* SensoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SensoresViewController.xib; sourceTree = "<group>"; };
 		296E193A18E5EFB5005969F7 /* tempViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tempViewController.xib; sourceTree = "<group>"; };
 		296E193B18E5EFB5005969F7 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		296E21BE18E5F3B2005969F7 /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
+		296E21BF18E5F3B2005969F7 /* Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Single.m; sourceTree = "<group>"; };
+		296E21C318E5F795005969F7 /* SDbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDbar.h; sourceTree = "<group>"; };
+		296E21C418E5F795005969F7 /* SDbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDbar.m; sourceTree = "<group>"; };
 		862D1B2317BC2C9B00157004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		862D1B2517BC2CA000157004 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8646015D17BAF99800FCE7F4 /* RNFrostedSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNFrostedSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4440,6 +4446,8 @@
 		296E10AA18E5EFAA005969F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				296E21C218E5F77F005969F7 /* SDbar */,
+				296E21BD18E5F3B2005969F7 /* Single */,
 				296E10AB18E5EFAA005969F7 /* PNChart */,
 				296E10C018E5EFAA005969F7 /* RNFrostedSidebar */,
 			);
@@ -6732,6 +6740,24 @@
 			path = NIBs;
 			sourceTree = "<group>";
 		};
+		296E21BD18E5F3B2005969F7 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				296E21BE18E5F3B2005969F7 /* Single.h */,
+				296E21BF18E5F3B2005969F7 /* Single.m */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		296E21C218E5F77F005969F7 /* SDbar */ = {
+			isa = PBXGroup;
+			children = (
+				296E21C318E5F795005969F7 /* SDbar.h */,
+				296E21C418E5F795005969F7 /* SDbar.m */,
+			);
+			path = SDbar;
+			sourceTree = "<group>";
+		};
 		8646015417BAF99800FCE7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -8984,12 +9010,14 @@
 			files = (
 				296E193E18E5EFB5005969F7 /* tempViewController.m in Sources */,
 				296E194718E5EFB5005969F7 /* PNLineChartDataItem.m in Sources */,
+				296E21C518E5F795005969F7 /* SDbar.m in Sources */,
 				296E194318E5EFB5005969F7 /* PNCircleChart.m in Sources */,
 				296E194818E5EFB5005969F7 /* UICountingLabel.m in Sources */,
 				296E194218E5EFB5005969F7 /* PNChartLabel.m in Sources */,
 				296E194518E5EFB5005969F7 /* PNLineChart.m in Sources */,
 				296E194C18E5EFB5005969F7 /* main.m in Sources */,
 				296E194118E5EFB5005969F7 /* PNBarChart.m in Sources */,
+				296E21C118E5F3B2005969F7 /* Single.m in Sources */,
 				296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */,
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
