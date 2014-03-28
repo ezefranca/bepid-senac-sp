@@ -71,10 +71,9 @@
         </view>
     </objects>
     <resources>
-<<<<<<< HEAD
+
         <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-=======
->>>>>>> e21e1792df9f0df12e6a42e3444ad3774a3b9e26
+
         <image name="burger.png" width="19" height="17"/>
         <image name="gelinho.png" width="512" height="512"/>
         <image name="inspiracao.png" width="1600" height="900"/>
