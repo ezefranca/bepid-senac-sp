@@ -45,6 +45,7 @@
     theAnim.fromValue = [NSValue valueWithCGPoint:self.tut.layer.position];
     theAnim.toValue = [NSValue valueWithCGPoint:c];
     theAnim.duration = s.value * 6;
+    theAnim.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.3 :0 :1 :0.3 ];
     theAnim.removedOnCompletion = NO;
     
     [[[self tut]layer]addAnimation:theAnim forKey:@"coco"];
