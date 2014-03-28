@@ -2179,6 +2179,8 @@
 		296E21B518E5EFB6005969F7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E193B18E5EFB5005969F7 /* ViewController.xib */; };
 		296E21C118E5F3B2005969F7 /* Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21BF18E5F3B2005969F7 /* Single.m */; };
 		296E21C518E5F795005969F7 /* SDbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21C418E5F795005969F7 /* SDbar.m */; };
+		296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21C718E6020E005969F7 /* PlanoViewController.m */; };
+		296E21CA18E6020E005969F7 /* PlanoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E21C818E6020E005969F7 /* PlanoViewController.xib */; };
 		8646016117BAF99800FCE7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016017BAF99800FCE7F4 /* Foundation.framework */; };
 		8646016317BAF99800FCE7F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016217BAF99800FCE7F4 /* CoreGraphics.framework */; };
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
@@ -4378,6 +4380,9 @@
 		296E21BF18E5F3B2005969F7 /* Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Single.m; sourceTree = "<group>"; };
 		296E21C318E5F795005969F7 /* SDbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDbar.h; sourceTree = "<group>"; };
 		296E21C418E5F795005969F7 /* SDbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDbar.m; sourceTree = "<group>"; };
+		296E21C618E6020E005969F7 /* PlanoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanoViewController.h; sourceTree = "<group>"; };
+		296E21C718E6020E005969F7 /* PlanoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanoViewController.m; sourceTree = "<group>"; };
+		296E21C818E6020E005969F7 /* PlanoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanoViewController.xib; path = ../../Class/Controller/PlanoViewController.xib; sourceTree = "<group>"; };
 		862D1B2317BC2C9B00157004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		862D1B2517BC2CA000157004 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8646015D17BAF99800FCE7F4 /* RNFrostedSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNFrostedSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4432,6 +4437,8 @@
 				296E10A618E5EFAA005969F7 /* tempViewController.m */,
 				296E10A718E5EFAA005969F7 /* ViewController.h */,
 				296E10A818E5EFAA005969F7 /* ViewController.m */,
+				296E21C618E6020E005969F7 /* PlanoViewController.h */,
+				296E21C718E6020E005969F7 /* PlanoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -6733,6 +6740,7 @@
 			isa = PBXGroup;
 			children = (
 				296E193818E5EFB5005969F7 /* HeaderSensor.xib */,
+				296E21C818E6020E005969F7 /* PlanoViewController.xib */,
 				296E193918E5EFB5005969F7 /* SensoresViewController.xib */,
 				296E193A18E5EFB5005969F7 /* tempViewController.xib */,
 				296E193B18E5EFB5005969F7 /* ViewController.xib */,
@@ -7908,6 +7916,7 @@
 				296E1B7318E5EFB5005969F7 /* P1-Lighticons-full-188.png in Resources */,
 				296E1CB918E5EFB5005969F7 /* P1-Lighticons-line-152.png in Resources */,
 				296E1C6818E5EFB5005969F7 /* P1-Lighticons-line-069.png in Resources */,
+				296E21CA18E6020E005969F7 /* PlanoViewController.xib in Resources */,
 				296E1ED718E5EFB6005969F7 /* P2-Lighticons-full-344.svg in Resources */,
 				296E1ECE18E5EFB6005969F7 /* P2-Lighticons-full-335.svg in Resources */,
 				296E1CBC18E5EFB5005969F7 /* P1-Lighticons-line-155.png in Resources */,
@@ -9019,6 +9028,7 @@
 				296E194118E5EFB5005969F7 /* PNBarChart.m in Sources */,
 				296E21C118E5F3B2005969F7 /* Single.m in Sources */,
 				296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */,
+				296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */,
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
 				296E194018E5EFB5005969F7 /* PNBar.m in Sources */,

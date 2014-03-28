@@ -10,6 +10,7 @@
 #import "tempViewController.h"
 #import "SensoresViewController.h"
 #import "PNChart.h"
+#import "PlanoViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
@@ -65,6 +66,11 @@
     
     if (index == 2) {
         SensoresViewController *s = [[SensoresViewController alloc]initWithNibName:@"SensoresViewController" bundle:nil];
+        [self presentViewController:s animated:NO completion:nil];
+    }
+    
+    if (index == 4) {
+        PlanoViewController *s = [[PlanoViewController alloc]initWithNibName:@"PlanoViewController" bundle:nil];
         [self presentViewController:s animated:NO completion:nil];
     }
 }
