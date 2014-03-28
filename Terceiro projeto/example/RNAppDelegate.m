@@ -8,6 +8,7 @@
 
 #import "RNAppDelegate.h"
 #import "ViewController.h"
+#import "SensoresViewController.h"
 
 @implementation RNAppDelegate
 
