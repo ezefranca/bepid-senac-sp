@@ -34,8 +34,8 @@
     
     
     
-    opcoesMenu = [NSArray arrayWithObjects:@"Temperatura", @"Umidade", @"Luminosidade", @"Ruido", @"Tremor", @"Inclinacao", @"Chama", @"Presenca" , nil];
-    self.title = @"Sensores";
+    opcoesMenu = [NSArray arrayWithObjects:@"Física", @"Química", @"Biologia", nil];
+    self.title = @"Experimentos";
     self.tableView.delegate = self;
 
     // Uncomment the following line to preserve selection between presentations.
@@ -75,9 +75,15 @@
     
     cell.textLabel.text = [opcoesMenu objectAtIndex:indexPath.row];
     cell.imageView.image = [UIImage imageNamed:@"lampada"];
-
+    cell.accessoryType = UITableViewCellAccessoryDetailButton;
     
     return cell;
+}
+
+
+// Pega o clique no iconizinho
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Funcz");
 }
 
 - (UIView *)headerView
