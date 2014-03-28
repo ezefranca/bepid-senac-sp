@@ -90,8 +90,6 @@
     </objects>
     <resources>
         <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
-        <image name="P1-Lighticons-full-197.png" width="512" height="512"/>
         <image name="burger.png" width="19" height="17"/>
         <image name="tum.png" width="375" height="360"/>
     </resources>
