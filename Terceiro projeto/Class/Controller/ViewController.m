@@ -11,6 +11,7 @@
 #import "SensoresViewController.h"
 #import "PNChart.h"
 #import "PlanoViewController.h"
+#import "OrvalhoViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
@@ -67,6 +68,11 @@
     if (index == 2) {
         SensoresViewController *s = [[SensoresViewController alloc]initWithNibName:@"SensoresViewController" bundle:nil];
         [self presentViewController:s animated:NO completion:nil];
+    }
+    
+    if (index == 3) {
+        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
+        [self presentViewController:o animated:NO completion:nil];
     }
     
     if (index == 4) {

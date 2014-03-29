@@ -26,8 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-  
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +35,7 @@
 }
 
 - (IBAction)slide:(id)sender {
-     UISlider *s = sender;
+    UISlider *s = sender;
     CGPoint c = CGPointMake(500, 200);
     
     // Change the position explicitly.
