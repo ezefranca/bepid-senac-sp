@@ -21,13 +21,17 @@
 {
     [super viewDidLoad];
     
+    int largura = 568;
+    int altura = 320;
+    
+    NSLog(@"%f   %f", self.view.bounds.size.height ,self.view.bounds.size.width );
     
     //OBJETOS
     
     RightSlidedown *r = [[RightSlidedown alloc]initWithTarget:self action:@selector(coisa)];
     [[self view ] addGestureRecognizer:r];
     //quadrado
-    self.redSquare = [[UIView alloc]initWithFrame:CGRectMake(20, 242, 50, 50)];
+    self.redSquare = [[UIView alloc]initWithFrame:CGRectMake(20, 20, 50, 50)];
     self.redSquare.backgroundColor = [UIColor redColor];
     [self.redSquare setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(20))];
     [self.view addSubview:self.redSquare];
@@ -36,7 +40,7 @@
     //linha
     self.line = [[UIView alloc]initWithFrame:CGRectMake(0, 300, 320, 20)];
     self.line.backgroundColor = [UIColor yellowColor];
-    [self.line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(20))];
+   // [self.line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(20))];
     [self.view addSubview:self.line];
     
     // INICIAR ANIMACAO
@@ -49,6 +53,7 @@
     UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.redSquare]];
     elasticityBehavior.elasticity = 0.0f;
     [elasticityBehavior setDensity:0.0];
+    [elasticityBehavior setElasticity:1.0   ];
     [self.animator addBehavior:elasticityBehavior];
     
     //linha
@@ -87,7 +92,7 @@
     //OBJETOS
     
     //quadrado
-    self.redSquare = [[UIView alloc]initWithFrame:CGRectMake(20, 200, 50, 50)];
+    self.redSquare = [[UIView alloc]initWithFrame:CGRectMake(20, 20, 50, 50)];
     self.redSquare.backgroundColor = [UIColor redColor];
     [self.redSquare setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(20))];
     [self.view addSubview:self.redSquare];
@@ -110,6 +115,7 @@
     UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.redSquare]];
     elasticityBehavior.elasticity = 0.0f;
     [elasticityBehavior setDensity:0.0];
+    [elasticityBehavior setElasticity:1.0   ];
     [self.animator addBehavior:elasticityBehavior];
     
     //linha
