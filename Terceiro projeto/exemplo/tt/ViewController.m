@@ -9,6 +9,7 @@
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 #import "ViewController.h"
+#import "RightSlidedown.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,8 @@
     
     //OBJETOS
     
-    
+    RightSlidedown *r = [[RightSlidedown alloc]initWithTarget:self action:@selector(coisa)];
+    [[self view ] addGestureRecognizer:r];
     //quadrado
     self.redSquare = [[UIView alloc]initWithFrame:CGRectMake(20, 242, 50, 50)];
     self.redSquare.backgroundColor = [UIColor redColor];
@@ -71,9 +73,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)zerar:(id)sender {
+
+-(void)coisa
+{
     [self.animator removeAllBehaviors];
-   
+    
     for (UIView *u in self.view.subviews) {
         if ([u class] != [UIButton class]) {
             [u removeFromSuperview];
@@ -122,5 +126,10 @@
     UICollisionBehavior* collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.redSquare , self.line]];
     collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     [self.animator addBehavior:collisionBehavior];
+
 }
+
+- (IBAction)zerar:(id)sender {
+    [self coisa];
+   }
 @end

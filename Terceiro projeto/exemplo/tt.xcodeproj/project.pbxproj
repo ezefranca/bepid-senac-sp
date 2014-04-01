@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290A128618EB36BB0093C6F0 /* RightSlidedown.m in Sources */ = {isa = PBXBuildFile; fileRef = 290A128518EB36BB0093C6F0 /* RightSlidedown.m */; };
 		29D4D04A18E9FD8B002CC46C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D4D04918E9FD8B002CC46C /* Foundation.framework */; };
 		29D4D04C18E9FD8B002CC46C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D4D04B18E9FD8B002CC46C /* CoreGraphics.framework */; };
 		29D4D04E18E9FD8B002CC46C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D4D04D18E9FD8B002CC46C /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290A128418EB36BB0093C6F0 /* RightSlidedown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSlidedown.h; sourceTree = "<group>"; };
+		290A128518EB36BB0093C6F0 /* RightSlidedown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSlidedown.m; sourceTree = "<group>"; };
 		29D4D04618E9FD8B002CC46C /* tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D4D04918E9FD8B002CC46C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29D4D04B18E9FD8B002CC46C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				29D4D05818E9FD8B002CC46C /* AppDelegate.h */,
+				290A128418EB36BB0093C6F0 /* RightSlidedown.h */,
+				290A128518EB36BB0093C6F0 /* RightSlidedown.m */,
 				29D4D05918E9FD8B002CC46C /* AppDelegate.m */,
 				29D4D05B18E9FD8B002CC46C /* Main_iPhone.storyboard */,
 				29D4D05E18E9FD8B002CC46C /* Main_iPad.storyboard */,
@@ -255,6 +260,7 @@
 			files = (
 				29D4D06318E9FD8B002CC46C /* ViewController.m in Sources */,
 				29D4D05A18E9FD8B002CC46C /* AppDelegate.m in Sources */,
+				290A128618EB36BB0093C6F0 /* RightSlidedown.m in Sources */,
 				29D4D05618E9FD8B002CC46C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +480,7 @@
 				29D4D07D18E9FD8B002CC46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D4D07E18E9FD8B002CC46C /* Build configuration list for PBXNativeTarget "ttTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				29D4D08018E9FD8B002CC46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

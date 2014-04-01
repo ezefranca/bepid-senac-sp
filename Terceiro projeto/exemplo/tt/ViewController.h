@@ -17,4 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
 - (IBAction)zerar:(id)sender;
+
+-(void)coisa;
 @end
