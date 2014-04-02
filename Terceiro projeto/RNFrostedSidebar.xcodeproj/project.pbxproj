@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BD86818EC93FE00C8C75C /* quimicaViewController.m */; };
+		251BD86B18EC93FE00C8C75C /* quimicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251BD86918EC93FE00C8C75C /* quimicaViewController.xib */; };
 		296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A218E5EFAA005969F7 /* RNAppDelegate.m */; };
 		296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A418E5EFAA005969F7 /* SensoresViewController.m */; };
 		296E193E18E5EFB5005969F7 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A618E5EFAA005969F7 /* tempViewController.m */; };
@@ -2191,6 +2193,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		251BD86718EC93FE00C8C75C /* quimicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quimicaViewController.h; sourceTree = "<group>"; };
+		251BD86818EC93FE00C8C75C /* quimicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quimicaViewController.m; sourceTree = "<group>"; };
+		251BD86918EC93FE00C8C75C /* quimicaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = quimicaViewController.xib; sourceTree = "<group>"; };
 		296E10A118E5EFAA005969F7 /* RNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppDelegate.h; sourceTree = "<group>"; };
 		296E10A218E5EFAA005969F7 /* RNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppDelegate.m; sourceTree = "<group>"; };
 		296E10A318E5EFAA005969F7 /* SensoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensoresViewController.h; sourceTree = "<group>"; };
@@ -4441,6 +4446,9 @@
 				296E10A318E5EFAA005969F7 /* SensoresViewController.h */,
 				296E10A418E5EFAA005969F7 /* SensoresViewController.m */,
 				296E10A518E5EFAA005969F7 /* tempViewController.h */,
+				251BD86718EC93FE00C8C75C /* quimicaViewController.h */,
+				251BD86818EC93FE00C8C75C /* quimicaViewController.m */,
+				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E10A618E5EFAA005969F7 /* tempViewController.m */,
 				296E10A718E5EFAA005969F7 /* ViewController.h */,
 				296E10A818E5EFAA005969F7 /* ViewController.m */,
@@ -6983,6 +6991,7 @@
 				296E1F6E18E5EFB6005969F7 /* P2-Lighticons-full-142.png in Resources */,
 				296E1D6718E5EFB5005969F7 /* P1-Lighticons-line-338.png in Resources */,
 				296E20FA18E5EFB6005969F7 /* P2-Lighticons-line-183.png in Resources */,
+				251BD86B18EC93FE00C8C75C /* quimicaViewController.xib in Resources */,
 				296E1DE818E5EFB5005969F7 /* P2-Lighticons-full-105.svg in Resources */,
 				296E1B2D18E5EFB5005969F7 /* P1-Lighticons-full-118.png in Resources */,
 				296E1E0D18E5EFB5005969F7 /* P2-Lighticons-full-142.svg in Resources */,
@@ -9040,6 +9049,7 @@
 				296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */,
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
+				251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */,
 				F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */,
 				296E194018E5EFB5005969F7 /* PNBar.m in Sources */,
 				296E194A18E5EFB5005969F7 /* RNFrostedSidebar.m in Sources */,

@@ -12,6 +12,7 @@
 
 
 @interface tempViewController : UIViewController <RNFrostedSidebarDelegate,PNChartDelegate>
+@property (strong, nonatomic) IBOutlet UIView *view;
 
 - (IBAction)btn:(id)sender;
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
