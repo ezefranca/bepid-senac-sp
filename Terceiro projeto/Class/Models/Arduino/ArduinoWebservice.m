@@ -32,6 +32,7 @@ NSMutableDictionary *jsonDadosSerializado = [NSJSONSerialization
 
     NSLog(@"%@", jsonDadosSerializado);
 sensoresData = [jsonDadosSerializado objectForKey:@"sensores"];
+    //ok
 
 
 }
