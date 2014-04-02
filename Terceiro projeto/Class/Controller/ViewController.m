@@ -12,6 +12,7 @@
 #import "PNChart.h"
 #import "PlanoViewController.h"
 #import "OrvalhoViewController.h"
+#include "ArduinoWebservice.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
@@ -42,6 +43,12 @@
     rotationAnimation.repeatCount = HUGE_VALF;
 
     [[[self tut ]layer]addAnimation:rotationAnimation forKey:nil];
+}
+
+- (IBAction)botaoTeste:(id)sender {
+    ArduinoWebservice *a = [ArduinoWebservice alloc];
+    [a initWithRequest];
+    [a conectaEFiltra:@"temperatura"];
 }
 
 -(void)abrirMenu

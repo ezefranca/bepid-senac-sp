@@ -14,6 +14,7 @@
 <RNFrostedSidebarDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *tut;
+- (IBAction)botaoTeste:(id)sender;
 
 -(void)abrirMenu;
 
