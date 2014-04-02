@@ -10,13 +10,20 @@
 
 @implementation ArduinoWebservice
 
-
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"Arduino Criado");
+    }
+    return self;
+}
 
 
 -(void)initWithRequest{
-    NSLog(@"Inicializando...");
-    jsonDados = [[NSData alloc] initWithContentsOfURL:
-                 [NSURL URLWithString:@"192.168.1.177"]];
+    NSLog(@"Conectando ao arduino...");
+   jsonDados = [[NSData alloc] initWithContentsOfURL:
+                 [NSURL URLWithString:@"http://192.168.1.177"]];
 }
 
 
@@ -31,9 +38,8 @@ NSMutableDictionary *jsonDadosSerializado = [NSJSONSerialization
                                          error:&error];
 
     NSLog(@"%@", jsonDadosSerializado);
-sensoresData = [jsonDadosSerializado objectForKey:@"sensores"];
-
-
+    sensoresData = [jsonDadosSerializado objectForKey:qualSensor];
+    //ok
 }
 
 @end

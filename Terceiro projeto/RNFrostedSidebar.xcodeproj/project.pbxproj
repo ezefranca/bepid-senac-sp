@@ -2190,6 +2190,7 @@
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
 		86D2CBF917CEAFE50098397C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D1B2317BC2C9B00157004 /* QuartzCore.framework */; };
 		86D2CBFA17CEAFE90098397C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D1B2517BC2CA000157004 /* Accelerate.framework */; };
+		F72A906418ECA41600802E31 /* ArduinoWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = F72A906318ECA41600802E31 /* ArduinoWebservice.m */; };
 		F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D742418E615C000C267FE /* OrvalhoViewController.m */; };
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
 /* End PBXBuildFile section */
@@ -4403,6 +4404,8 @@
 		8646016217BAF99800FCE7F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8646016417BAF99800FCE7F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8646017917BAF99800FCE7F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F72A906218ECA41600802E31 /* ArduinoWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoWebservice.h; sourceTree = "<group>"; };
+		F72A906318ECA41600802E31 /* ArduinoWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArduinoWebservice.m; sourceTree = "<group>"; };
 		F72D742318E615C000C267FE /* OrvalhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrvalhoViewController.h; sourceTree = "<group>"; };
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
@@ -4474,7 +4477,11 @@
 		296E10AA18E5EFAA005969F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				2981729818ECA44500A5AD6B /* Arduino */,
+=======
+				F72A906118ECA41600802E31 /* Arduino */,
+>>>>>>> 01501c471584bb89caa39ef4b0eba627241a8939
 				2981729418EC9FAF00A5AD6B /* Simutation */,
 				296E21C218E5F77F005969F7 /* SDbar */,
 				296E21BD18E5F3B2005969F7 /* Single */,
@@ -6841,6 +6848,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F72A906118ECA41600802E31 /* Arduino */ = {
+			isa = PBXGroup;
+			children = (
+				F72A906218ECA41600802E31 /* ArduinoWebservice.h */,
+				F72A906318ECA41600802E31 /* ArduinoWebservice.m */,
+			);
+			path = Arduino;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -9076,7 +9092,11 @@
 				296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */,
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
+<<<<<<< HEAD
 				2981729B18ECA44500A5AD6B /* ArduinoWebservice.m in Sources */,
+=======
+				F72A906418ECA41600802E31 /* ArduinoWebservice.m in Sources */,
+>>>>>>> 01501c471584bb89caa39ef4b0eba627241a8939
 				251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */,
 				F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */,
 				296E194018E5EFB5005969F7 /* PNBar.m in Sources */,
