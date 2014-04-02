@@ -2183,6 +2183,7 @@
 		296E21C518E5F795005969F7 /* SDbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21C418E5F795005969F7 /* SDbar.m */; };
 		296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21C718E6020E005969F7 /* PlanoViewController.m */; };
 		296E21CA18E6020E005969F7 /* PlanoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E21C818E6020E005969F7 /* PlanoViewController.xib */; };
+		2981729718EC9FCD00A5AD6B /* Simulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2981729618EC9FCD00A5AD6B /* Simulation.m */; };
 		8646016117BAF99800FCE7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016017BAF99800FCE7F4 /* Foundation.framework */; };
 		8646016317BAF99800FCE7F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016217BAF99800FCE7F4 /* CoreGraphics.framework */; };
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
@@ -4390,6 +4391,8 @@
 		296E21C618E6020E005969F7 /* PlanoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanoViewController.h; sourceTree = "<group>"; };
 		296E21C718E6020E005969F7 /* PlanoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanoViewController.m; sourceTree = "<group>"; };
 		296E21C818E6020E005969F7 /* PlanoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanoViewController.xib; path = ../../Class/Controller/PlanoViewController.xib; sourceTree = "<group>"; };
+		2981729518EC9FCD00A5AD6B /* Simulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simulation.h; sourceTree = "<group>"; };
+		2981729618EC9FCD00A5AD6B /* Simulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Simulation.m; sourceTree = "<group>"; };
 		862D1B2317BC2C9B00157004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		862D1B2517BC2CA000157004 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8646015D17BAF99800FCE7F4 /* RNFrostedSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNFrostedSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4468,6 +4471,7 @@
 		296E10AA18E5EFAA005969F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2981729418EC9FAF00A5AD6B /* Simutation */,
 				296E21C218E5F77F005969F7 /* SDbar */,
 				296E21BD18E5F3B2005969F7 /* Single */,
 				296E10AB18E5EFAA005969F7 /* PNChart */,
@@ -6782,6 +6786,15 @@
 			path = SDbar;
 			sourceTree = "<group>";
 		};
+		2981729418EC9FAF00A5AD6B /* Simutation */ = {
+			isa = PBXGroup;
+			children = (
+				2981729518EC9FCD00A5AD6B /* Simulation.h */,
+				2981729618EC9FCD00A5AD6B /* Simulation.m */,
+			);
+			path = Simutation;
+			sourceTree = "<group>";
+		};
 		8646015417BAF99800FCE7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -9042,6 +9055,7 @@
 				296E194818E5EFB5005969F7 /* UICountingLabel.m in Sources */,
 				296E194218E5EFB5005969F7 /* PNChartLabel.m in Sources */,
 				296E194518E5EFB5005969F7 /* PNLineChart.m in Sources */,
+				2981729718EC9FCD00A5AD6B /* Simulation.m in Sources */,
 				296E194C18E5EFB5005969F7 /* main.m in Sources */,
 				296E194118E5EFB5005969F7 /* PNBarChart.m in Sources */,
 				296E21C118E5F3B2005969F7 /* Single.m in Sources */,
