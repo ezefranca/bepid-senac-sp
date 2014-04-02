@@ -48,9 +48,6 @@
     
     [[[self tut]layer]addAnimation:theAnim forKey:@"coco"];
     
-    
-   
-    
     NSLog(@"%f", s.value);
 
 }
