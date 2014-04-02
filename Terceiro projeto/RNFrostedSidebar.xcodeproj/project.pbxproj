@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BD86818EC93FE00C8C75C /* quimicaViewController.m */; };
 		251BD86B18EC93FE00C8C75C /* quimicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251BD86918EC93FE00C8C75C /* quimicaViewController.xib */; };
+		251BD87218EC9F2300C8C75C /* ArduinoWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BD87118EC9F2300C8C75C /* ArduinoWebservice.m */; };
 		296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A218E5EFAA005969F7 /* RNAppDelegate.m */; };
 		296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A418E5EFAA005969F7 /* SensoresViewController.m */; };
 		296E193E18E5EFB5005969F7 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A618E5EFAA005969F7 /* tempViewController.m */; };
@@ -2195,7 +2196,9 @@
 /* Begin PBXFileReference section */
 		251BD86718EC93FE00C8C75C /* quimicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quimicaViewController.h; sourceTree = "<group>"; };
 		251BD86818EC93FE00C8C75C /* quimicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quimicaViewController.m; sourceTree = "<group>"; };
-		251BD86918EC93FE00C8C75C /* quimicaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = quimicaViewController.xib; sourceTree = "<group>"; };
+		251BD86918EC93FE00C8C75C /* quimicaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = quimicaViewController.xib; path = ../../Class/Controller/quimicaViewController.xib; sourceTree = "<group>"; };
+		251BD86C18EC9E3D00C8C75C /* ArduinoWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArduinoWebservice.h; path = Class/Models/Arduino/ArduinoWebservice.h; sourceTree = SOURCE_ROOT; };
+		251BD87118EC9F2300C8C75C /* ArduinoWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArduinoWebservice.m; sourceTree = "<group>"; };
 		296E10A118E5EFAA005969F7 /* RNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppDelegate.h; sourceTree = "<group>"; };
 		296E10A218E5EFAA005969F7 /* RNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppDelegate.m; sourceTree = "<group>"; };
 		296E10A318E5EFAA005969F7 /* SensoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensoresViewController.h; sourceTree = "<group>"; };
@@ -4418,6 +4421,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251BD86F18EC9F2300C8C75C /* Arduino */ = {
+			isa = PBXGroup;
+			children = (
+				251BD86C18EC9E3D00C8C75C /* ArduinoWebservice.h */,
+				251BD87118EC9F2300C8C75C /* ArduinoWebservice.m */,
+			);
+			path = Arduino;
+			sourceTree = "<group>";
+		};
 		296E109E18E5EFAA005969F7 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -4448,7 +4460,6 @@
 				296E10A518E5EFAA005969F7 /* tempViewController.h */,
 				251BD86718EC93FE00C8C75C /* quimicaViewController.h */,
 				251BD86818EC93FE00C8C75C /* quimicaViewController.m */,
-				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E10A618E5EFAA005969F7 /* tempViewController.m */,
 				296E10A718E5EFAA005969F7 /* ViewController.h */,
 				296E10A818E5EFAA005969F7 /* ViewController.m */,
@@ -4468,6 +4479,7 @@
 		296E10AA18E5EFAA005969F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				251BD86F18EC9F2300C8C75C /* Arduino */,
 				296E21C218E5F77F005969F7 /* SDbar */,
 				296E21BD18E5F3B2005969F7 /* Single */,
 				296E10AB18E5EFAA005969F7 /* PNChart */,
@@ -6755,6 +6767,7 @@
 			isa = PBXGroup;
 			children = (
 				F72D742518E615C000C267FE /* OrvalhoViewController.xib */,
+				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E193818E5EFB5005969F7 /* HeaderSensor.xib */,
 				296E21C818E6020E005969F7 /* PlanoViewController.xib */,
 				296E193918E5EFB5005969F7 /* SensoresViewController.xib */,
@@ -9050,6 +9063,7 @@
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
 				251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */,
+				251BD87218EC9F2300C8C75C /* ArduinoWebservice.m in Sources */,
 				F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */,
 				296E194018E5EFB5005969F7 /* PNBar.m in Sources */,
 				296E194A18E5EFB5005969F7 /* RNFrostedSidebar.m in Sources */,
