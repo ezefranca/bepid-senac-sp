@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlanoViewController">
             <connections>
-                <outlet property="tut" destination="O58-SI-S9d" id="uG2-po-nbr"/>
                 <outlet property="view" destination="0N8-CI-ode" id="uLf-dq-PjJ"/>
             </connections>
         </placeholder>
@@ -23,23 +22,19 @@
             <rect key="frame" x="0.0" y="0.0" width="1004" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tum.png" translatesAutoresizingMaskIntoConstraints="NO" id="O58-SI-S9d">
-                    <rect key="frame" x="101" y="50" width="126" height="112"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="19v-YK-sS6">
-                    <rect key="frame" x="172" y="663" width="661" height="34"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-3k-6hW">
+                    <rect key="frame" x="37" y="712" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
-                        <action selector="slide:" destination="-1" eventType="valueChanged" id="YiX-g7-Clp"/>
+                        <action selector="btn:" destination="-1" eventType="touchUpInside" id="14C-YS-IzT"/>
                     </connections>
-                </slider>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>
     </objects>
-    <resources>
-        <image name="tum.png" width="375" height="360"/>
-    </resources>
 </document>

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PlanoViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *tut;
-- (IBAction)slide:(id)sender;
+@property UIDynamicAnimator *animator;
+- (IBAction)btn:(id)sender;
 
+-(void)animar;
 @end

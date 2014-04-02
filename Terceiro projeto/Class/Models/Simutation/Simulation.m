@@ -11,7 +11,18 @@
 
 @implementation Simulation
 
--(void)start : (UIView *) view;
+-(id)init
+{
+    self = [super init];
+    
+    if (self) {
+        
+    }
+    
+    return self;
+}
+
+-(void)start : (UIView *) view : (UIDynamicAnimator *) animator ;
 {
 
     NSLog(@"%f   %f", view.bounds.size.height ,view.bounds.size.width );
@@ -32,7 +43,7 @@
     [view addSubview:line];
     
     // INICIAR ANIMACAO
-    UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:view];
+     animator = [[UIDynamicAnimator alloc] initWithReferenceView:view];
     
     //CUSTON
     

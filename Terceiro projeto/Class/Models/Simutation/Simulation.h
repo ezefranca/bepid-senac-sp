@@ -10,6 +10,6 @@
 
 @interface Simulation : NSObject
 
--(void)start : (id) view;
+-(void)start : (UIView *) view : (UIDynamicAnimator *) animator ;
 
 @end
