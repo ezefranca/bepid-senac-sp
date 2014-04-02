@@ -115,16 +115,15 @@ void loop() {
           // cabecalho HTTP padrao para GET
           client.println("HTTP/1.1 200 OK");
           client.println("Content-Type: text/json");
-          client.println("Connection: close");  // a conexao sera fechada apos a reposta do request
-	  client.println("Refresh: 2");  // atualiza a cada 2 segundos
+          //client.println("Connection: close");  // a conexao sera fechada apos a reposta do request
+	  //client.println("Refresh: 2");  // atualiza a cada 2 segundos
     client.println();
           // preparacao do JSON
-    client.print(" \{ \"Altura:\" ");
+    client.print(" \{ \"Altura\": ");
     z = 384 - z;
     client.print((float)z);
-    client.print("} "); 
     
-    client.print(" \{ \"Distancia:\" ");
+    client.print(", \"Distancia\": ");
     client.print((float)cm);
     client.print("} "); 
     

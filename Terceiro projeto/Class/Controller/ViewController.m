@@ -46,9 +46,9 @@
 }
 
 - (IBAction)botaoTeste:(id)sender {
-    ArduinoWebservice *a = [ArduinoWebservice alloc];
-    [a initWithRequest];
-    [a conectaEFiltra:@"temperatura"];
+    ArduinoWebservice *a = [[ArduinoWebservice alloc]init];
+   [a initWithRequest];
+   [a conectaEFiltra:@"temperatura"];
 }
 
 -(void)abrirMenu
@@ -64,7 +64,7 @@
 #pragma mark - RNFrostedSidebarDelegate
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
+    NSLog(@"Tapped item at index %lu",(unsigned long)index);
     
     
     if (index == 1) {
