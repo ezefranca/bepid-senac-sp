@@ -14,6 +14,8 @@
 		25CCD38C18EDDD740000D1CD /* qui.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38A18EDDD740000D1CD /* qui.png */; };
 		25CCD38E18EDDDAC0000D1CD /* fisica.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38D18EDDDAC0000D1CD /* fisica.png */; };
 		25CCD39018EDE0780000D1CD /* blackboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38F18EDE0780000D1CD /* blackboard.png */; };
+		294F52D818EDF6BB001EB661 /* ter.png in Resources */ = {isa = PBXBuildFile; fileRef = 294F52D718EDF6BB001EB661 /* ter.png */; };
+		294F52DA18EDFC60001EB661 /* copo.png in Resources */ = {isa = PBXBuildFile; fileRef = 294F52D918EDFC60001EB661 /* copo.png */; };
 		296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A218E5EFAA005969F7 /* RNAppDelegate.m */; };
 		296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A418E5EFAA005969F7 /* SensoresViewController.m */; };
 		296E193E18E5EFB5005969F7 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A618E5EFAA005969F7 /* tempViewController.m */; };
@@ -2208,6 +2210,8 @@
 		25CCD38A18EDDD740000D1CD /* qui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qui.png; sourceTree = "<group>"; };
 		25CCD38D18EDDDAC0000D1CD /* fisica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fisica.png; sourceTree = "<group>"; };
 		25CCD38F18EDE0780000D1CD /* blackboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackboard.png; sourceTree = "<group>"; };
+		294F52D718EDF6BB001EB661 /* ter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ter.png; sourceTree = "<group>"; };
+		294F52D918EDFC60001EB661 /* copo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copo.png; sourceTree = "<group>"; };
 		296E10A118E5EFAA005969F7 /* RNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppDelegate.h; sourceTree = "<group>"; };
 		296E10A218E5EFAA005969F7 /* RNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppDelegate.m; sourceTree = "<group>"; };
 		296E10A318E5EFAA005969F7 /* SensoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensoresViewController.h; sourceTree = "<group>"; };
@@ -4551,6 +4555,8 @@
 		296E10C818E5EFAA005969F7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				294F52D918EDFC60001EB661 /* copo.png */,
+				294F52D718EDF6BB001EB661 /* ter.png */,
 				25CCD38F18EDE0780000D1CD /* blackboard.png */,
 				25CCD38D18EDDDAC0000D1CD /* fisica.png */,
 				25CCD38918EDDD730000D1CD /* bio.png */,
@@ -8693,6 +8699,7 @@
 				296E1BAB18E5EFB5005969F7 /* P1-Lighticons-full-244.png in Resources */,
 				296E1EB718E5EFB6005969F7 /* P2-Lighticons-full-312.svg in Resources */,
 				296E1E1E18E5EFB5005969F7 /* P2-Lighticons-full-159.svg in Resources */,
+				294F52D818EDF6BB001EB661 /* ter.png in Resources */,
 				296E1A7818E5EFB5005969F7 /* P1-Lighticons-full-293.svg in Resources */,
 				296E1C5018E5EFB5005969F7 /* P1-Lighticons-line-045.png in Resources */,
 				296E209318E5EFB6005969F7 /* P2-Lighticons-line-080.png in Resources */,
@@ -8996,6 +9003,7 @@
 				296E19C218E5EFB5005969F7 /* P1-Lighticons-full-111.svg in Resources */,
 				296E1D1218E5EFB5005969F7 /* P1-Lighticons-line-248.png in Resources */,
 				296E1BD118E5EFB5005969F7 /* P1-Lighticons-full-282.png in Resources */,
+				294F52DA18EDFC60001EB661 /* copo.png in Resources */,
 				296E1F4D18E5EFB6005969F7 /* P2-Lighticons-full-109.png in Resources */,
 				296E1A5818E5EFB5005969F7 /* P1-Lighticons-full-261.svg in Resources */,
 				296E1E1F18E5EFB5005969F7 /* P2-Lighticons-full-160.svg in Resources */,

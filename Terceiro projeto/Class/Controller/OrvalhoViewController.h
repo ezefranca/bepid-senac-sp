@@ -12,6 +12,9 @@
 
 @interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>
 
+@property int temperatutaInicial;
+@property int temperaturaFinal;
+
 -(void)abrirMenu;
 
 @end

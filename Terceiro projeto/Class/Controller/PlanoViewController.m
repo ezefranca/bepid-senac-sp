@@ -8,6 +8,7 @@
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 #import "PlanoViewController.h"
 #import "Simulation.h"
+#import "SDbar.h"
 
 @interface PlanoViewController ()
 
