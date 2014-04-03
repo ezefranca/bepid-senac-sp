@@ -10,4 +10,8 @@
 
 @interface SensoresViewController : UIViewController <UIViewControllerTransitioningDelegate>
 
+- (IBAction)biologiaBotao1:(id)sender;
+- (IBAction)botaoQuimica:(id)sender;
+- (IBAction)botaoFisica:(id)sender;
+
 @end

@@ -7,6 +7,11 @@
 //
 
 #import "SensoresViewController.h"
+#import "quimicaViewController.h"
+#import "OrvalhoViewController.h"
+#import "PlanoViewController.h"
+#import "ViewController.h"
+#import "SDbar.h"
 
 @interface SensoresViewController ()
 
@@ -17,6 +22,15 @@
     NSArray *opcoesMenu;
 }
 
+- (IBAction)biologiaBotao1:(id)sender {
+    [SDbar changeController:99 :self ];
+}
+- (IBAction)botaoQuimica:(id)sender {
+    [SDbar changeController:99 :self ];
+}
+- (IBAction)botaoFisica:(id)sender {
+    [SDbar changeController:97 :self ];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

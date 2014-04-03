@@ -71,6 +71,26 @@
         PlanoViewController *s = [[PlanoViewController alloc]initWithNibName:@"PlanoViewController" bundle:nil];
         [controller presentViewController:s animated:NO completion:nil];
     }
+    
+    // Biologia
+    if (index == 99) {
+        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
+        [controller presentViewController:o animated:NO completion:nil];
+    }
+    
+    // Quimica
+    if (index == 98) {
+        
+        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
+        [controller presentViewController:o animated:NO completion:nil];
+    }
+    
+    //Fisica
+    if (index == 97) {
+        PlanoViewController *o = [[PlanoViewController alloc]initWithNibName:@"PlanoViewController" bundle:nil];
+        [controller presentViewController:o animated:YES completion:nil];
+        
+    }
 
 }
 
