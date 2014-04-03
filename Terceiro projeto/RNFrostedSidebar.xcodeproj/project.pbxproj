@@ -10,6 +10,10 @@
 		251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BD86818EC93FE00C8C75C /* quimicaViewController.m */; };
 		251BD86B18EC93FE00C8C75C /* quimicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251BD86918EC93FE00C8C75C /* quimicaViewController.xib */; };
 		25CCD38818EDD8170000D1CD /* ArduinoWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CCD38718EDD8170000D1CD /* ArduinoWebservice.m */; };
+		25CCD38B18EDDD740000D1CD /* bio.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38918EDDD730000D1CD /* bio.png */; };
+		25CCD38C18EDDD740000D1CD /* qui.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38A18EDDD740000D1CD /* qui.png */; };
+		25CCD38E18EDDDAC0000D1CD /* fisica.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38D18EDDDAC0000D1CD /* fisica.png */; };
+		25CCD39018EDE0780000D1CD /* blackboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CCD38F18EDE0780000D1CD /* blackboard.png */; };
 		296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A218E5EFAA005969F7 /* RNAppDelegate.m */; };
 		296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A418E5EFAA005969F7 /* SensoresViewController.m */; };
 		296E193E18E5EFB5005969F7 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E10A618E5EFAA005969F7 /* tempViewController.m */; };
@@ -2200,6 +2204,10 @@
 		251BD86918EC93FE00C8C75C /* quimicaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = quimicaViewController.xib; sourceTree = "<group>"; };
 		25CCD38618EDD8170000D1CD /* ArduinoWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoWebservice.h; sourceTree = "<group>"; };
 		25CCD38718EDD8170000D1CD /* ArduinoWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArduinoWebservice.m; sourceTree = "<group>"; };
+		25CCD38918EDDD730000D1CD /* bio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bio.png; sourceTree = "<group>"; };
+		25CCD38A18EDDD740000D1CD /* qui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qui.png; sourceTree = "<group>"; };
+		25CCD38D18EDDDAC0000D1CD /* fisica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fisica.png; sourceTree = "<group>"; };
+		25CCD38F18EDE0780000D1CD /* blackboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackboard.png; sourceTree = "<group>"; };
 		296E10A118E5EFAA005969F7 /* RNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppDelegate.h; sourceTree = "<group>"; };
 		296E10A218E5EFAA005969F7 /* RNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppDelegate.m; sourceTree = "<group>"; };
 		296E10A318E5EFAA005969F7 /* SensoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensoresViewController.h; sourceTree = "<group>"; };
@@ -4543,6 +4551,10 @@
 		296E10C818E5EFAA005969F7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				25CCD38F18EDE0780000D1CD /* blackboard.png */,
+				25CCD38D18EDDDAC0000D1CD /* fisica.png */,
+				25CCD38918EDDD730000D1CD /* bio.png */,
+				25CCD38A18EDDD740000D1CD /* qui.png */,
 				296E10C918E5EFAA005969F7 /* burger.png */,
 				296E10CA18E5EFAA005969F7 /* burger@2x.png */,
 				296E10CB18E5EFAA005969F7 /* click.gif */,
@@ -6977,6 +6989,7 @@
 				296E1A8D18E5EFB5005969F7 /* P1-Lighticons-full-314.svg in Resources */,
 				296E1CE418E5EFB5005969F7 /* P1-Lighticons-line-196.png in Resources */,
 				296E1CD918E5EFB5005969F7 /* P1-Lighticons-line-184.png in Resources */,
+				25CCD38E18EDDDAC0000D1CD /* fisica.png in Resources */,
 				296E1A3318E5EFB5005969F7 /* P1-Lighticons-full-224.svg in Resources */,
 				296E1B1218E5EFB5005969F7 /* P1-Lighticons-full-091.png in Resources */,
 				296E1D0218E5EFB5005969F7 /* P1-Lighticons-line-232.png in Resources */,
@@ -7342,6 +7355,7 @@
 				296E19A818E5EFB5005969F7 /* P1-Lighticons-full-085.svg in Resources */,
 				296E205618E5EFB6005969F7 /* P2-Lighticons-line-019.png in Resources */,
 				296E1F7318E5EFB6005969F7 /* P2-Lighticons-full-147.png in Resources */,
+				25CCD39018EDE0780000D1CD /* blackboard.png in Resources */,
 				296E1D2E18E5EFB5005969F7 /* P1-Lighticons-line-277.png in Resources */,
 				296E1D8218E5EFB5005969F7 /* P2-Lighticons-full-003.svg in Resources */,
 				296E1F8818E5EFB6005969F7 /* P2-Lighticons-full-168.png in Resources */,
@@ -7806,6 +7820,7 @@
 				296E1BDE18E5EFB5005969F7 /* P1-Lighticons-full-295.png in Resources */,
 				296E1CAE18E5EFB5005969F7 /* P1-Lighticons-line-141.png in Resources */,
 				296E1F6018E5EFB6005969F7 /* P2-Lighticons-full-128.png in Resources */,
+				25CCD38B18EDDD740000D1CD /* bio.png in Resources */,
 				296E21AE18E5EFB6005969F7 /* profile@2x.png in Resources */,
 				296E1C6B18E5EFB5005969F7 /* P1-Lighticons-line-073.png in Resources */,
 				296E1DE518E5EFB5005969F7 /* P2-Lighticons-full-102.svg in Resources */,
@@ -7957,6 +7972,7 @@
 				296E1DB218E5EFB5005969F7 /* P2-Lighticons-full-051.svg in Resources */,
 				296E1DAB18E5EFB5005969F7 /* P2-Lighticons-full-044.svg in Resources */,
 				296E1D4C18E5EFB5005969F7 /* P1-Lighticons-line-308.png in Resources */,
+				25CCD38C18EDDD740000D1CD /* qui.png in Resources */,
 				296E1B7318E5EFB5005969F7 /* P1-Lighticons-full-188.png in Resources */,
 				296E1CB918E5EFB5005969F7 /* P1-Lighticons-line-152.png in Resources */,
 				296E1C6818E5EFB5005969F7 /* P1-Lighticons-line-069.png in Resources */,
