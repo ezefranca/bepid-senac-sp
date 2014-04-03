@@ -102,20 +102,8 @@
 
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
     
-    
-    if (index == 0) {
-        ViewController *t = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
-        
-        //SERA USADO O BLOCO
-        [self presentViewController:t animated:NO completion:nil];
-    }
-    /*
-     if (index == 3) {
-     [sidebar dismissAnimated:YES completion:nil];
-     }
-     */
+    [SDbar changeController:index :self ];
 }
 
 -(void)userClickedOnLineKeyPoint:(CGPoint)point lineIndex:(NSInteger)lineIndex andPointIndex:(NSInteger)pointIndex{

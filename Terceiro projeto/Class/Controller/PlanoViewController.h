@@ -10,7 +10,7 @@
 
 @interface PlanoViewController : UIViewController
 @property UIDynamicAnimator *animator;
-- (IBAction)btn:(id)sender;
+
 
 -(void)animar;
 @end

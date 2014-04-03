@@ -7,6 +7,11 @@
 //
 
 #import "SDbar.h"
+#import "tempViewController.h"
+#import "SensoresViewController.h"  
+#import "PlanoViewController.h"
+#import "OrvalhoViewController.h"
+#import "ViewController.h"
 
 @implementation SDbar
 
@@ -35,6 +40,38 @@
     callout.delegate = delegate;
     //    callout.showFromRight = YES;
     [callout show];
+}
+
++(void)changeController : (int)index : (UIViewController *) controller
+{
+    
+    if (index == 0) {
+        ViewController *t = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+        
+        [controller presentViewController:t animated:NO completion:^{ NSLog(@"troquei"); }];
+    }
+    
+    if (index == 1) {
+        tempViewController *t = [[tempViewController alloc]initWithNibName:@"tempViewController" bundle:nil];
+        
+        [controller presentViewController:t animated:NO completion:^{ NSLog(@"troquei"); }];
+    }
+    
+    if (index == 2) {
+        SensoresViewController *s = [[SensoresViewController alloc]initWithNibName:@"SensoresViewController" bundle:nil];
+        [controller presentViewController:s animated:NO completion:nil];
+    }
+    
+    if (index == 3) {
+        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
+        [controller presentViewController:o animated:NO completion:nil];
+    }
+    
+    if (index == 4) {
+        PlanoViewController *s = [[PlanoViewController alloc]initWithNibName:@"PlanoViewController" bundle:nil];
+        [controller presentViewController:s animated:NO completion:nil];
+    }
+
 }
 
 @end

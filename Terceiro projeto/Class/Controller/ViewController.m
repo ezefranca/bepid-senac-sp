@@ -64,29 +64,8 @@
 #pragma mark - RNFrostedSidebarDelegate
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %lu",(unsigned long)index);
     
-    
-    if (index == 1) {
-        tempViewController *t = [[tempViewController alloc]initWithNibName:@"tempViewController" bundle:nil];
-        
-        [self presentViewController:t animated:NO completion:^{ NSLog(@"troquei"); }];
-    }
-    
-    if (index == 2) {
-        SensoresViewController *s = [[SensoresViewController alloc]initWithNibName:@"SensoresViewController" bundle:nil];
-        [self presentViewController:s animated:NO completion:nil];
-    }
-    
-    if (index == 3) {
-        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
-        [self presentViewController:o animated:NO completion:nil];
-    }
-    
-    if (index == 4) {
-        PlanoViewController *s = [[PlanoViewController alloc]initWithNibName:@"PlanoViewController" bundle:nil];
-        [self presentViewController:s animated:NO completion:nil];
-    }
+    [SDbar changeController:index :self ];
 }
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {

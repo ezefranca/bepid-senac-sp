@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Single.h"
 
+
 @interface SDbar : NSObject
 
 +(void)showSideBar : (id)delegate;
+
++(void)changeController : (int)index : (UIViewController *) controller;
 
 @end

@@ -10,8 +10,8 @@
 #import "RNFrostedSidebar.h"
 #import "PNChart.h"
 
-@interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate,PNChartDelegate>
+@interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>
 
-
+-(void)abrirMenu;
 
 @end
