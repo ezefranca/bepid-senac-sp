@@ -30,6 +30,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
+    [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
+    [self.view addGestureRecognizer:gestoPorra];
+    
+    self.angulo = 30;
+    self.podeComecar = NO;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,45 +45,66 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)btn:(id)sender {
-    [self animar];
+
+-(void)abrirMenu
+{
+    [SDbar showSideBar:self];
+}
+
+- (IBAction)btn:(id)sender
+{
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 1004, 20)];
+    line.backgroundColor = [UIColor yellowColor];
+    [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo))];
+    [self.view addSubview:line];
+    
+    self.podeComecar = YES;
 }
 
 -(void)animar
 {
-    NSLog(@"%f   %f", self.view.bounds.size.height ,self.view.bounds.size.width );
+    
+  }
+
+
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    [SDbar changeController:index :self ];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint touchPoint = [touch locationInView:self.view];
+    
     
     //OBJETOS
-    
+    if (self.podeComecar) {
+  
     //quadrado
-    [self.animator removeAllBehaviors];
+        [self.animator removeAllBehaviors];
     
-    for (UIView *u in self.view.subviews) {
-        if ([u class] != [UIButton class]) {
-            [u removeFromSuperview];
+        for (UIView *u in self.view.subviews) {
+            if ([u class] != [UIButton class]) {
+                [u removeFromSuperview];
+            }
         }
-    }
-    
-    float rotacao = 40;
+
     
     //linha
-    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 1024, 20)];
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 1004, 20)];
     line.backgroundColor = [UIColor yellowColor];
-    [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(rotacao))];
+    [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo))];
     [self.view addSubview:line];
     
     
-    float x = 1024* cos(DEGREES_TO_RADIANS(rotacao));
-    float y = 1024* sin(DEGREES_TO_RADIANS(rotacao));
     
-    NSLog(@"%d   %d -  %f   %f",  0 , 400 , x , y);
-    
-    
-    UIView *redSquare = [[UIView alloc]initWithFrame:CGRectMake((x - 1024) *(-1), y, 50, 50)];
+    UIView *redSquare = [[UIView alloc]initWithFrame:CGRectMake(touchPoint.x, touchPoint.y, 50, 50)];
     redSquare.backgroundColor = [UIColor redColor];
-    [redSquare setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(rotacao))];
+    [redSquare setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo
+                                                                             ))];
     [self.view addSubview:redSquare];
-
+    
     // INICIAR ANIMACAO
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
@@ -86,7 +114,7 @@
     UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[redSquare]];
     elasticityBehavior.elasticity = 0.0f;
     [elasticityBehavior setDensity:20.0];
-   // [elasticityBehavior setElasticity:1.0   ];
+    // [elasticityBehavior setElasticity:1.0   ];
     [self.animator addBehavior:elasticityBehavior];
     
     //linha
@@ -103,8 +131,14 @@
     UICollisionBehavior* collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[redSquare , line]];
     collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     [self.animator addBehavior:collisionBehavior];
+    
+    }
+
 }
 
+
+
+//Per saperne di più: http://www.iprog.it/blog/objective-c-ios/nstimer-creare-un-cronometro-per-iphone/ | iProg
 /*
 - (IBAction)slide:(id)sender {
     UISlider *s = sender;

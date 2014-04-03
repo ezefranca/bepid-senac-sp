@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RNFrostedSidebar.h"
 
-@interface PlanoViewController : UIViewController
+@interface PlanoViewController : UIViewController <RNFrostedSidebarDelegate>
 @property UIDynamicAnimator *animator;
 
+- (IBAction)btn:(id)sender;
 
+@property int angulo;
+
+@property BOOL podeComecar;
+
+@property NSTimer *timer;
+
+-(void)updateTimer;
 -(void)animar;
+-(void)abrirMenu;
 @end
