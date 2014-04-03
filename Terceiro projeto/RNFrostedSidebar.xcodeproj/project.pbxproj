@@ -4477,11 +4477,9 @@
 		296E10AA18E5EFAA005969F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				2981729818ECA44500A5AD6B /* Arduino */,
-=======
-				F72A906118ECA41600802E31 /* Arduino */,
->>>>>>> 01501c471584bb89caa39ef4b0eba627241a8939
+
 				2981729418EC9FAF00A5AD6B /* Simutation */,
 				296E21C218E5F77F005969F7 /* SDbar */,
 				296E21BD18E5F3B2005969F7 /* Single */,
@@ -9092,11 +9090,9 @@
 				296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */,
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
-<<<<<<< HEAD
+
 				2981729B18ECA44500A5AD6B /* ArduinoWebservice.m in Sources */,
-=======
-				F72A906418ECA41600802E31 /* ArduinoWebservice.m in Sources */,
->>>>>>> 01501c471584bb89caa39ef4b0eba627241a8939
+
 				251BD86A18EC93FE00C8C75C /* quimicaViewController.m in Sources */,
 				F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */,
 				296E194018E5EFB5005969F7 /* PNBar.m in Sources */,
