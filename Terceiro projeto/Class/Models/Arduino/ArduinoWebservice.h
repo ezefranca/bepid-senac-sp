@@ -16,6 +16,6 @@
 }
 
 -(void)initWithRequest;
--(void)conectaEFiltra:(NSString*)qualSensor;
+-(float)conectaEFiltra:(NSString*)qualSensor;
 
 @end

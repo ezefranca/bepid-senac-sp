@@ -9,11 +9,13 @@
 #import "OrvalhoViewController.h"
 #import "PNChart.h"
 #import "SDbar.h"
+#import "ArduinoWebservice.h"
 #import <math.h>
 
 @interface OrvalhoViewController ()
 
 @end
+
 
 @implementation OrvalhoViewController
 
@@ -30,6 +32,20 @@
 {
     [super viewDidLoad];
     
+    if(!a){
+        a = [[ArduinoWebservice alloc]init];
+    }
+    
+//    NSThread* corinthiana = [[NSThread alloc] initWithTarget:self
+//                          
+//                                                 selector:@selector(atualizadorLabel)
+//                          
+//                                                   object:nil];
+//    
+//    [corinthiana start];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
+    
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:gestoPorra];
@@ -42,12 +58,22 @@
 }
 
 - (IBAction)FinishButton:(id)sender {
+    
     [SDbar changeController:199 :self];
+}
+
+-(void)atualizador{
+    
 }
 
 
 
 - (IBAction)BeginButton:(id)sender {
+    //temperaturaInicial
+    [a initWithRequest];
+    temperaturaInicial = [a conectaEFiltra:@"temperatura"];
+    _inicialLabel.text = [NSString stringWithFormat:@"%2f C", temperaturaInicial];
+    NSLog(@"%@",_inicialLabel.text);
 }
 
 -(void)abrirMenu
@@ -63,6 +89,14 @@
 
 - (IBAction)btn:(id)sender {
     [self abrirMenu];
+}
+
+-(void)atualizadorLabel{
+    float temp;
+    [a initWithRequest];
+    temp = [a conectaEFiltra:@"temperatura"];
+    _atualLabel.text = [NSString stringWithFormat:@"%2f C", temp];
+    NSLog(@"%f", temp);
 }
 
 @end

@@ -15,6 +15,8 @@
     BOOL chave;
 }
 - (IBAction)ligar_lampada:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *labelLuminosidade;
+
 @property (strong, nonatomic) IBOutlet UIImageView *imagemLampada;
 
 @end

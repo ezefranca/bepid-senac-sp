@@ -30,14 +30,14 @@
     
     
     UILabel * lineChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 1004, 30)];
-    lineChartLabel.text = @"Estimate Drew Curve";
+    lineChartLabel.text = @"Estimated Dew Point Curve";
     lineChartLabel.textColor = PNTwitterColor;
     lineChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
     lineChartLabel.textAlignment = NSTextAlignmentCenter;
     
     PNLineChart * lineChart = [[PNLineChart alloc] initWithFrame:CGRectMake(200, 200, 1004, 500)];
     lineChart.backgroundColor = [UIColor clearColor];
-    [lineChart setXLabels:@[@"Begin Time", @"Final Time"]];
+    [lineChart setXLabels:@[@"Start Time", @"Final Time"]];
     [lineChart setYLabels:@[@"Temperature"]];
     
     // Line Chart Nr.1
@@ -58,7 +58,7 @@
     [self.view addSubview:lineChartLabel];
     [self.view addSubview:lineChart];
     
-    self.title = @"Drew";
+    self.title = @"Dew Point";
 
 }
 

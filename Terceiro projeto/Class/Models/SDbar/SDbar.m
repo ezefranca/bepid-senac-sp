@@ -93,7 +93,7 @@
     }
     
     //---------------------------- Grafico ponto orvalho
-    if (index == 199) {
+    if (index == 97) {
         GraficoOrvalhoViewController *o = [[GraficoOrvalhoViewController alloc]initWithNibName:@"GraficoOrvalhoViewController" bundle:nil];
         [controller presentViewController:o animated:YES completion:nil];
         
