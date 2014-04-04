@@ -14,6 +14,9 @@
 
 @property int temperatutaInicial;
 @property int temperaturaFinal;
+- (IBAction)FinishButton:(id)sender;
+- (IBAction)btn:(id)sender;
+- (IBAction)BeginButton:(id)sender;
 
 -(void)abrirMenu;
 

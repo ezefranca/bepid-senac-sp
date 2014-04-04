@@ -12,6 +12,7 @@
 #import "PlanoViewController.h"
 #import "OrvalhoViewController.h"
 #import "biologiaViewController.h"
+#import "GraficoOrvalhoViewController.h"
 #import "ViewController.h"
 
 @implementation SDbar
@@ -73,18 +74,32 @@
         [controller presentViewController:s animated:NO completion:nil];
     }
     
-    // Biologia
+    //-------------------> Biologia
     if (index == 98) {
         biologiaViewController *o = [[biologiaViewController alloc]initWithNibName:@"biologiaViewController" bundle:nil];
         [controller presentViewController:o animated:YES completion:nil];
     }
     
-    // Quimica
+    
+    
+    
+    //------------------> Fim Biologia
+    
+    //------------------> Quimica
     if (index == 99) {
         
         OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
         [controller presentViewController:o animated:YES completion:nil];
     }
+    
+    //---------------------------- Grafico ponto orvalho
+    if (index == 199) {
+        GraficoOrvalhoViewController *o = [[GraficoOrvalhoViewController alloc]initWithNibName:@"GraficoOrvalhoViewController" bundle:nil];
+        [controller presentViewController:o animated:YES completion:nil];
+        
+    }
+    
+    //------------------> Fim Quimica
     
     //Fisica
     if (index == 97) {

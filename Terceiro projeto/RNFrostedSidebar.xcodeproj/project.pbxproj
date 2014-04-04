@@ -2200,6 +2200,8 @@
 		F725F1A818EE77BB00CAEB1C /* biologiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */; };
 		F725F1AA18EE7FCD00CAEB1C /* lampadaAcesa.png in Resources */ = {isa = PBXBuildFile; fileRef = F725F1A918EE7FCD00CAEB1C /* lampadaAcesa.png */; };
 		F725F1AC18EEBF8500CAEB1C /* menino.png in Resources */ = {isa = PBXBuildFile; fileRef = F725F1AB18EEBF8500CAEB1C /* menino.png */; };
+		F725F1B018EEE52B00CAEB1C /* GraficoOrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F725F1AE18EEE52B00CAEB1C /* GraficoOrvalhoViewController.m */; };
+		F725F1B118EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F725F1AF18EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib */; };
 		F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D742418E615C000C267FE /* OrvalhoViewController.m */; };
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
 /* End PBXBuildFile section */
@@ -4424,6 +4426,9 @@
 		F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = biologiaViewController.xib; sourceTree = "<group>"; };
 		F725F1A918EE7FCD00CAEB1C /* lampadaAcesa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lampadaAcesa.png; path = Resources/images/lampadaAcesa.png; sourceTree = SOURCE_ROOT; };
 		F725F1AB18EEBF8500CAEB1C /* menino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menino.png; sourceTree = "<group>"; };
+		F725F1AD18EEE52B00CAEB1C /* GraficoOrvalhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraficoOrvalhoViewController.h; sourceTree = "<group>"; };
+		F725F1AE18EEE52B00CAEB1C /* GraficoOrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraficoOrvalhoViewController.m; sourceTree = "<group>"; };
+		F725F1AF18EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GraficoOrvalhoViewController.xib; path = ../../Class/Controller/GraficoOrvalhoViewController.xib; sourceTree = "<group>"; };
 		F72D742318E615C000C267FE /* OrvalhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrvalhoViewController.h; sourceTree = "<group>"; };
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
@@ -4475,6 +4480,8 @@
 		296E10A018E5EFAA005969F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F725F1AD18EEE52B00CAEB1C /* GraficoOrvalhoViewController.h */,
+				F725F1AE18EEE52B00CAEB1C /* GraficoOrvalhoViewController.m */,
 				296E10A118E5EFAA005969F7 /* RNAppDelegate.h */,
 				296E10A218E5EFAA005969F7 /* RNAppDelegate.m */,
 				F725F1A418EE77BB00CAEB1C /* biologiaViewController.h */,
@@ -6801,6 +6808,7 @@
 		296E193718E5EFB5005969F7 /* NIBs */ = {
 			isa = PBXGroup;
 			children = (
+				F725F1AF18EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib */,
 				F72D742518E615C000C267FE /* OrvalhoViewController.xib */,
 				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E193818E5EFB5005969F7 /* HeaderSensor.xib */,
@@ -8633,6 +8641,7 @@
 				296E20F218E5EFB6005969F7 /* P2-Lighticons-line-175.png in Resources */,
 				296E1B4118E5EFB5005969F7 /* P1-Lighticons-full-138.png in Resources */,
 				296E20E518E5EFB6005969F7 /* P2-Lighticons-line-162.png in Resources */,
+				F725F1B118EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib in Resources */,
 				296E204418E5EFB6005969F7 /* P2-Lighticons-line-001.png in Resources */,
 				296E1ADE18E5EFB5005969F7 /* P1-Lighticons-full-039.png in Resources */,
 				296E1A8518E5EFB5005969F7 /* P1-Lighticons-full-306.svg in Resources */,
@@ -9116,6 +9125,7 @@
 				296E21C118E5F3B2005969F7 /* Single.m in Sources */,
 				296E193C18E5EFB5005969F7 /* RNAppDelegate.m in Sources */,
 				296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */,
+				F725F1B018EEE52B00CAEB1C /* GraficoOrvalhoViewController.m in Sources */,
 				296E194618E5EFB5005969F7 /* PNLineChartData.m in Sources */,
 				296E193D18E5EFB5005969F7 /* SensoresViewController.m in Sources */,
 				25CCD38818EDD8170000D1CD /* ArduinoWebservice.m in Sources */,

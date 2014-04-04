@@ -48,7 +48,7 @@
         <tabBarController definesPresentationContext="YES" id="fPx-vb-9Ut">
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
             <nil key="simulatedTopBarMetrics"/>
-            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <nil key="simulatedDestinationMetrics"/>
             <tabBar key="tabBar" contentMode="scaleToFill" id="96N-nX-rWT">

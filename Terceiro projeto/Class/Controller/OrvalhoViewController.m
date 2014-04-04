@@ -41,6 +41,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)FinishButton:(id)sender {
+    [SDbar changeController:199 :self];
+}
+
+
+
+- (IBAction)BeginButton:(id)sender {
+}
+
 -(void)abrirMenu
 {
     [SDbar showSideBar:self];
@@ -49,6 +58,11 @@
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
     
     [SDbar changeController:index :self ];
+}
+
+
+- (IBAction)btn:(id)sender {
+    [self abrirMenu];
 }
 
 @end
