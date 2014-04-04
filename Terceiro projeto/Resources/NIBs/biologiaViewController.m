@@ -9,6 +9,7 @@
 #import "biologiaViewController.h"
 #import "SDbar.h"
 #import "PNChart.h"
+#import "OrvalhoViewController.h"
 
 
 @interface biologiaViewController ()
@@ -30,9 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
-    
+    if(!a){
+        a = [[ArduinoWebservice alloc]init];
+    }
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
     //For CircleChart
     
     PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:CGRectMake(50, 150.0, SCREEN_WIDTH, 150.0) andTotal:[NSNumber numberWithInt:100] andCurrent:[NSNumber numberWithInt:60] andClockwise:YES];
@@ -77,6 +79,14 @@
 
 -(void)userClickedOnLinePoint:(CGPoint)point lineIndex:(NSInteger)lineIndex{
     NSLog(@"Click on line %f, %f, line index is %d",point.x, point.y, (int)lineIndex);
+}
+
+-(void)atualizadorLabel{
+    float temp;
+    [a initWithRequest];
+    temp = [a conectaEFiltra:@"luminosidade"];
+    _labelLuminosidade.text = [NSString stringWithFormat:@"%2f C", temp];
+    //NSLog(@"%f", temp);
 }
 
 @end

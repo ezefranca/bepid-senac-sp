@@ -36,13 +36,9 @@
         a = [[ArduinoWebservice alloc]init];
     }
     
-//    NSThread* corinthiana = [[NSThread alloc] initWithTarget:self
-//                          
-//                                                 selector:@selector(atualizadorLabel)
-//                          
-//                                                   object:nil];
-//    
-//    [corinthiana start];
+    _plotaGrafico.enabled = FALSE;
+    _plotaGrafico.alpha = 0;
+
     
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
     
@@ -58,6 +54,9 @@
 }
 
 - (IBAction)FinishButton:(id)sender {
+    NSThread* corinthiana = [[NSThread alloc] initWithTarget:self selector:@selector(pegaInicial)
+                                                      object:nil];
+    [corinthiana start];
     
     [SDbar changeController:199 :self];
 }
@@ -70,11 +69,32 @@
 
 - (IBAction)BeginButton:(id)sender {
     //temperaturaInicial
+       NSThread* corinthiana = [[NSThread alloc] initWithTarget:self selector:@selector(pegaInicial)
+                    object:nil];
+       [corinthiana start];
+
+}
+
+- (IBAction)plotaGrafico:(id)sender {
+     [SDbar changeController:199 :self ];
+}
+
+-(void)pegaInicial{
     [a initWithRequest];
     temperaturaInicial = [a conectaEFiltra:@"temperatura"];
     _inicialLabel.text = [NSString stringWithFormat:@"%2f C", temperaturaInicial];
     NSLog(@"%@",_inicialLabel.text);
 }
+
+-(void)pegaFinal{
+    [a initWithRequest];
+    temperaturaFinal = [a conectaEFiltra:@"temperatura"];
+    _finalLabel.text = [NSString stringWithFormat:@"%2f C", temperaturaFinal];
+   // NSLog(@"%@",_finalLabel.text);
+    _plotaGrafico.enabled = TRUE;
+    _plotaGrafico.alpha = 1;
+}
+
 
 -(void)abrirMenu
 {

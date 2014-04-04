@@ -10,9 +10,12 @@
 #import "PNChartDelegate.h"
 #import "PNChart.h"
 #import "RNFrostedSidebar.h"
+#import "ArduinoWebservice.h"
+
 @interface biologiaViewController : UIViewController <RNFrostedSidebarDelegate, PNChartDelegate>
 {
     BOOL chave;
+    ArduinoWebservice *a;
 }
 - (IBAction)ligar_lampada:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *labelLuminosidade;

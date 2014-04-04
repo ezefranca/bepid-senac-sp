@@ -19,10 +19,12 @@
 @property (strong, nonatomic) IBOutlet UILabel *inicialLabel;
 @property (strong, nonatomic) IBOutlet UILabel *finalLabel;
 @property (strong, nonatomic) IBOutlet UILabel *atualLabel;
+@property (strong, nonatomic) IBOutlet UIButton *plotaGrafico;
 
 - (IBAction)FinishButton:(id)sender;
 - (IBAction)btn:(id)sender;
 - (IBAction)BeginButton:(id)sender;
+- (IBAction)plotaGrafico:(id)sender;
 
 -(void)abrirMenu;
 -(void)atualizadorLabel;

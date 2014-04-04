@@ -9,6 +9,7 @@
                 <outlet property="atualLabel" destination="44q-EK-C78" id="Yfy-cj-3jT"/>
                 <outlet property="finalLabel" destination="q6d-DG-O9W" id="tgQ-YF-jHI"/>
                 <outlet property="inicialLabel" destination="tvH-5M-aJU" id="bvu-UT-KGi"/>
+                <outlet property="plotaGrafico" destination="IS6-H2-b7v" id="OAD-bd-nHh"/>
                 <outlet property="view" destination="LGK-Yo-UdP" id="0gi-xJ-ard"/>
             </connections>
         </placeholder>
@@ -101,6 +102,17 @@
                     </state>
                     <connections>
                         <action selector="btn:" destination="-1" eventType="touchUpInside" id="102-2R-GZZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS6-H2-b7v">
+                    <rect key="frame" x="387" y="338" width="259" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Click here to Plot Graphic">
+                        <color key="titleColor" red="1" green="0.0" blue="0.047118742970000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="plotaGrafico:" destination="-1" eventType="touchUpInside" id="8DU-Xh-OPw"/>
                     </connections>
                 </button>
             </subviews>
