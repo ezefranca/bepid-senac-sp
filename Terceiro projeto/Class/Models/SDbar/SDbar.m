@@ -11,6 +11,7 @@
 #import "SensoresViewController.h"  
 #import "PlanoViewController.h"
 #import "OrvalhoViewController.h"
+#import "biologiaViewController.h"
 #import "ViewController.h"
 
 @implementation SDbar
@@ -73,16 +74,16 @@
     }
     
     // Biologia
-    if (index == 99) {
-        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
-        [controller presentViewController:o animated:NO completion:nil];
+    if (index == 98) {
+        biologiaViewController *o = [[biologiaViewController alloc]initWithNibName:@"biologiaViewController" bundle:nil];
+        [controller presentViewController:o animated:YES completion:nil];
     }
     
     // Quimica
-    if (index == 98) {
+    if (index == 99) {
         
         OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
-        [controller presentViewController:o animated:NO completion:nil];
+        [controller presentViewController:o animated:YES completion:nil];
     }
     
     //Fisica

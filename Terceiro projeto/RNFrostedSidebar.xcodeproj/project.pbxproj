@@ -2196,6 +2196,10 @@
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
 		86D2CBF917CEAFE50098397C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D1B2317BC2C9B00157004 /* QuartzCore.framework */; };
 		86D2CBFA17CEAFE90098397C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D1B2517BC2CA000157004 /* Accelerate.framework */; };
+		F725F1A718EE77BB00CAEB1C /* biologiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F725F1A518EE77BB00CAEB1C /* biologiaViewController.m */; };
+		F725F1A818EE77BB00CAEB1C /* biologiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */; };
+		F725F1AA18EE7FCD00CAEB1C /* lampadaAcesa.png in Resources */ = {isa = PBXBuildFile; fileRef = F725F1A918EE7FCD00CAEB1C /* lampadaAcesa.png */; };
+		F725F1AC18EEBF8500CAEB1C /* menino.png in Resources */ = {isa = PBXBuildFile; fileRef = F725F1AB18EEBF8500CAEB1C /* menino.png */; };
 		F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D742418E615C000C267FE /* OrvalhoViewController.m */; };
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
 /* End PBXBuildFile section */
@@ -2203,7 +2207,7 @@
 /* Begin PBXFileReference section */
 		251BD86718EC93FE00C8C75C /* quimicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quimicaViewController.h; sourceTree = "<group>"; };
 		251BD86818EC93FE00C8C75C /* quimicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quimicaViewController.m; sourceTree = "<group>"; };
-		251BD86918EC93FE00C8C75C /* quimicaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = quimicaViewController.xib; sourceTree = "<group>"; };
+		251BD86918EC93FE00C8C75C /* quimicaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = quimicaViewController.xib; path = ../../Class/Controller/quimicaViewController.xib; sourceTree = "<group>"; };
 		25CCD38618EDD8170000D1CD /* ArduinoWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoWebservice.h; sourceTree = "<group>"; };
 		25CCD38718EDD8170000D1CD /* ArduinoWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArduinoWebservice.m; sourceTree = "<group>"; };
 		25CCD38918EDDD730000D1CD /* bio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bio.png; sourceTree = "<group>"; };
@@ -4415,6 +4419,11 @@
 		8646016217BAF99800FCE7F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8646016417BAF99800FCE7F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8646017917BAF99800FCE7F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F725F1A418EE77BB00CAEB1C /* biologiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = biologiaViewController.h; path = ../../Resources/NIBs/biologiaViewController.h; sourceTree = "<group>"; };
+		F725F1A518EE77BB00CAEB1C /* biologiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = biologiaViewController.m; path = ../../Resources/NIBs/biologiaViewController.m; sourceTree = "<group>"; };
+		F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = biologiaViewController.xib; sourceTree = "<group>"; };
+		F725F1A918EE7FCD00CAEB1C /* lampadaAcesa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lampadaAcesa.png; path = Resources/images/lampadaAcesa.png; sourceTree = SOURCE_ROOT; };
+		F725F1AB18EEBF8500CAEB1C /* menino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menino.png; sourceTree = "<group>"; };
 		F72D742318E615C000C267FE /* OrvalhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrvalhoViewController.h; sourceTree = "<group>"; };
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
@@ -4468,15 +4477,16 @@
 			children = (
 				296E10A118E5EFAA005969F7 /* RNAppDelegate.h */,
 				296E10A218E5EFAA005969F7 /* RNAppDelegate.m */,
+				F725F1A418EE77BB00CAEB1C /* biologiaViewController.h */,
+				F725F1A518EE77BB00CAEB1C /* biologiaViewController.m */,
 				F72D742318E615C000C267FE /* OrvalhoViewController.h */,
 				F72D742418E615C000C267FE /* OrvalhoViewController.m */,
 				296E10A318E5EFAA005969F7 /* SensoresViewController.h */,
 				296E10A418E5EFAA005969F7 /* SensoresViewController.m */,
 				296E10A518E5EFAA005969F7 /* tempViewController.h */,
+				296E10A618E5EFAA005969F7 /* tempViewController.m */,
 				251BD86718EC93FE00C8C75C /* quimicaViewController.h */,
 				251BD86818EC93FE00C8C75C /* quimicaViewController.m */,
-				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
-				296E10A618E5EFAA005969F7 /* tempViewController.m */,
 				296E10A718E5EFAA005969F7 /* ViewController.h */,
 				296E10A818E5EFAA005969F7 /* ViewController.m */,
 				296E21C618E6020E005969F7 /* PlanoViewController.h */,
@@ -4555,6 +4565,8 @@
 		296E10C818E5EFAA005969F7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F725F1AB18EEBF8500CAEB1C /* menino.png */,
+				F725F1A918EE7FCD00CAEB1C /* lampadaAcesa.png */,
 				294F52D918EDFC60001EB661 /* copo.png */,
 				294F52D718EDF6BB001EB661 /* ter.png */,
 				25CCD38F18EDE0780000D1CD /* blackboard.png */,
@@ -6790,10 +6802,12 @@
 			isa = PBXGroup;
 			children = (
 				F72D742518E615C000C267FE /* OrvalhoViewController.xib */,
+				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E193818E5EFB5005969F7 /* HeaderSensor.xib */,
 				296E21C818E6020E005969F7 /* PlanoViewController.xib */,
 				296E193918E5EFB5005969F7 /* SensoresViewController.xib */,
 				296E193A18E5EFB5005969F7 /* tempViewController.xib */,
+				F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */,
 				296E193B18E5EFB5005969F7 /* ViewController.xib */,
 			);
 			path = NIBs;
@@ -7034,6 +7048,7 @@
 				296E1C0218E5EFB5005969F7 /* P1-Lighticons-full-331.png in Resources */,
 				296E1A5118E5EFB5005969F7 /* P1-Lighticons-full-254.svg in Resources */,
 				296E1F6E18E5EFB6005969F7 /* P2-Lighticons-full-142.png in Resources */,
+				F725F1A818EE77BB00CAEB1C /* biologiaViewController.xib in Resources */,
 				296E1D6718E5EFB5005969F7 /* P1-Lighticons-line-338.png in Resources */,
 				296E20FA18E5EFB6005969F7 /* P2-Lighticons-line-183.png in Resources */,
 				251BD86B18EC93FE00C8C75C /* quimicaViewController.xib in Resources */,
@@ -7731,6 +7746,7 @@
 				296E199A18E5EFB5005969F7 /* P1-Lighticons-full-071.svg in Resources */,
 				296E1B5718E5EFB5005969F7 /* P1-Lighticons-full-160.png in Resources */,
 				296E1F9B18E5EFB6005969F7 /* P2-Lighticons-full-187.png in Resources */,
+				F725F1AC18EEBF8500CAEB1C /* menino.png in Resources */,
 				296E1AB418E5EFB5005969F7 /* P1-Lighticons-full-353.svg in Resources */,
 				296E1B5D18E5EFB5005969F7 /* P1-Lighticons-full-166.png in Resources */,
 				296E1F3018E5EFB6005969F7 /* P2-Lighticons-full-080.png in Resources */,
@@ -8372,6 +8388,7 @@
 				296E1F7118E5EFB6005969F7 /* P2-Lighticons-full-145.png in Resources */,
 				296E1A4018E5EFB5005969F7 /* P1-Lighticons-full-237.svg in Resources */,
 				296E195818E5EFB5005969F7 /* P1-Lighticons-full-005.svg in Resources */,
+				F725F1AA18EE7FCD00CAEB1C /* lampadaAcesa.png in Resources */,
 				296E1CA718E5EFB5005969F7 /* P1-Lighticons-line-134.png in Resources */,
 				296E194D18E5EFB5005969F7 /* burger.png in Resources */,
 				296E1AEB18E5EFB5005969F7 /* P1-Lighticons-full-052.png in Resources */,
@@ -9086,6 +9103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296E193E18E5EFB5005969F7 /* tempViewController.m in Sources */,
+				F725F1A718EE77BB00CAEB1C /* biologiaViewController.m in Sources */,
 				296E194718E5EFB5005969F7 /* PNLineChartDataItem.m in Sources */,
 				296E21C518E5F795005969F7 /* SDbar.m in Sources */,
 				296E194318E5EFB5005969F7 /* PNCircleChart.m in Sources */,

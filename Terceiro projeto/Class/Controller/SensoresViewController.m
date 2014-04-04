@@ -10,6 +10,7 @@
 #import "quimicaViewController.h"
 #import "OrvalhoViewController.h"
 #import "PlanoViewController.h"
+#import "biologiaViewController.h"
 #import "ViewController.h"
 #import "SDbar.h"
 
@@ -23,7 +24,7 @@
 }
 
 - (IBAction)biologiaBotao1:(id)sender {
-    [SDbar changeController:99 :self ];
+    [SDbar changeController:98 :self ];
 }
 - (IBAction)botaoQuimica:(id)sender {
     [SDbar changeController:99 :self ];
