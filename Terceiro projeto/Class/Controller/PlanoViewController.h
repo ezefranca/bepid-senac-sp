@@ -20,7 +20,7 @@
 
 @property NSTimer *timer;
 
--(void)updateTimer;
+
 -(void)animar;
 -(void)abrirMenu;
 @end

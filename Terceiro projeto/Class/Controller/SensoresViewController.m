@@ -7,11 +7,6 @@
 //
 
 #import "SensoresViewController.h"
-#import "quimicaViewController.h"
-#import "OrvalhoViewController.h"
-#import "PlanoViewController.h"
-#import "biologiaViewController.h"
-#import "ViewController.h"
 #import "SDbar.h"
 
 @interface SensoresViewController ()

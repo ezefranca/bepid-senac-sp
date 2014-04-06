@@ -24,8 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
-    
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:gestoPorra];

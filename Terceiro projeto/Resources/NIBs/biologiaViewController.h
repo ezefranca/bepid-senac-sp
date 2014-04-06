@@ -13,13 +13,16 @@
 #import "ArduinoWebservice.h"
 
 @interface biologiaViewController : UIViewController <RNFrostedSidebarDelegate, PNChartDelegate>
-{
-    BOOL chave;
-    ArduinoWebservice *a;
-}
-- (IBAction)ligar_lampada:(id)sender;
-@property (strong, nonatomic) IBOutlet UILabel *labelLuminosidade;
 
+- (IBAction)onLamp:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *swithLamp;
+
+- (IBAction)btnBar:(id)sender;
+
+@property ArduinoWebservice *arduino;
+@property NSTimer *time;
+
+@property (strong, nonatomic) IBOutlet UILabel *labelLuminosidade;
 @property (strong, nonatomic) IBOutlet UIImageView *imagemLampada;
 
 @end

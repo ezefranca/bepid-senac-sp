@@ -12,6 +12,7 @@
 
 @property NSMutableArray *sensoresData;
 @property NSData *jsonData;
+@property Reachability *internetReachable;
 
 -(float)returnData:(NSString*) sensor;
 

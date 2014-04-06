@@ -23,7 +23,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.arduino = [[ArduinoWebservice alloc]init];
+        self.plotaGrafico.enabled = FALSE;
+        self.plotaGrafico.alpha = 0;
     }
     return self;
 }
@@ -31,13 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.arduino = [[ArduinoWebservice alloc]init];
-    
-    _plotaGrafico.enabled = FALSE;
-    _plotaGrafico.alpha = 0;
 
-    
     self.time = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
     
     //gesto para abrir a barra lateral
@@ -58,49 +54,23 @@
     self.time = nil;
 }
 
-- (IBAction)FinishButton:(id)sender {
-    /*
-    NSThread* corinthiana = [[NSThread alloc] initWithTarget:self selector:@selector(pegaInicial)
-                                                      object:nil];
-    [corinthiana start];
-     */
+- (IBAction)FinishButton:(id)sender
+{
+    self.temperaturaFinal = [self.arduino returnData:@"temperatura"];
+    self.finalLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaFinal];
+    self.plotaGrafico.enabled = TRUE;
+    self.plotaGrafico.alpha = 1;
 }
 
-- (IBAction)BeginButton:(id)sender {
-    //temperaturaInicial
-    /*
-       NSThread* corinthiana = [[NSThread alloc] initWithTarget:self selector:@selector(pegaInicial)
-                    object:nil];
-       [corinthiana start];
-     */
+- (IBAction)BeginButton:(id)sender
+{
+    self.temperaturaInicial = [self.arduino returnData:@"temperatura"];
+    self.inicialLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaInicial];
 }
 
 - (IBAction)plotaGrafico:(id)sender {
      [SDbar changeController:6 :self ];
 }
-
--(void)pegaInicial{
-    /*
-    [a initWithRequest];
-    temperaturaInicial = [a conectaEFiltra:@"temperatura"];
-    _inicialLabel.text = [NSString stringWithFormat:@"%2f C", temperaturaInicial];
-    NSLog(@"%@",_inicialLabel.text);
-     */
-}
-
--(void)pegaFinal{
-    /*
-    [a initWithRequest];
-    temperaturaFinal = [a conectaEFiltra:@"temperatura"];
-    _finalLabel.text = [NSString stringWithFormat:@"%2f C", temperaturaFinal];
-   // NSLog(@"%@",_finalLabel.text);
-    _plotaGrafico.enabled = TRUE;
-    _plotaGrafico.alpha = 1;
-     */
-}
-
-
-
 
 -(void)atualizadorLabel{
     
