@@ -75,39 +75,17 @@
     }
     
     //-------------------> Biologia
-    if (index == 98) {
+    if (index == 5) {
         biologiaViewController *o = [[biologiaViewController alloc]initWithNibName:@"biologiaViewController" bundle:nil];
         [controller presentViewController:o animated:YES completion:nil];
     }
     
-    
-    
-    
-    //------------------> Fim Biologia
-    
-    //------------------> Quimica
-    if (index == 99) {
-        
-        OrvalhoViewController *o = [[OrvalhoViewController alloc]initWithNibName:@"OrvalhoViewController" bundle:nil];
-        [controller presentViewController:o animated:YES completion:nil];
-    }
-    
     //---------------------------- Grafico ponto orvalho
-    if (index == 97) {
+    if (index == 6) {
         GraficoOrvalhoViewController *o = [[GraficoOrvalhoViewController alloc]initWithNibName:@"GraficoOrvalhoViewController" bundle:nil];
         [controller presentViewController:o animated:YES completion:nil];
         
     }
-    
-    //------------------> Fim Quimica
-    
-    //Fisica
-    if (index == 97) {
-        PlanoViewController *o = [[PlanoViewController alloc]initWithNibName:@"PlanoViewController" bundle:nil];
-        [controller presentViewController:o animated:YES completion:nil];
-        
-    }
-
 }
 
 @end

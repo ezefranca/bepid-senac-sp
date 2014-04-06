@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface ArduinoWebservice : NSObject
-{
-    NSMutableArray *sensoresData;
-    NSMutableArray *sensoresDataAuxiliar;
-    NSData *jsonDados;
-}
 
--(void)initWithRequest;
--(float)conectaEFiltra:(NSString*)qualSensor;
+@property NSMutableArray *sensoresData;
+@property NSData *jsonData;
+
+-(float)returnData:(NSString*) sensor;
+
+-(void)reloadData;
 
 @end

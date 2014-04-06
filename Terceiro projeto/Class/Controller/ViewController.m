@@ -46,9 +46,11 @@
 }
 
 - (IBAction)botaoTeste:(id)sender {
+    /*
     ArduinoWebservice *a = [[ArduinoWebservice alloc]init];
    [a initWithRequest];
    [a conectaEFiltra:@"temperatura"];
+     */
 }
 
 -(void)abrirMenu

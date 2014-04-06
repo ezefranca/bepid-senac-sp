@@ -82,11 +82,13 @@
 }
 
 -(void)atualizadorLabel{
+    /*
     float temp;
     [a initWithRequest];
     temp = [a conectaEFiltra:@"luminosidade"];
     _labelLuminosidade.text = [NSString stringWithFormat:@"%2f C", temp];
     //NSLog(@"%f", temp);
+     */
 }
 
 @end

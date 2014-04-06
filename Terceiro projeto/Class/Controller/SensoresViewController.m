@@ -24,13 +24,13 @@
 }
 
 - (IBAction)biologiaBotao1:(id)sender {
-    [SDbar changeController:98 :self ];
+    [SDbar changeController:5 :self ];
 }
 - (IBAction)botaoQuimica:(id)sender {
-    [SDbar changeController:99 :self ];
+    [SDbar changeController:3 :self ];
 }
 - (IBAction)botaoFisica:(id)sender {
-    [SDbar changeController:97 :self ];
+    [SDbar changeController:4 :self ];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

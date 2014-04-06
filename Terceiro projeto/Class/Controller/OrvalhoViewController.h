@@ -12,10 +12,12 @@
 #import "ArduinoWebservice.h"
 
 @interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>
-{
-    float temperaturaInicial, temperaturaFinal;
-    ArduinoWebservice *a;
-}
+
+@property ArduinoWebservice *arduino;
+@property float temperaturaInicial;
+@property float temperaturaFinal;
+@property NSTimer *time;
+
 @property (strong, nonatomic) IBOutlet UILabel *inicialLabel;
 @property (strong, nonatomic) IBOutlet UILabel *finalLabel;
 @property (strong, nonatomic) IBOutlet UILabel *atualLabel;

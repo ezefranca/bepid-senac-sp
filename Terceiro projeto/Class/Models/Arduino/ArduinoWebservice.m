@@ -14,36 +14,32 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@"Arduino Criado");
+    
+        self.jsonData = [[NSData alloc]init];
+
     }
     return self;
 }
 
-
--(void)initWithRequest{
- //   NSLog(@"Conectando ao arduino...");
-   jsonDados = [[NSData alloc] initWithContentsOfURL:
-                 [NSURL URLWithString:@"http://192.168.1.177"]];
+-(void)reloadData
+{
+    self.jsonData = [[NSData alloc] initWithContentsOfURL:
+                             [NSURL URLWithString:@"http://172.246.16.27/arduino"]];
 }
 
+-(float)returnData:(NSString *)sensor
+{
+    
+    NSError *error;
+    
+    NSMutableDictionary *jsonDadosSerializado = [NSJSONSerialization
+                                                 JSONObjectWithData:self.jsonData
+                                                 options:NSJSONReadingMutableContainers
+                                                 error:&error];
+    
+    return  [[jsonDadosSerializado objectForKey:sensor] floatValue];
 
-
--(float)conectaEFiltra:(NSString*)qualSensor{
-
-    float sensor;
-NSError *error;
-
-NSMutableDictionary *jsonDadosSerializado = [NSJSONSerialization
-                                         JSONObjectWithData:jsonDados
-                                         options:NSJSONReadingMutableContainers
-                                         error:&error];
-
-  //  NSLog(@"%@", jsonDadosSerializado);
-    sensoresData = [jsonDadosSerializado objectForKey:qualSensor];
-    sensor = [[jsonDadosSerializado objectForKey:qualSensor] floatValue];
- //   NSLog(@"-----%f", sensor);
-    return sensor;
-    //ok
 }
+
 
 @end
