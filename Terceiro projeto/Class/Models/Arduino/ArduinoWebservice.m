@@ -23,6 +23,27 @@
 
 -(void)reloadData
 {
+    self.internetReachable = [Reachability reachabilityWithHostname:@"172.246.16.27"];
+
+    self.internetReachable.reachableBlock = ^(Reachability*reach)
+    {
+        // Update the UI on the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"internet esta funcionando");
+        });
+    };
+    
+    // Internet is not reachable
+    self.internetReachable.unreachableBlock = ^(Reachability*reach)
+    {
+        // Update the UI on the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"Someone broke the internet :(");
+        });
+    };
+    
+     [self.internetReachable startNotifier];
+    
     self.jsonData = [[NSData alloc] initWithContentsOfURL:
                              [NSURL URLWithString:@"http://172.246.16.27/arduino"]];
 }

@@ -2196,6 +2196,7 @@
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
 		86D2CBF917CEAFE50098397C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D1B2317BC2C9B00157004 /* QuartzCore.framework */; };
 		86D2CBFA17CEAFE90098397C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D1B2517BC2CA000157004 /* Accelerate.framework */; };
+		C069753E18F14EE400DB4924 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C069753D18F14EE400DB4924 /* Reachability.m */; };
 		F725F1A718EE77BB00CAEB1C /* biologiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F725F1A518EE77BB00CAEB1C /* biologiaViewController.m */; };
 		F725F1A818EE77BB00CAEB1C /* biologiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */; };
 		F725F1AA18EE7FCD00CAEB1C /* lampadaAcesa.png in Resources */ = {isa = PBXBuildFile; fileRef = F725F1A918EE7FCD00CAEB1C /* lampadaAcesa.png */; };
@@ -4421,6 +4422,8 @@
 		8646016217BAF99800FCE7F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8646016417BAF99800FCE7F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8646017917BAF99800FCE7F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C069753C18F14EE400DB4924 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C069753D18F14EE400DB4924 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		F725F1A418EE77BB00CAEB1C /* biologiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = biologiaViewController.h; path = ../../Resources/NIBs/biologiaViewController.h; sourceTree = "<group>"; };
 		F725F1A518EE77BB00CAEB1C /* biologiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = biologiaViewController.m; path = ../../Resources/NIBs/biologiaViewController.m; sourceTree = "<group>"; };
 		F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = biologiaViewController.xib; sourceTree = "<group>"; };
@@ -4512,6 +4515,7 @@
 		296E10AA18E5EFAA005969F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C069753B18F14EE400DB4924 /* Reachability */,
 				25CCD38518EDD8170000D1CD /* Arduino */,
 				2981729418EC9FAF00A5AD6B /* Simutation */,
 				296E21C218E5F77F005969F7 /* SDbar */,
@@ -6881,6 +6885,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C069753B18F14EE400DB4924 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C069753C18F14EE400DB4924 /* Reachability.h */,
+				C069753D18F14EE400DB4924 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -9115,6 +9128,7 @@
 				F725F1A718EE77BB00CAEB1C /* biologiaViewController.m in Sources */,
 				296E194718E5EFB5005969F7 /* PNLineChartDataItem.m in Sources */,
 				296E21C518E5F795005969F7 /* SDbar.m in Sources */,
+				C069753E18F14EE400DB4924 /* Reachability.m in Sources */,
 				296E194318E5EFB5005969F7 /* PNCircleChart.m in Sources */,
 				296E194818E5EFB5005969F7 /* UICountingLabel.m in Sources */,
 				296E194218E5EFB5005969F7 /* PNChartLabel.m in Sources */,
