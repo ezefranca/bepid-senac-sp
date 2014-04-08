@@ -14,12 +14,17 @@
 
 @interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>
 
+@property UIDynamicAnimator *animator;
+
 @property ArduinoWebservice *arduino;
 @property float temperaturaInicial;
 @property float temperaturaFinal;
 @property float temperaturaAtual;
 @property Single *single;
 @property NSTimer *time;
+
+@property BOOL podeComecar;
+@property int angulo;
 
 @property (strong, nonatomic) IBOutlet UILabel *inicialLabel;
 @property (strong, nonatomic) IBOutlet UILabel *finalLabel;
@@ -33,4 +38,5 @@
 
 -(void)abrirMenu;
 -(void)atualizadorLabel;
+-(void)desenhaGelinho;
 @end

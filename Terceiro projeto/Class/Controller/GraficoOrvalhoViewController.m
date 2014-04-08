@@ -52,7 +52,7 @@
     NSArray * data01Array = [[NSArray alloc]initWithObjects: inicio, final, nil];
     
     UR = 100 - 5*(dadosTemperatura.temperatura.TemperaturaFinal - dadosTemperatura.temperatura.temperaturaInicial);
-    NSLog(@"Umidade reladitva %f", UR);
+  //  NSLog(@"Umidade reladitva %f", UR);
     
     
     PNLineChartData *data01 = [PNLineChartData new];

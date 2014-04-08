@@ -67,6 +67,8 @@
 {
     self.temperaturaInicial = [self.arduino returnData:@"temperatura"];
     self.inicialLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaInicial];
+    
+    [self desenhaGelinho];
 }
 
 - (IBAction)plotaGrafico:(id)sender {
@@ -107,6 +109,36 @@
 
 - (IBAction)btn:(id)sender {
     [self abrirMenu];
+}
+
+-(void)desenhaGelinho{
+    // INICIAR ANIMACAO
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    //CUSTON
+    UIView *redSquare = [[UIView alloc]initWithFrame:CGRectMake(800, 200, 50, 50)];
+    redSquare.backgroundColor = [UIColor redColor];
+    [redSquare setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo
+                                                                             ))];
+    [self.view addSubview:redSquare];
+    
+    //quadrado
+    UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[redSquare]];
+    elasticityBehavior.elasticity = 0.0f;
+    [elasticityBehavior setDensity:20.0];
+    // [elasticityBehavior setElasticity:1.0   ];
+    [self.animator addBehavior:elasticityBehavior];
+    
+    
+    
+    
+    //COLISAO E GRAEVIDADE
+    UIGravityBehavior* gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[redSquare ]];
+    [self.animator addBehavior:gravityBehavior];
+    
+    UICollisionBehavior* collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[redSquare]];
+    collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    [self.animator addBehavior:collisionBehavior];
 }
 
 @end

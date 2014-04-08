@@ -36,7 +36,7 @@
     bool isAvailable = success && (flags & kSCNetworkFlagsReachable) &&
     !(flags & kSCNetworkFlagsConnectionRequired);
     if (isAvailable) {
-        NSLog(@"Servidor frifri online: %d", flags);
+  //      NSLog(@"Servidor frifri online: %d", flags);
     }else{
         NSLog(@"Servidor frifri offline");
     }
@@ -50,7 +50,7 @@
     {
         // Update the UI on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"internet esta funcionando");
+          //  NSLog(@"internet esta funcionando");
         });
     };
     
