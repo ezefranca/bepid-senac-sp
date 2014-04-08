@@ -9,6 +9,7 @@
 #import "GraficoOrvalhoViewController.h"
 #import "PNChart.h"
 #import "Single.h"
+#import "SDbar.h"
 
 @interface GraficoOrvalhoViewController ()
 
@@ -113,5 +114,6 @@
 
 
 - (IBAction)btn:(id)sender {
+    [SDbar showSideBar:self];
 }
 @end
