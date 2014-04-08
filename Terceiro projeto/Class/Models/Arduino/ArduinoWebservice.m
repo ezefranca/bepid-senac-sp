@@ -23,6 +23,27 @@
 
 -(void)reloadData
 {
+    
+    
+    bool success = false;
+    const char *host_name = [@"172.246.16.27"
+                             cStringUsingEncoding:NSASCIIStringEncoding];
+    
+    SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL,
+                                                                                host_name);
+    SCNetworkReachabilityFlags flags;
+    success = SCNetworkReachabilityGetFlags(reachability, &flags);
+    bool isAvailable = success && (flags & kSCNetworkFlagsReachable) &&
+    !(flags & kSCNetworkFlagsConnectionRequired);
+    if (isAvailable) {
+        NSLog(@"Servidor frifri online: %d", flags);
+    }else{
+        NSLog(@"Servidor frifri offline");
+    }
+    
+
+    
+    
     self.internetReachable = [Reachability reachabilityWithHostname:@"172.246.16.27"];
 
     self.internetReachable.reachableBlock = ^(Reachability*reach)
