@@ -64,7 +64,7 @@
 -(void)animar
 {
     
-  }
+}
 
 
 

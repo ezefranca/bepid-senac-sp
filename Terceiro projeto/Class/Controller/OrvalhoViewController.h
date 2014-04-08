@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
 #import "PNChart.h"
+#import "Single.h"
 #import "ArduinoWebservice.h"
 
 @interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>
@@ -16,6 +17,8 @@
 @property ArduinoWebservice *arduino;
 @property float temperaturaInicial;
 @property float temperaturaFinal;
+@property float temperaturaAtual;
+@property Single *single;
 @property NSTimer *time;
 
 @property (strong, nonatomic) IBOutlet UILabel *inicialLabel;

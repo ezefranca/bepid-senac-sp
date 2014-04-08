@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 GABRIEL VIEIRA. All rights reserved.
 //
 
+
+
 #import "Single.h"
 
 @implementation Single
@@ -14,6 +16,7 @@
 +(Single *) sharedStore
 {
     static Single *sharedStore = nil;
+    
     
     if(!sharedStore)
     {

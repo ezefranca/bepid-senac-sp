@@ -26,6 +26,7 @@
         self.arduino = [[ArduinoWebservice alloc]init];
         self.plotaGrafico.enabled = FALSE;
         self.plotaGrafico.alpha = 0;
+        self.single = [[Single alloc]init];
     }
     return self;
 }
@@ -69,6 +70,14 @@
 }
 
 - (IBAction)plotaGrafico:(id)sender {
+   
+    Temperatura temp = self.single.temperatura;
+    temp.temperaturaAtual = self.temperaturaAtual;
+    temp.TemperaturaFinal = self.temperaturaFinal;
+    temp.temperaturaInicial = self.temperaturaInicial;
+    
+    self.single.temperatura = temp;
+    
      [SDbar changeController:6 :self ];
 }
 
@@ -77,6 +86,7 @@
     float temp;
     [self.arduino reloadData];
     temp = [self.arduino returnData:@"temperatura"];
+    self.temperaturaAtual = temp;
     _atualLabel.text = [NSString stringWithFormat:@"%2f C", temp];
     NSLog(@"%f", temp);
     
