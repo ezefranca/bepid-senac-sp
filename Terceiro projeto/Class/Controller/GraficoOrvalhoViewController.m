@@ -8,6 +8,7 @@
 
 #import "GraficoOrvalhoViewController.h"
 #import "PNChart.h"
+#import "Single.h"
 
 @interface GraficoOrvalhoViewController ()
 
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
     
+    Single *dadosTemperatura = [[Single alloc]init];
+    
     
     UILabel * lineChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 1004, 30)];
     lineChartLabel.text = @"Estimated Dew Point Curve";
@@ -41,7 +44,13 @@
     [lineChart setYLabels:@[@"Temperature"]];
     
     // Line Chart Nr.1
-    NSArray * data01Array = @[@24.1, @30];
+    
+    NSNumber *inicio = [[NSNumber alloc]initWithFloat:dadosTemperatura.temperatura.temperaturaInicial];
+    NSNumber *final = [[NSNumber alloc]initWithFloat:dadosTemperatura.temperatura.TemperaturaFinal];
+    NSArray * data01Array = [[NSArray alloc]initWithObjects: inicio, final, nil];
+    
+    
+    
     PNLineChartData *data01 = [PNLineChartData new];
     data01.color = PNFreshGreen;
     data01.itemCount = lineChart.xLabels.count;

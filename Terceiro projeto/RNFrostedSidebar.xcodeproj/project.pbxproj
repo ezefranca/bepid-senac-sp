@@ -6926,6 +6926,11 @@
 				CLASSPREFIX = RN;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ryan Nystrom";
+				TargetAttributes = {
+					8646015C17BAF99800FCE7F4 = {
+						DevelopmentTeam = 54JDK55DR5;
+					};
+				};
 			};
 			buildConfigurationList = 8646015817BAF99800FCE7F4 /* Build configuration list for PBXProject "RNFrostedSidebar" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -9234,11 +9239,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Class/Models/RNFrostedSidebar/RNFrostedSidebar-Prefix.pch";
 				INFOPLIST_FILE = "Class/Models/RNFrostedSidebar/RNFrostedSidebar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = RNFrostedSidebar;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -9249,11 +9257,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Class/Models/RNFrostedSidebar/RNFrostedSidebar-Prefix.pch";
 				INFOPLIST_FILE = "Class/Models/RNFrostedSidebar/RNFrostedSidebar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = RNFrostedSidebar;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
