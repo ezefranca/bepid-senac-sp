@@ -46,10 +46,13 @@
     
     // Line Chart Nr.1
     
+    // Calculos ponto de orvalho
     NSNumber *inicio = [[NSNumber alloc]initWithFloat:dadosTemperatura.temperatura.temperaturaInicial];
     NSNumber *final = [[NSNumber alloc]initWithFloat:dadosTemperatura.temperatura.TemperaturaFinal];
     NSArray * data01Array = [[NSArray alloc]initWithObjects: inicio, final, nil];
     
+    UR = 100 - 5*(dadosTemperatura.temperatura.TemperaturaFinal - dadosTemperatura.temperatura.temperaturaInicial);
+    NSLog(@"Umidade reladitva %f", UR);
     
     
     PNLineChartData *data01 = [PNLineChartData new];
@@ -115,5 +118,10 @@
 
 - (IBAction)btn:(id)sender {
     [SDbar showSideBar:self];
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    [SDbar changeController:index :self ];
 }
 @end

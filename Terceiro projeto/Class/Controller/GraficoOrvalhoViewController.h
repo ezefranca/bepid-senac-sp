@@ -13,6 +13,8 @@
 @interface GraficoOrvalhoViewController : UIViewController <RNFrostedSidebarDelegate,PNChartDelegate>
 {
     UILabel * LabelDeBaixo;
+    float Tpo;
+    float UR;
 }
 - (IBAction)btn:(id)sender;
 
