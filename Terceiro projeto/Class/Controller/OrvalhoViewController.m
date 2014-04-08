@@ -27,6 +27,7 @@
         self.plotaGrafico.enabled = FALSE;
         self.plotaGrafico.alpha = 0;
         self.single = [[Single alloc]init];
+        self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     }
     return self;
 }
@@ -36,6 +37,7 @@
     [super viewDidLoad];
 
     self.time = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(desenhaGelinho) userInfo:nil repeats:YES];
     
     //gesto para abrir a barra lateral
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
@@ -90,7 +92,7 @@
     temp = [self.arduino returnData:@"temperatura"];
     self.temperaturaAtual = temp;
     _atualLabel.text = [NSString stringWithFormat:@"%2f C", temp];
-    NSLog(@"%f", temp);
+    
     
 }
 
@@ -113,7 +115,13 @@
 
 -(void)desenhaGelinho{
     // INICIAR ANIMACAO
-    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    [self.animator removeAllBehaviors];
+    
+    for (UIView *u in self.view.subviews) {
+        if ([u class] == [UIView class]) {
+            [u removeFromSuperview];
+        }
+    }
     
     //CUSTON
     UIView *redSquare = [[UIView alloc]initWithFrame:CGRectMake(800, 200, 50, 50)];
@@ -128,8 +136,6 @@
     [elasticityBehavior setDensity:20.0];
     // [elasticityBehavior setElasticity:1.0   ];
     [self.animator addBehavior:elasticityBehavior];
-    
-    
     
     
     //COLISAO E GRAEVIDADE
