@@ -27,8 +27,10 @@ typedef struct
 
 @property NSIndexSet *optionIndex;
 @property Temperatura temperatura;
+@property RNFrostedSidebar *bar;
 
 +(Single *) sharedStore;
+-(RNFrostedSidebar *)returnBar;
 
 
 @end

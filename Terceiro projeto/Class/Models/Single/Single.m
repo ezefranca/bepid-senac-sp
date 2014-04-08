@@ -41,9 +41,35 @@
         if (self.optionIndex) {
             self.optionIndex = [[NSIndexSet alloc]init];
         }
+        
+        if(!self.bar)
+        {
+            NSArray *images = @[
+                                [UIImage imageNamed:@"gear"],
+                                [UIImage imageNamed:@"globe"],
+                                [UIImage imageNamed:@"profile"],
+                                [UIImage imageNamed:@"star"],
+                                [UIImage imageNamed:@"gear"]];
+            
+            
+            NSArray *colors = @[
+                                [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
+                                [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
+                                [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                                [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
+                                [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1]];
+            
+            self.bar = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices: self.optionIndex borderColors:colors];
+
+        }
     }
     
     return self;
+}
+
+-(RNFrostedSidebar *)returnBar
+{
+    return self.bar;
 }
 
 
