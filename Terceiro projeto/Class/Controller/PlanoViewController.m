@@ -75,8 +75,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [[event allTouches] anyObject];
-    CGPoint touchPoint = [touch locationInView:self.view];
-    
+    CGPoint touchPoint = [[touch locationInView:self.view];
     
     //OBJETOS
     if (self.podeComecar) {
