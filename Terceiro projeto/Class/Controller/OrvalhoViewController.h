@@ -41,4 +41,6 @@
 -(void)abrirMenu;
 -(void)atualizadorLabel;
 -(void)desenhaGelinho;
+
+-(void)atualizaBackground;
 @end

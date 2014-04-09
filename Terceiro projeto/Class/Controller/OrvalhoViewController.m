@@ -37,7 +37,6 @@
     [super viewDidLoad];
 
     self.time = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
-    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(desenhaGelinho) userInfo:nil repeats:YES];
     
     //gesto para abrir a barra lateral
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
@@ -71,7 +70,9 @@
     self.temperaturaInicial = [self.arduino returnData:@"temperatura"];
     self.inicialLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaInicial];
     
-    [self desenhaGelinho];
+    [self performSelectorOnMainThread:@selector(desenhaGelinho) withObject:nil waitUntilDone:NO];
+    
+    //[self desenhaGelinho];
 }
 
 - (IBAction)plotaGrafico:(id)sender {
@@ -91,13 +92,18 @@
 
 -(void)atualizadorLabel{
     
+    
+    [self performSelectorInBackground:@selector(atualizaBackground) withObject:nil];
+    
+}
+
+-(void)atualizaBackground
+{
     float temp;
     [self.arduino reloadData];
     temp = [self.arduino returnData:@"temperatura"];
     self.temperaturaAtual = temp;
     _atualLabel.text = [NSString stringWithFormat:@"%2f C", temp];
-    
-    
 }
 
 #pragma mark sidebarManager
