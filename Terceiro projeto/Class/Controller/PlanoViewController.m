@@ -64,18 +64,19 @@
     self.tamanhoDaLinha = sin(DEGREES_TO_RADIANS(self.angulo))*1024;
     NSLog(@"%f", self.tamanhoDaLinha);
     
-    
-    if (self.angulo > 0 && self.angulo < 45){
+    if(self.angulo <= 45)
+    {
         self.tamanhoDaLinha = 1004;
     }
-    
-    else if (self.angulo > 45 && self.angulo < 70){
-        self.tamanhoDaLinha = 800;
+    else if (self.angulo <= 70)
+    {
+        self.tamanhoDaLinha = 750;
     }
-    
-    else if (self.angulo > 70 && self.angulo < 91) {
-        self.tamanhoDaLinha = 728;
-        }
+    else
+    {
+        self.tamanhoDaLinha = 700;
+    }
+
     
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, self.tamanhoDaLinha, 20)];
     line.backgroundColor = [UIColor yellowColor];
