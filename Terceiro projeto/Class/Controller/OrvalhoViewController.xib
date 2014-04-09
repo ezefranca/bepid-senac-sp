@@ -126,7 +126,7 @@
                         <action selector="tartarugaInfo:" destination="-1" eventType="touchUpInside" id="mNl-xw-NSf"/>
                     </connections>
                 </button>
-                <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91F-p8-sdG">
+                <view hidden="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91F-p8-sdG">
                     <rect key="frame" x="122" y="52" width="779" height="614"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
