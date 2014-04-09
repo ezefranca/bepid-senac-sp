@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="atualLabel" destination="44q-EK-C78" id="Yfy-cj-3jT"/>
                 <outlet property="finalLabel" destination="q6d-DG-O9W" id="tgQ-YF-jHI"/>
+                <outlet property="informacaoView" destination="91F-p8-sdG" id="wSD-Oc-oxD"/>
                 <outlet property="inicialLabel" destination="tvH-5M-aJU" id="bvu-UT-KGi"/>
                 <outlet property="plotaGrafico" destination="IS6-H2-b7v" id="OAD-bd-nHh"/>
                 <outlet property="view" destination="LGK-Yo-UdP" id="0gi-xJ-ard"/>
@@ -105,7 +106,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS6-H2-b7v">
-                    <rect key="frame" x="390" y="284" width="259" height="200"/>
+                    <rect key="frame" x="396" y="439" width="259" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Click here to Plot Graphic">
                         <color key="titleColor" red="1" green="0.0" blue="0.047118742970000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,16 +117,33 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXK-HM-5eA">
-                    <rect key="frame" x="569" y="589" width="122" height="159"/>
+                    <rect key="frame" x="593" y="600" width="122" height="159"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button" image="tutscience.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="tartarugaInfo:" destination="-1" eventType="touchUpInside" id="mNl-xw-NSf"/>
+                    </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91F-p8-sdG">
-                    <rect key="frame" x="634" y="137" width="260" height="238"/>
+                <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91F-p8-sdG">
+                    <rect key="frame" x="122" y="52" width="779" height="614"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech_bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nt7-nP-VZS">
+                            <rect key="frame" x="26" y="11" width="605" height="544"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZn-T4-ezf">
+                            <rect key="frame" x="96" y="118" width="490" height="104"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <string key="text">Relative humidity is the ratio of the partial pressure of water vapor in an air-water mixture to the saturated vapor pressure of water at a prescribed temperature. The relative humidity of air depends on temperature and the pressure of the system of interest.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
@@ -135,6 +153,7 @@
     <resources>
         <image name="bugbut.png" width="344" height="284"/>
         <image name="copo.png" width="385" height="428"/>
+        <image name="speech_bubble.png" width="1438" height="1092"/>
         <image name="ter.png" width="206" height="454"/>
         <image name="tutscience.png" width="1017" height="1300"/>
     </resources>

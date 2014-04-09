@@ -35,6 +35,8 @@
 - (IBAction)btn:(id)sender;
 - (IBAction)BeginButton:(id)sender;
 - (IBAction)plotaGrafico:(id)sender;
+- (IBAction)tartarugaInfo:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *informacaoView;
 
 -(void)abrirMenu;
 -(void)atualizadorLabel;

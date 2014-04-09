@@ -43,6 +43,7 @@
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:gestoPorra];
+    self.informacaoView.alpha = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +84,9 @@
     self.single.temperatura = temp;
     
      [SDbar changeController:6 :self ];
+}
+
+- (IBAction)tartarugaInfo:(id)sender {
 }
 
 -(void)atualizadorLabel{
