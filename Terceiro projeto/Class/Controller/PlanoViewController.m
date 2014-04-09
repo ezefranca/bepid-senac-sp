@@ -53,7 +53,8 @@
 - (IBAction)btn:(id)sender
 {
     for (UIView *u in self.view.subviews) {
-        if ([u class] != [UIButton class]) {
+        if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class]) {
+            
             [u removeFromSuperview];
         }
     }
@@ -80,8 +81,23 @@
     
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, self.tamanhoDaLinha, 20)];
     line.backgroundColor = [UIColor yellowColor];
-    [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo))];
+    [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo ))];
     [self.view addSubview:line];
+    
+    
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: DEGREES_TO_RADIANS( self.angulo) ];
+    rotationAnimation.duration = 2;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = 1;
+    rotationAnimation.removedOnCompletion = NO;
+    rotationAnimation.fillMode = kCAFillModeForwards;
+    
+    [[[self transferidor ]layer]addAnimation:rotationAnimation forKey:nil];
+
+    
+   /// [self.transferidor setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(360 - 90))];
     
     self.podeComecar = YES;
 }
@@ -106,10 +122,12 @@
         [self.animator removeAllBehaviors];
     
         for (UIView *u in self.view.subviews) {
-            if ([u class] != [UIButton class]) {
+            if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class]) {
+                
                 [u removeFromSuperview];
             }
         }
+
 
     
     //linha

@@ -65,6 +65,7 @@
 		296E21C918E6020E005969F7 /* PlanoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296E21C718E6020E005969F7 /* PlanoViewController.m */; };
 		296E21CA18E6020E005969F7 /* PlanoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E21C818E6020E005969F7 /* PlanoViewController.xib */; };
 		2981729718EC9FCD00A5AD6B /* Simulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2981729618EC9FCD00A5AD6B /* Simulation.m */; };
+		29C4B7B918F5DB2E00B1DAAE /* transferidor.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C4B7B818F5DB2E00B1DAAE /* transferidor.png */; };
 		8646016117BAF99800FCE7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016017BAF99800FCE7F4 /* Foundation.framework */; };
 		8646016317BAF99800FCE7F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016217BAF99800FCE7F4 /* CoreGraphics.framework */; };
 		8646016517BAF99800FCE7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646016417BAF99800FCE7F4 /* UIKit.framework */; };
@@ -163,6 +164,7 @@
 		296E21C818E6020E005969F7 /* PlanoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanoViewController.xib; path = ../../Class/Controller/PlanoViewController.xib; sourceTree = "<group>"; };
 		2981729518EC9FCD00A5AD6B /* Simulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simulation.h; sourceTree = "<group>"; };
 		2981729618EC9FCD00A5AD6B /* Simulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Simulation.m; sourceTree = "<group>"; };
+		29C4B7B818F5DB2E00B1DAAE /* transferidor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transferidor.png; sourceTree = "<group>"; };
 		862D1B2317BC2C9B00157004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		862D1B2517BC2CA000157004 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8646015D17BAF99800FCE7F4 /* RNFrostedSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNFrostedSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,6 +326,7 @@
 		296E10C818E5EFAA005969F7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				29C4B7B818F5DB2E00B1DAAE /* transferidor.png */,
 				25D23CDA18F5D85600BE0981 /* Angle-Thingy-icon.png */,
 				25D23CD818F5D06300BE0981 /* speech_bubble.png */,
 				25D23CD218F5BCF000BE0981 /* pause.png */,
@@ -522,6 +525,7 @@
 				25D23CD918F5D06300BE0981 /* speech_bubble.png in Resources */,
 				F725F1AC18EEBF8500CAEB1C /* menino.png in Resources */,
 				296E194E18E5EFB5005969F7 /* burger@2x.png in Resources */,
+				29C4B7B918F5DB2E00B1DAAE /* transferidor.png in Resources */,
 				25CCD38B18EDDD740000D1CD /* bio.png in Resources */,
 				296E21AE18E5EFB6005969F7 /* profile@2x.png in Resources */,
 				296E21B318E5EFB6005969F7 /* SensoresViewController.xib in Resources */,

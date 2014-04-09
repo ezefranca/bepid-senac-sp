@@ -23,6 +23,7 @@
 @property ArduinoWebservice *arduino;
 @property NSTimer *timer;
 @property float tamanhoDaLinha;
+@property (weak, nonatomic) IBOutlet UIImageView *transferidor;
 
 
 -(void)animar;
