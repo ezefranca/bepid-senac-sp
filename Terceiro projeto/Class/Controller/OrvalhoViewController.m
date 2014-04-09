@@ -43,6 +43,8 @@
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:gestoPorra];
     self.informacaoView.alpha = 0;
+    
+    self.turtleVisible = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,6 +90,26 @@
 }
 
 - (IBAction)tartarugaInfo:(id)sender {
+    
+    if (self.turtleVisible)
+    {
+        [UIView animateWithDuration:1 animations:^{
+            
+            self.informacaoView.alpha = 0;
+        }];
+        self.informacaoView.hidden = YES;
+        
+        self.turtleVisible = NO;
+    }
+    else
+    {
+        [UIView animateWithDuration:1 animations:^{
+             self.informacaoView.alpha = 1;
+            self.informacaoView.hidden = NO;
+        }];
+        
+        self.turtleVisible = YES;
+    }
 }
 
 -(void)atualizadorLabel{
@@ -129,7 +151,9 @@
     
     for (UIView *u in self.view.subviews) {
         if ([u class] == [UIView class]) {
-            [u removeFromSuperview];
+            if (u != self.informacaoView) {
+                 [u removeFromSuperview];
+            }
         }
     }
     

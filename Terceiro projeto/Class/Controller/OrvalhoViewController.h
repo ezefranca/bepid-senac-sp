@@ -30,6 +30,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *finalLabel;
 @property (strong, nonatomic) IBOutlet UILabel *atualLabel;
 @property (strong, nonatomic) IBOutlet UIButton *plotaGrafico;
+@property BOOL turtleVisible;
 
 - (IBAction)FinishButton:(id)sender;
 - (IBAction)btn:(id)sender;
