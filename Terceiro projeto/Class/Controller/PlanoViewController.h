@@ -8,17 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
+#import "ArduinoWebservice.h"
 
 @interface PlanoViewController : UIViewController <RNFrostedSidebarDelegate>
 @property UIDynamicAnimator *animator;
 
 - (IBAction)btn:(id)sender;
+- (IBAction)burguer:(id)sender;
 
 @property int angulo;
 
 @property BOOL podeComecar;
 
+@property ArduinoWebservice *arduino;
 @property NSTimer *timer;
+@property float tamanhoDaLinha;
 
 
 -(void)animar;

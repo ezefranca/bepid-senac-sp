@@ -22,6 +22,7 @@
     if (self) {
         
         self.animator = [[UIDynamicAnimator alloc]init];
+        self.arduino = [[ArduinoWebservice alloc]init] ;
         // Custom initialization
     }
     return self;
@@ -33,8 +34,10 @@
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:gestoPorra];
+    [self.arduino reloadData];
     
-    self.angulo = 30;
+    
+    self.angulo = [self.arduino returnData:@"altura"];
     self.podeComecar = NO;
 
 }
@@ -46,14 +49,35 @@
 }
 
 
--(void)abrirMenu
-{
-    [SDbar showSideBar:self];
-}
 
 - (IBAction)btn:(id)sender
 {
-    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 1004, 20)];
+    for (UIView *u in self.view.subviews) {
+        if ([u class] != [UIButton class]) {
+            [u removeFromSuperview];
+        }
+    }
+
+    
+    [self.arduino reloadData];
+    self.angulo = [self.arduino returnData:@"altura"];
+    self.tamanhoDaLinha = sin(DEGREES_TO_RADIANS(self.angulo))*1024;
+    NSLog(@"%f", self.tamanhoDaLinha);
+    
+    
+    if (self.angulo > 0 && self.angulo < 45){
+        self.tamanhoDaLinha = 1004;
+    }
+    
+    else if (self.angulo > 45 && self.angulo < 70){
+        self.tamanhoDaLinha = 800;
+    }
+    
+    else if (self.angulo > 70 && self.angulo < 91) {
+        self.tamanhoDaLinha = 728;
+        }
+    
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, self.tamanhoDaLinha, 20)];
     line.backgroundColor = [UIColor yellowColor];
     [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo))];
     [self.view addSubview:line];
@@ -61,17 +85,13 @@
     self.podeComecar = YES;
 }
 
+
+
 -(void)animar
 {
     
 }
 
-
-
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    
-    [SDbar changeController:index :self ];
-}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [[event allTouches] anyObject];
@@ -92,7 +112,7 @@
 
     
     //linha
-    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 1004, 20)];
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 400, self.tamanhoDaLinha, 20)];
     line.backgroundColor = [UIColor yellowColor];
     [line setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo))];
     [self.view addSubview:line];
@@ -113,7 +133,7 @@
     //quadrado
     UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[redSquare]];
     elasticityBehavior.elasticity = 0.0f;
-    [elasticityBehavior setDensity:20.0];
+    [elasticityBehavior setDensity:1];
     // [elasticityBehavior setElasticity:1.0   ];
     [self.animator addBehavior:elasticityBehavior];
     
@@ -136,26 +156,17 @@
 
 }
 
-
-
-//Per saperne di più: http://www.iprog.it/blog/objective-c-ios/nstimer-creare-un-cronometro-per-iphone/ | iProg
-/*
-- (IBAction)slide:(id)sender {
-    UISlider *s = sender;
-    CGPoint c = CGPointMake(500, 200);
-    
-    // Change the position explicitly.
-    CABasicAnimation* theAnim = [CABasicAnimation animationWithKeyPath:@"position"];
-    theAnim.fromValue = [NSValue valueWithCGPoint:self.tut.layer.position];
-    theAnim.toValue = [NSValue valueWithCGPoint:c];
-    theAnim.duration = s.value * 6;
-    theAnim.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.3 :0 :1 :0.3 ];
-    theAnim.removedOnCompletion = NO;
-    
-    [[[self tut]layer]addAnimation:theAnim forKey:@"coco"];
-    
-    NSLog(@"%f", s.value);
-
+-(void)abrirMenu
+{
+    [SDbar showSideBar:self];
 }
- */
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    [SDbar changeController:index :self ];
+}
+
+- (IBAction)burguer:(id)sender {
+    [SDbar showSideBar:self];
+}
 @end
