@@ -151,32 +151,39 @@
     
     for (UIView *u in self.view.subviews) {
         if ([u class] == [UIView class]) {
-            if (u != self.informacaoView) {
+            if (u != self.informacaoView && u != self.coliView)  {
                  [u removeFromSuperview];
             }
         }
     }
     
+    
+    
     //CUSTON
-    UIView *redSquare = [[UIView alloc]initWithFrame:CGRectMake(800, 200, 50, 50)];
-    redSquare.backgroundColor = [UIColor redColor];
-    [redSquare setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(self.angulo
-                                                                             ))];
+    UIImageView *redSquare = [[UIImageView alloc]initWithFrame:CGRectMake(800, 200, 50, 50)];
+    redSquare.image = [UIImage imageNamed:@"gelo.png"];
+   //
     [self.view addSubview:redSquare];
     
     //quadrado
     UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[redSquare]];
-    elasticityBehavior.elasticity = 0.0f;
-    [elasticityBehavior setDensity:20.0];
+    elasticityBehavior.elasticity = 0.5f;
+    [elasticityBehavior setDensity:1.0];
     // [elasticityBehavior setElasticity:1.0   ];
     [self.animator addBehavior:elasticityBehavior];
+    
+    //colisaioasidoafhdjs
+    UIDynamicItemBehavior *coisaPesada = [[UIDynamicItemBehavior alloc] initWithItems:@[self.coliView]];
+    coisaPesada.elasticity = 0.0f;
+    [coisaPesada setDensity:20000000000.0];
+    [self.animator addBehavior:coisaPesada];
     
     
     //COLISAO E GRAEVIDADE
     UIGravityBehavior* gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[redSquare ]];
     [self.animator addBehavior:gravityBehavior];
     
-    UICollisionBehavior* collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[redSquare]];
+    UICollisionBehavior* collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[redSquare, self.coliView ]];
     collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     [self.animator addBehavior:collisionBehavior];
 }

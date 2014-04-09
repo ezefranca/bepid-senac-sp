@@ -26,6 +26,7 @@
 @property BOOL podeComecar;
 @property int angulo;
 
+@property (weak, nonatomic) IBOutlet UIView *coliView;
 @property (strong, nonatomic) IBOutlet UILabel *inicialLabel;
 @property (strong, nonatomic) IBOutlet UILabel *finalLabel;
 @property (strong, nonatomic) IBOutlet UILabel *atualLabel;
