@@ -23,7 +23,9 @@
 @property ArduinoWebservice *arduino;
 @property NSTimer *timer;
 @property float tamanhoDaLinha;
-@property (weak, nonatomic) IBOutlet UIImageView *transferidor;
+@property (weak, nonatomic) IBOutlet UIButton *btn;
+
+@property (weak, nonatomic) IBOutlet UILabel *anguloLabel;
 
 
 -(void)animar;

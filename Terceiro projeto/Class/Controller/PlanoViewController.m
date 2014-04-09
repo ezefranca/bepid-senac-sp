@@ -94,8 +94,10 @@
     rotationAnimation.removedOnCompletion = NO;
     rotationAnimation.fillMode = kCAFillModeForwards;
     
-    [[[self transferidor ]layer]addAnimation:rotationAnimation forKey:nil];
-
+    [[[self btn ]layer]addAnimation:rotationAnimation forKey:nil];
+    NSString *stringDoLabel = [[NSNumber numberWithFloat:self.angulo] stringValue];
+    
+    self.anguloLabel.text = stringDoLabel;
     
    /// [self.transferidor setTransform:CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(360 - 90))];
     
