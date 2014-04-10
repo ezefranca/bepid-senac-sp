@@ -83,6 +83,8 @@
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
 		F7D0ACF218F643C000A97B00 /* humidity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF118F643C000A97B00 /* humidity.jpg */; };
 		F7D0ACF418F6520700A97B00 /* Textos.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF318F6520700A97B00 /* Textos.strings */; };
+		F7D0ACF818F6538900A97B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF618F6538900A97B00 /* InfoPlist.strings */; };
+		F7D0ACFB18F653C900A97B00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF918F653C900A97B00 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,7 +192,9 @@
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
 		F7D0ACF118F643C000A97B00 /* humidity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humidity.jpg; sourceTree = "<group>"; };
-		F7D0ACF318F6520700A97B00 /* Textos.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Textos.strings; path = Texts/Textos.strings; sourceTree = "<group>"; };
+		F7D0ACF318F6520700A97B00 /* Textos.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Textos.strings; path = ../Resources/NIBs/Texts/Textos.strings; sourceTree = "<group>"; };
+		F7D0ACF718F6538900A97B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F7D0ACFA18F653C900A97B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,7 +382,6 @@
 				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E193818E5EFB5005969F7 /* HeaderSensor.xib */,
 				296E21C818E6020E005969F7 /* PlanoViewController.xib */,
-				F7D0ACF318F6520700A97B00 /* Textos.strings */,
 				296E193918E5EFB5005969F7 /* SensoresViewController.xib */,
 				296E193A18E5EFB5005969F7 /* tempViewController.xib */,
 				F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */,
@@ -417,6 +420,7 @@
 		8646015417BAF99800FCE7F4 = {
 			isa = PBXGroup;
 			children = (
+				F7D0ACF518F6538900A97B00 /* en.lproj */,
 				296E109E18E5EFAA005969F7 /* Class */,
 				296E10C518E5EFAA005969F7 /* Images.xcassets */,
 				296E10C618E5EFAA005969F7 /* main.m */,
@@ -454,6 +458,16 @@
 				C069753D18F14EE400DB4924 /* Reachability.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		F7D0ACF518F6538900A97B00 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F7D0ACF318F6520700A97B00 /* Textos.strings */,
+				F7D0ACF918F653C900A97B00 /* Localizable.strings */,
+				F7D0ACF618F6538900A97B00 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +539,8 @@
 				296E21B118E5EFB6005969F7 /* tum.png in Resources */,
 				296E195218E5EFB5005969F7 /* Default@2x.png in Resources */,
 				296E21B518E5EFB6005969F7 /* ViewController.xib in Resources */,
+				F7D0ACF818F6538900A97B00 /* InfoPlist.strings in Resources */,
+				F7D0ACFB18F653C900A97B00 /* Localizable.strings in Resources */,
 				296E194F18E5EFB5005969F7 /* click.gif in Resources */,
 				25D23CD718F5BCF000BE0981 /* tutscience.png in Resources */,
 				25CCD39018EDE0780000D1CD /* blackboard.png in Resources */,
@@ -598,6 +614,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7D0ACF618F6538900A97B00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D0ACF718F6538900A97B00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F7D0ACF918F653C900A97B00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D0ACFA18F653C900A97B00 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8646018717BAF99800FCE7F4 /* Debug */ = {
