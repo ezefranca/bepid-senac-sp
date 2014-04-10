@@ -39,6 +39,12 @@
     
     self.angulo = [self.arduino returnData:@"altura"];
     self.podeComecar = NO;
+    
+    //indiceTexto = 1;
+    
+    self.informacaoView.alpha = 0;
+    
+    self.turtleVisible = NO;
 
 }
 
@@ -50,10 +56,13 @@
 
 
 
+- (IBAction)nextBtn:(id)sender {
+}
+
 - (IBAction)btn:(id)sender
 {
     for (UIView *u in self.view.subviews) {
-        if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class]) {
+        if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class] && u != self.informacaoView) {
             
             [u removeFromSuperview];
         }
@@ -189,5 +198,27 @@
 
 - (IBAction)burguer:(id)sender {
     [SDbar showSideBar:self];
+}
+
+- (IBAction)tartarugaInfo:(id)sender {
+    
+    if (self.turtleVisible)
+    {
+        [UIView animateWithDuration:1 animations:^{
+            
+            self.informacaoView.alpha = 0;
+        }];
+        self.informacaoView.hidden = YES;
+        
+        self.turtleVisible = NO;
+    }
+    else
+    {
+        [UIView animateWithDuration:1 animations:^{
+            self.informacaoView.alpha = 1;
+            self.informacaoView.hidden = NO;
+        }];
+        self.turtleVisible = YES;
+    }
 }
 @end
