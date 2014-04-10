@@ -44,8 +44,6 @@
 }
 
 - (IBAction)botaoTeste:(id)sender {
-    NSString *loc = NSLocalizedString(@"TEXTO_001", nil);
-    NSLog(@"%@", loc);
     /*
     ArduinoWebservice *a = [[ArduinoWebservice alloc]init];
    [a initWithRequest];
