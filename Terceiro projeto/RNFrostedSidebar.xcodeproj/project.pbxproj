@@ -82,6 +82,7 @@
 		F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D742418E615C000C267FE /* OrvalhoViewController.m */; };
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
 		F7D0ACF218F643C000A97B00 /* humidity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF118F643C000A97B00 /* humidity.jpg */; };
+		F7D0ACF418F6520700A97B00 /* Textos.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF318F6520700A97B00 /* Textos.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +190,7 @@
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
 		F7D0ACF118F643C000A97B00 /* humidity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humidity.jpg; sourceTree = "<group>"; };
+		F7D0ACF318F6520700A97B00 /* Textos.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Textos.strings; path = Texts/Textos.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +378,7 @@
 				251BD86918EC93FE00C8C75C /* quimicaViewController.xib */,
 				296E193818E5EFB5005969F7 /* HeaderSensor.xib */,
 				296E21C818E6020E005969F7 /* PlanoViewController.xib */,
+				F7D0ACF318F6520700A97B00 /* Textos.strings */,
 				296E193918E5EFB5005969F7 /* SensoresViewController.xib */,
 				296E193A18E5EFB5005969F7 /* tempViewController.xib */,
 				F725F1A618EE77BB00CAEB1C /* biologiaViewController.xib */,
@@ -513,6 +516,7 @@
 				296E21AD18E5EFB6005969F7 /* profile.png in Resources */,
 				296E21A918E5EFB6005969F7 /* globe.png in Resources */,
 				F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */,
+				F7D0ACF418F6520700A97B00 /* Textos.strings in Resources */,
 				296E21AF18E5EFB6005969F7 /* star.png in Resources */,
 				25CCD38E18EDDDAC0000D1CD /* fisica.png in Resources */,
 				296E21A818E5EFB6005969F7 /* gear@2x.png in Resources */,
