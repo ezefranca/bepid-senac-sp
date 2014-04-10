@@ -62,7 +62,7 @@
 - (IBAction)btn:(id)sender
 {
     for (UIView *u in self.view.subviews) {
-        if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class]) {
+        if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class] && u != self.informacaoView) {
             
             [u removeFromSuperview];
         }
@@ -218,7 +218,6 @@
             self.informacaoView.alpha = 1;
             self.informacaoView.hidden = NO;
         }];
-        
         self.turtleVisible = YES;
     }
 }
