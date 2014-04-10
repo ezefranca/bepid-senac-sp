@@ -96,7 +96,7 @@
     
     NSLog(@"Click Key on line %f, %f line index is %d and point index is %d",point.x, point.y,(int)lineIndex, (int)pointIndex);
     
-     [self.view addSubview:LabelDeBaixo];
+   //  [self.view addSubview:LabelDeBaixo];
 }
 
 -(void)userClickedOnLinePoint:(CGPoint)point lineIndex:(NSInteger)lineIndex{
