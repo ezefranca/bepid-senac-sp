@@ -81,6 +81,7 @@
 		F725F1B118EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F725F1AF18EEE52B00CAEB1C /* GraficoOrvalhoViewController.xib */; };
 		F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D742418E615C000C267FE /* OrvalhoViewController.m */; };
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
+		F7D0ACF218F643C000A97B00 /* humidity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF118F643C000A97B00 /* humidity.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -187,6 +188,7 @@
 		F72D742318E615C000C267FE /* OrvalhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrvalhoViewController.h; sourceTree = "<group>"; };
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
+		F7D0ACF118F643C000A97B00 /* humidity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humidity.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +330,7 @@
 		296E10C818E5EFAA005969F7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F7D0ACF118F643C000A97B00 /* humidity.jpg */,
 				29C4B7BA18F5E36D00B1DAAE /* gelo.png */,
 				29C4B7B818F5DB2E00B1DAAE /* transferidor.png */,
 				25D23CDA18F5D85600BE0981 /* Angle-Thingy-icon.png */,
@@ -538,6 +541,7 @@
 				296E21CA18E6020E005969F7 /* PlanoViewController.xib in Resources */,
 				296E21B218E5EFB6005969F7 /* HeaderSensor.xib in Resources */,
 				25D23CD518F5BCF000BE0981 /* pause.png in Resources */,
+				F7D0ACF218F643C000A97B00 /* humidity.jpg in Resources */,
 				296E195118E5EFB5005969F7 /* Default.png in Resources */,
 				2903696518F463B000D593E3 /* bugbut.png in Resources */,
 				296E21AA18E5EFB6005969F7 /* globe@2x.png in Resources */,
