@@ -82,6 +82,9 @@
 		F72D742618E615C000C267FE /* OrvalhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D742418E615C000C267FE /* OrvalhoViewController.m */; };
 		F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D742518E615C000C267FE /* OrvalhoViewController.xib */; };
 		F7D0ACF218F643C000A97B00 /* humidity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACF118F643C000A97B00 /* humidity.jpg */; };
+		F7D0ACFF18F69E0600A97B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D0ACFD18F69E0600A97B00 /* InfoPlist.strings */; };
+		F7D0AD0218F69E3200A97B00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D0AD0018F69E3200A97B00 /* Localizable.strings */; };
+		F7D0AD0418F6AEB300A97B00 /* line-chart-4.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D0AD0318F6AEB300A97B00 /* line-chart-4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +192,9 @@
 		F72D742418E615C000C267FE /* OrvalhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrvalhoViewController.m; sourceTree = "<group>"; };
 		F72D742518E615C000C267FE /* OrvalhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrvalhoViewController.xib; path = ../../Class/Controller/OrvalhoViewController.xib; sourceTree = "<group>"; };
 		F7D0ACF118F643C000A97B00 /* humidity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humidity.jpg; sourceTree = "<group>"; };
+		F7D0ACFE18F69E0600A97B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F7D0AD0118F69E3200A97B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		F7D0AD0318F6AEB300A97B00 /* line-chart-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line-chart-4.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +336,7 @@
 		296E10C818E5EFAA005969F7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F7D0AD0318F6AEB300A97B00 /* line-chart-4.png */,
 				F7D0ACF118F643C000A97B00 /* humidity.jpg */,
 				29C4B7BA18F5E36D00B1DAAE /* gelo.png */,
 				29C4B7B818F5DB2E00B1DAAE /* transferidor.png */,
@@ -414,6 +421,7 @@
 		8646015417BAF99800FCE7F4 = {
 			isa = PBXGroup;
 			children = (
+				F7D0ACFC18F69E0600A97B00 /* en.lproj */,
 				296E109E18E5EFAA005969F7 /* Class */,
 				296E10C518E5EFAA005969F7 /* Images.xcassets */,
 				296E10C618E5EFAA005969F7 /* main.m */,
@@ -451,6 +459,15 @@
 				C069753D18F14EE400DB4924 /* Reachability.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		F7D0ACFC18F69E0600A97B00 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F7D0ACFD18F69E0600A97B00 /* InfoPlist.strings */,
+				F7D0AD0018F69E3200A97B00 /* Localizable.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296E21AD18E5EFB6005969F7 /* profile.png in Resources */,
+				F7D0AD0218F69E3200A97B00 /* Localizable.strings in Resources */,
 				296E21A918E5EFB6005969F7 /* globe.png in Resources */,
 				F72D742718E615C000C267FE /* OrvalhoViewController.xib in Resources */,
 				296E21AF18E5EFB6005969F7 /* star.png in Resources */,
@@ -519,6 +537,7 @@
 				F725F1A818EE77BB00CAEB1C /* biologiaViewController.xib in Resources */,
 				251BD86B18EC93FE00C8C75C /* quimicaViewController.xib in Resources */,
 				296E21B118E5EFB6005969F7 /* tum.png in Resources */,
+				F7D0ACFF18F69E0600A97B00 /* InfoPlist.strings in Resources */,
 				296E195218E5EFB5005969F7 /* Default@2x.png in Resources */,
 				296E21B518E5EFB6005969F7 /* ViewController.xib in Resources */,
 				296E194F18E5EFB5005969F7 /* click.gif in Resources */,
@@ -535,6 +554,7 @@
 				25CCD38B18EDDD740000D1CD /* bio.png in Resources */,
 				296E21AE18E5EFB6005969F7 /* profile@2x.png in Resources */,
 				296E21B318E5EFB6005969F7 /* SensoresViewController.xib in Resources */,
+				F7D0AD0418F6AEB300A97B00 /* line-chart-4.png in Resources */,
 				296E194B18E5EFB5005969F7 /* Images.xcassets in Resources */,
 				25D23CDB18F5D85600BE0981 /* Angle-Thingy-icon.png in Resources */,
 				25CCD38C18EDDD740000D1CD /* qui.png in Resources */,
@@ -594,6 +614,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7D0ACFD18F69E0600A97B00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D0ACFE18F69E0600A97B00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F7D0AD0018F69E3200A97B00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D0AD0118F69E3200A97B00 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8646018717BAF99800FCE7F4 /* Debug */ = {

@@ -12,7 +12,9 @@
 #import "Single.h"
 #import "ArduinoWebservice.h"
 
-@interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>
+@interface OrvalhoViewController : UIViewController <RNFrostedSidebarDelegate>{
+    int indiceTexto;
+}
 
 @property UIDynamicAnimator *animator;
 
@@ -24,7 +26,10 @@
 @property NSTimer *time;
 
 @property BOOL podeComecar;
+@property BOOL startAndStop;
 @property int angulo;
+@property (strong, nonatomic) IBOutlet UIView *dadosexperimentoView;
+@property (strong, nonatomic) IBOutlet UIButton *beginButton;
 
 @property (weak, nonatomic) IBOutlet UIView *coliView;
 @property (strong, nonatomic) IBOutlet UILabel *inicialLabel;
@@ -32,6 +37,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *atualLabel;
 @property (strong, nonatomic) IBOutlet UIButton *plotaGrafico;
 @property BOOL turtleVisible;
+@property (strong, nonatomic) IBOutlet UITextView *textoInformativo;
+- (IBAction)nextTextInfo:(id)sender;
 
 - (IBAction)FinishButton:(id)sender;
 - (IBAction)btn:(id)sender;

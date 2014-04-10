@@ -38,6 +38,8 @@
 
     self.time = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(atualizadorLabel) userInfo:nil repeats:YES];
     
+    indiceTexto = 1;
+    
     //gesto para abrir a barra lateral
     UISwipeGestureRecognizer *gestoPorra = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(abrirMenu)];
     [gestoPorra setDirection:UISwipeGestureRecognizerDirectionRight];
@@ -59,20 +61,39 @@
     self.time = nil;
 }
 
-- (IBAction)FinishButton:(id)sender
-{
-    self.temperaturaFinal = [self.arduino returnData:@"temperatura"];
-    self.finalLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaFinal];
-    self.plotaGrafico.enabled = TRUE;
-    self.plotaGrafico.alpha = 1;
+- (IBAction)nextTextInfo:(id)sender {
+    if(indiceTexto > 5)
+        indiceTexto = 1;
+    NSNumber *z = [NSNumber numberWithInteger:indiceTexto];
+    NSString *y = [z stringValue];
+    self.textoInformativo.text = NSLocalizedString(y, nil);
+    indiceTexto++;
 }
+
 
 - (IBAction)BeginButton:(id)sender
 {
-    self.temperaturaInicial = [self.arduino returnData:@"temperatura"];
-    self.inicialLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaInicial];
     
-    [self performSelectorOnMainThread:@selector(desenhaGelinho) withObject:nil waitUntilDone:NO];
+    if (self.startAndStop)
+    {
+        self.temperaturaFinal = [self.arduino returnData:@"temperatura"];
+        self.finalLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaFinal];
+        self.plotaGrafico.enabled = TRUE;
+        self.plotaGrafico.alpha = 1;
+        self.beginButton.titleLabel.text = @"CLICK TO GET INITIAL";
+        self.startAndStop = FALSE;
+    }
+    else
+    {
+        self.beginButton.titleLabel.text = @"CLICK TO GET FINAL";
+        self.temperaturaInicial = [self.arduino returnData:@"temperatura"];
+        self.inicialLabel.text = [NSString stringWithFormat:@"%2f C" , self.temperaturaInicial];
+        [self performSelectorOnMainThread:@selector(desenhaGelinho) withObject:nil waitUntilDone:NO];
+        
+        self.startAndStop = TRUE;
+    }
+    
+    
     
     //[self desenhaGelinho];
 }
@@ -151,7 +172,7 @@
     
     for (UIView *u in self.view.subviews) {
         if ([u class] == [UIView class]) {
-            if (u != self.informacaoView && u != self.coliView)  {
+            if (u != self.informacaoView && u != self.coliView && u != self.dadosexperimentoView)  {
                  [u removeFromSuperview];
             }
         }

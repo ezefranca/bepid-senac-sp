@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  RNFrostedSidebar
+
+  Created by Ezequiel Franca dos Santos on 10/04/14.
+*/
+
+"1" = "HI, click next ";
+"2" = "Problem: The goal of these experiments is to learn about condensation and the dew point.";
+"3" = "My AppFolder";
+"4" = "Materials: -> Metal or glass cup. -> Bowl full of water and ice cubes (even a big jar works well). -> Thermometer(IPad get temperature for you). ->Warm water. ->Syringe (any kind as long as it can deliver liquids 3-5 cc amounts).";
+"5" = "Procedure: Using your thermometer, note the temperature of the air. Go to www.weather.com and enter your zip code next to “Find Weather” and note the relative humidity where you live. Fill the metal or glass cup one third of the way with water that is approximately 85 degrees Fahrenheit. Place the thermometer into the water. Using the syringe, slowly add small amounts (roughly 2 tablespoons or so) of ice water and watch the thermometer. Continue adding small amounts of water until the temperature of the water drops a degree or two each time the ice water is added. Continue adding ice water until condensation begins to appear on the outside of the metal or glass cup. Just as the evening air chills the air near grass and other surfaces, the ice water you added to the warm water chilled the outside of the cup. Repeat this experiment on a day when the relative humidity is different. Do you have to add more or less ice water to make condensation occur? There are many dew point calculators on Internet. Try using the one at ";
