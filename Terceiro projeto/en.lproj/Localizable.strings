@@ -1,10 +1,16 @@
 /*
- Textos.strings
- RNFrostedSidebar
- 
- Created by Ezequiel Franca dos Santos on 10/04/14.
- Copyright (c) 2014 Ryan Nystrom. All rights reserved.
- */
-"TEXTO_001" = "Olá, Seja Bem vindo!";
-"LABEL_002" = "Stop MyApp";
-"LABEL_003" = "My AppFolder";
+Localizable.strings
+RNFrostedSidebar
+
+Created by Ezequiel Franca dos Santos on 10/04/14.
+*/
+
+"1" = "HI, click next ";
+"2" = "Problem: The goal of these experiments is to learn about condensation and the dew point.";
+"3" = "My AppFolder";
+"4" = "Materials: Metal or glass cup, ice cubes.";
+"5" = ""
+"6" = "Measure the temperature of the air."
+"7" = "Put water in a pot (ideally who has very thin wall).";
+"8" = "Go slowly adding ice and stirring the mixture so its temperature is homogeneous and the ice dissolves.";"
+"9" = "Look closely at the surface of the canister and record where in the temperature starts to be vapor condensation on its surface.";
