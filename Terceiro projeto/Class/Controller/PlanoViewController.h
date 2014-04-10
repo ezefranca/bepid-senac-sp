@@ -13,8 +13,13 @@
 @interface PlanoViewController : UIViewController <RNFrostedSidebarDelegate>
 @property UIDynamicAnimator *animator;
 
+- (IBAction)nextBtn:(id)sender;
 - (IBAction)btn:(id)sender;
 - (IBAction)burguer:(id)sender;
+- (IBAction)tartarugaInfo:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *informacaoView;
+@property (strong, nonatomic) IBOutlet UITextView *textoInformativo;
+@property BOOL turtleVisible;
 
 @property int angulo;
 
