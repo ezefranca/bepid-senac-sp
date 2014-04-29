@@ -26,7 +26,7 @@
     
     
     bool success = false;
-    const char *host_name = [@"172.246.16.27"
+    const char *host_name = [@"192.168.1.177"
                              cStringUsingEncoding:NSASCIIStringEncoding];
     
     SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL,
@@ -41,10 +41,7 @@
         NSLog(@"Servidor frifri offline");
     }
     
-
-    
-    
-    self.internetReachable = [Reachability reachabilityWithHostname:@"172.246.16.27"];
+    self.internetReachable = [Reachability reachabilityWithHostname:@"192.168.1.177"];
 
     self.internetReachable.reachableBlock = ^(Reachability*reach)
     {
@@ -66,7 +63,7 @@
      [self.internetReachable startNotifier];
     
     self.jsonData = [[NSData alloc] initWithContentsOfURL:
-                             [NSURL URLWithString:@"http://172.246.16.27/arduino"]];
+                             [NSURL URLWithString:@"http://192.168.1.177"]];
 }
 
 -(float)returnData:(NSString *)sensor

@@ -62,7 +62,7 @@
 }
 
 - (IBAction)nextTextInfo:(id)sender {
-    if(indiceTexto > 5)
+    if(indiceTexto > 9)
         indiceTexto = 1;
     NSNumber *z = [NSNumber numberWithInteger:indiceTexto];
     NSString *y = [z stringValue];

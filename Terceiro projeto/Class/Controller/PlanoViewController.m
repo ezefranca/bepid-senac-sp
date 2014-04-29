@@ -71,6 +71,9 @@
     
     [self.arduino reloadData];
     self.angulo = [self.arduino returnData:@"altura"];
+    
+    NSLog(@"%d", self.angulo);
+    
     self.tamanhoDaLinha = sin(DEGREES_TO_RADIANS(self.angulo))*1024;
     NSLog(@"%f", self.tamanhoDaLinha);
     
@@ -133,7 +136,7 @@
         [self.animator removeAllBehaviors];
     
         for (UIView *u in self.view.subviews) {
-            if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class]) {
+            if ([u class] != [UIButton class] && [u class] != [UILabel class] && [u class] != [UIImageView class] && u!= self.informacaoView) {
                 
                 [u removeFromSuperview];
             }

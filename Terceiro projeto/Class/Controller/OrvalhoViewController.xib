@@ -142,18 +142,11 @@
                                 <action selector="nextTextInfo:" destination="-1" eventType="touchUpInside" id="oaq-Z0-bbQ"/>
                             </connections>
                         </button>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZn-T4-ezf">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" editable="NO" text="Click next to see..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iZn-T4-ezf">
                             <rect key="frame" x="86" y="118" width="490" height="179"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                            <attributedString key="attributedText">
-                                <fragment content="Hi, click next to see...">
-                                    <attributes>
-                                        <font key="NSFont" size="30" name="Helvetica"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="30"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BV0-SM-B94">
